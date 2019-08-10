@@ -33,30 +33,27 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="dropdown-toggle nav-link">
+            <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link">
               <i class="fas fa-users"></i> About Us
             </a>
-            <!-- <div class="dropdown-menu dropdown-with-icons">
-              <a href="../index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> Offers
-              </a>
-              <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
-                <i class="material-icons">content_paste</i> Customer Support
-              </a>
-            </div> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-              <i class="fas fa-tags"></i> &nbsp;Offers
+            <a class="nav-link" href="<?= base_url();?>home/how_it_works" rel="tooltip" title="" data-placement="bottom"  data-original-title="Know more about move">
+            <i class="fas fa-info-circle"></i> &nbsp;How it works
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="#" target="_blank" data-original-title="Click here for queries">
+            <a class="nav-link" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom"  data-original-title="Click here for queries">
+            <i class="fas fa-question-circle"></i> &nbsp;FAQ
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="#"  data-original-title="Contact our team">
               <i class="fas fa-hands-helping"></i> &nbsp;Customer Support
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="./forserviceproviders.php" target="_blank" data-original-title="For the Vendors">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider"  data-original-title="For the Vendors">
               <i class="fab fa-black-tie"></i> &nbsp;For Service Provider
             </a>
           </li>

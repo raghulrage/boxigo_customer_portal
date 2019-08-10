@@ -6089,9 +6089,9 @@ button.close {
 }
 
 .carousel-indicators {
-  position: absolute;
+  position: relative;
   right: 0;
-  bottom: 10px;
+  bottom:1 0px;
   left: 0;
   z-index: 15;
   display: flex;

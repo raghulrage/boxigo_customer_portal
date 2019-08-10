@@ -9,22 +9,27 @@
         <ul>
           <li>
             <a href="#">
-             About Us
+            <i class="fas fa-users"></i> About Us
             </a>
           </li>
           <li>
             <a href="#">
-              offers
+            <i class="fas fa-info-circle"></i> &nbsp; How it works
             </a>
           </li>
           <li>
             <a href="#customer support">
-              Blog
+            <i class="fas fa-question-circle"></i> &nbsp;FAQ
+            </a>
+          </li>
+          <li>
+            <a href="#customer support">
+            <i class="fas fa-hands-helping"></i> &nbsp;Customer support
             </a>
           </li>
           <li>
             <a href="forserviceproviders.php">
-              for service providers
+            <i class="fab fa-black-tie"></i> &nbsp;for service providers
             </a>
           </li>
           <li class="nav-item">
@@ -45,7 +50,7 @@
         <script>
           document.write(new Date().getFullYear())
         </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+        <a href="http://boxigo.planpackersandmovers.com/" target="_blank">Boxigo</a>
       </div>
     </div>
   </footer>

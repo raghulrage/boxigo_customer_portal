@@ -22,4 +22,24 @@ class Home extends CI_Controller {
 	{
 		$this->load->template('home');
 	}
+	
+	public function forserviceprovider()
+	{
+		$this->load->template('forserviceprovider');
+	}
+
+	public function aboutus()
+	{
+		$this->load->template('aboutus');
+	}
+
+	public function how_it_works()
+	{
+		$this->load->template('how_it_works');
+	}
+
+	public function faq()
+	{
+		$this->load->template('faq');
+	}
 }
