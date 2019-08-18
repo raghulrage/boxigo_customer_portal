@@ -71,11 +71,11 @@ function filter_array($array) {
 				<div class="tab-content" id="pills-tabContent">
 					<div class="tab-pane fade show active" id="pills-livingroom" role="tabpanel" aria-labelledby="pills-livingroom-tab">
 						<?php $i=0; foreach ($living_room_item as $key => $value) { ?>
-							<h4 class="title"><?= ucwords($key); ?></h4>
-							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center">
-								<?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?>
+							<h4 class="title">Select Your&nbsp;<?= ucwords($key); ?>&nbsp;Items</h4>
+							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center">
+								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
-									<?php if($j == count($value)){ echo " <p>and</p> "; } ?>
+									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
 		 								<div class="form-group mx-2 text-center w-15">
 											<div class="input-group input-group-hover">
 												<div class="input-group-prepend invisible">
@@ -86,8 +86,8 @@ function filter_array($array) {
 													<span class="input-group-text pointer btn-number bg-info text-white" data-type="plus" data-field="<?= $k; ?>">+</span>
 												</div>
 											</div>
+											<p class="mx-2 mt-2"><?= ucwords(str_replace("_", " ", $k)); ?><?php echo ($j++ < count($value)) ? ", " : "."; ?></p>
 										</div>
-										<p class="mx-2 "><?= ucwords(str_replace("_", " ", $k)); ?><?php echo ($j++ < count($value)) ? ", " : "."; ?></p>
 
 								<?php } ?>
 							</div>
@@ -95,11 +95,11 @@ function filter_array($array) {
 					</div>
 					<div class="tab-pane fade" id="pills-bedroom" role="tabpanel" aria-labelledby="pills-bedroom-tab">
 						<?php $i=0; foreach ($bed_room_item as $key => $value) { ?>
-							<h4 class="title"><?= ucwords($key); ?></h4>
-							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center">
-								<?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?>
+							<h4 class="title">Select Your&nbsp;<?= ucwords($key); ?>&nbsp;Items</h4>
+							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center">
+								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
-									<?php if($j == count($value)){ echo " <p>and</p> "; } ?>
+									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
 										<div class="form-group mx-2 text-center w-15">
 											<div class="input-group input-group-hover">
 												<div class="input-group-prepend invisible">
@@ -110,19 +110,20 @@ function filter_array($array) {
 													<span class="input-group-text pointer btn-number bg-info text-white" data-type="plus" data-field="<?= $k; ?>">+</span>
 												</div>
 											</div>
+											<p class="mx-2 mt-2"><?= ucwords(str_replace("_", " ", $k)); ?><?php echo ($j++ < count($value)) ? ", " : "."; ?></p>
 										</div>
-										<p class="mx-2"><?= ucwords(str_replace("_", " ", $k)); ?><?php echo ($j++ < count($value)) ? ", " : "."; ?></p>
+										
 								<?php } ?>
 							</div>
 						<?php } ?>
 					</div>
 					<div class="tab-pane fade" id="pills-kitchen" role="tabpanel" aria-labelledby="pills-kitchen-tab">
 						<?php $i=0; foreach ($kitchen_item as $key => $value) { ?>
-							<h4 class="title"><?= ucwords($key); ?></h4>
-							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center">
-								<?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?>
+							<h4 class="title">Select Your&nbsp;<?= ucwords($key); ?>&nbsp;Items</h4>
+							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center">
+								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
-									<?php if($j == count($value)){ echo " <p>and</p> "; } ?>
+									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
 										<div class="form-group mx-2 text-center w-15">
 											<div class="input-group input-group-hover">
 												<div class="input-group-prepend invisible">
@@ -133,19 +134,20 @@ function filter_array($array) {
 													<span class="input-group-text pointer btn-number bg-info text-white" data-type="plus" data-field="<?= $k; ?>">+</span>
 												</div>
 											</div>
+											<p class="mx-2 mt-2"><?= ucwords(str_replace("_", " ", $k)); ?><?php echo ($j++ < count($value)) ? ", " : "."; ?></p>
 										</div>
-										<p class="mx-2"><?= ucwords(str_replace("_", " ", $k)); ?><?php echo ($j++ < count($value)) ? ", " : "."; ?></p>
+										
 								<?php } ?>
 							</div>
 						<?php } ?>
 					</div>
 					<div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">
 						<?php $i=0; foreach ($misc_item as $key => $value) { ?>
-							<h4 class="title"><?= ucwords($key); ?></h4>
-							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center">
-								<?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?>
+							<h4 class="title">Select Your&nbsp;<?= ucwords($key); ?>&nbsp;Items</h4>
+							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center">
+								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
-									<?php if($j == count($value)){ echo " <p>and</p> "; } ?>
+									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
 										<div class="form-group mx-2 text-center w-15">
 											<div class="input-group input-group-hover">
 												<div class="input-group-prepend invisible">
@@ -156,17 +158,18 @@ function filter_array($array) {
 													<span class="input-group-text pointer btn-number bg-info text-white" data-type="plus" data-field="<?= $k; ?>">+</span>
 												</div>
 											</div>
+											<p class="mx-2 mt-2"><?= ucwords(str_replace("_", " ", $k)); ?><?php echo ($j++ < count($value)) ? ", " : "."; ?></p>
 										</div>
-										<p class="mx-2"><?= ucwords(str_replace("_", " ", $k)); ?><?php echo ($j++ < count($value)) ? ", " : "."; ?></p>
+										
 								<?php } ?>
 							</div>
 						<?php } ?>
+						<div class="d-flex flex-row justify-content-center align-items-center mt-5">
+							<button type="submit" class="btn btn-success btn-raised">Next</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="d-flex flex-row justify-content-center align-items-center mt-5">
-			<button type="submit" class="btn btn-success btn-raised">Next</button>
 		</div>
 		<?php echo form_close(); ?>
 	</div>

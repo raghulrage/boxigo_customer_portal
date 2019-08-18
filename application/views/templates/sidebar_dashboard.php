@@ -19,7 +19,7 @@
 					<!-- <span class="badge badge-primary badge-pill ml-auto">1</span> -->
 				</li>
 				<li class="list-group-item  justify-content-between align-items-center">
-					<a class="btn btn-info btn-block btn-raised" href="<?= base_url();?>estimate">Make <?php if($estimate_list['total'] > 0): ?>another <?php else : ?>an <?php endif; ?>estimate</a>
+					<a class="btn btn-success btn-block btn-raised" href="<?= base_url();?>estimate">Make <?php if($estimate_list['total'] > 0): ?>another <?php else : ?>an <?php endif; ?>estimate</a>
 				</li>
 			</ul>
 		</div>

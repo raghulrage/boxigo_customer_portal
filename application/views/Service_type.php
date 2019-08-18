@@ -4,89 +4,57 @@ $movedata = $this->session->userdata('movedata');
 
 ?>
 
+
+<!-- fetch data from api -->
+<?php
+	$url = 'http://boxigo.in/boxigo-backend-api/product/servicesType_get_service.php'; // path to your JSON file
+	$data = file_get_contents($url); // put the contents of the file into a variable
+	$characters = json_decode($data);
+?>
+
+<!-- end -->
+
+
+
+
 <section class="section" style="padding-top:100px">
 	<div class="container">
 		
 		<?php if($this->session->flashdata('error_message')): ?>
 			<p class="text-danger"><?= $this->session->flashdata('error_message'); ?></p>
 		<?php endif; ?>
+		<h3 class="text-center">Choose your preffered service</h3><br>
 		<div class="row">
-			<div class="col-xl-4 text-center">
-				<div class="single-price card">
-					<div class="card-header bg-success price-title">
-						<h4>Silver/Economy</h4>
-					</div>
-					<div class="card-body">
-						<div class="price-tag">
-							<h2>$25 <span>month</span></h2>
-						</div>
-						<div class="price-item">
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">100GB Monthly Bandwidth</li>
-								<li class="list-group-item">100 Google AdWords</li>
-								<li class="list-group-item">100 Domain Hosting</li>
-								<li class="list-group-item">SSL Shopping Cart</li>
-								<li class="list-group-item">24/7 Live Support</li>
-							</ul>
-						</div>
-					</div>
-					<div class="card-footer d-flex justify-content-center">
-						<a href="<?= base_url();?>estimate/service_type_select/silver" class="box-btn">Select</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 text-center">
-				<div class="single-price card">
-					<div class="card-header bg-success price-title">
-						<h4>Bronze/Premium</h4>
-					</div>
-					<div class="card-body">
+		
+			<?php foreach($characters->serviceType as $key => $value){ ?>
+				
+					<div class="col-xl-4 text-center">
+						<a href="<?= base_url();?>estimate/service_type_select/<?= $value->display_name; ?>">
+							<div class="single-price card h-100">
+								<div class="card-header bg-success price-title">
+									<h4><?= $value->display_name; ?></h4>
+								</div>
+								<div class="card-body">
+									<div class="price-tag">
+										<h3>This service type has</h3>
+									</div>
 
-						<div class="price-tag center">
-							<h2>$125 <span>month</span></h2>
-						</div>
-						<div class="price-item">
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">100GB Monthly Bandwidth</li>
-								<li class="list-group-item">100 Google AdWords</li>
-								<li class="list-group-item">100 Domain Hosting</li>
-								<li class="list-group-item">SSL Shopping Cart</li>
-								<li class="list-group-item">24/7 Live Support</li>
-							</ul>
-						</div>
-
+									<div class="price-item">
+										<ul class="list-group list-group-flush">
+										
+											<?php foreach($value->service_info as $key => $value){ ?>
+												<h4 class="list-group-item text-center"><?= $value; ?></h4>
+											<?php } ?>
+										
+										</ul>
+									</div>
+								</div>
+							</div>
+						</a>
 					</div>
-					<div class="card-footer d-flex justify-content-center">
-						<a href="<?= base_url();?>estimate/service_type_select/bronze" class="box-btn">Select</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 text-center">
-				<div class="single-price card">
-					<div class="card-header bg-success price-title">
-						<h4>Gold/Elite</h4>
-					</div>
-					<div class="card-body">
-
-						<div class="price-tag">
-							<h2>$225 <span>month</span></h2>
-						</div>
-						<div class="price-item">
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">100GB Monthly Bandwidth</li>
-								<li class="list-group-item">100 Google AdWords</li>
-								<li class="list-group-item">100 Domain Hosting</li>
-								<li class="list-group-item">SSL Shopping Cart</li>
-								<li class="list-group-item">24/7 Live Support</li>
-							</ul>
-						</div>
-
-					</div>
-					<div class="card-footer d-flex justify-content-center">
-						<a href="<?= base_url();?>estimate/service_type_select/gold" class="box-btn">Select</a>
-					</div>
-				</div>
-			</div>
+				
+			<?php } ?>
+		
 		</div>
 	</div>
 </section>

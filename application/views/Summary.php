@@ -1,5 +1,7 @@
 <?php 
 
+
+
 $movedata = $this->session->userdata('movedata');
 
 ?>
@@ -34,8 +36,9 @@ $movedata = $this->session->userdata('movedata');
 				</div>
 				<div class="card">
 					<div class="card-header">Moving Distance</div>
-					<div class="card-body d-flex justify-content-center align-items-center">
-						<p class="phone my-0"><?= $movedata['property_size'];?></p>
+					<div class="card-body d-flex flex-column justify-content-center align-items-center">
+						<p class="phone my-0"><?= $movedata['distance'];?></p>
+						<p class="phone my-0"><?= $movedata['duration'];?></p>
 					</div>
 				</div>
 			</div>

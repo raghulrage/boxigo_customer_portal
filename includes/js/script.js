@@ -69,3 +69,69 @@ $('.input-group-hover').hover(function(){
     if($(this).find('.input-group-prepend')) { $(this).find('.input-group-prepend').addClass('invisible') };
     if($(this).find('.input-group-append')) { $(this).find('.input-group-append').addClass('invisible') };
 })
+
+$(document).ready(function(){
+    $('.add-active').click(function(){
+        if($('.add-active').hasClass('btn-success')){ $('.add-active').removeClass('btn-success'); }
+        $(this).addClass('btn-success');
+    });
+});
+
+
+
+// google maps script----------------------------------------------------------//
+
+var from, to;  
+         
+var directionsService = new google.maps.DirectionsService();  
+google.maps.event.addDomListener(window, 'load', function () {  
+    new google.maps.places.SearchBox(document.getElementById('from'));
+    new google.maps.places.SearchBox(document.getElementById('to'));    
+});  
+
+
+
+function getdistance() {  
+    from = document.getElementById("from").value;  
+    to = document.getElementById("to").value;  
+    var service = new google.maps.DistanceMatrixService();  
+    service.getDistanceMatrix({  
+        origins: [from],  
+        destinations: [to],  
+        travelMode: google.maps.TravelMode.DRIVING,  
+        unitSystem: google.maps.UnitSystem.METRIC,  
+        avoidHighways: false,  
+        avoidTolls: false  
+    }, function (response, status) {  
+        if (status == google.maps.DistanceMatrixStatus.OK && response.rows[0].elements[0].status != "ZERO_RESULTS") {  
+            var distance = response.rows[0].elements[0].distance.text;  
+            var duration = response.rows[0].elements[0].duration.text;  
+            var lbl_distance = "Distance: " + distance;
+            var lbl_duration = "Duration: " + duration;  
+
+            document.getElementById('flashmsg').innerHTML ="Calculated "+ lbl_distance +" "+"and"+" "+ "Travel "+ lbl_duration;  
+             
+            var info = [];
+                var details = {};
+                details.dist = lbl_distance;
+                details.dur = lbl_duration;
+                info.push(details)
+                console.log(info)
+            $.ajax({
+                url:"http://localhost/boxigo.com/estimate/api",
+                method:"post",
+                data:{info: JSON.stringify(info)},
+            })
+}  
+else {  
+           alert("Unable to calculate distance.");  
+        }  
+    });  
+}  
+
+
+// google maps script end------------------------------------------------------//
+
+function showmsg(){
+    document.getElementById('flashmsg').style.display="block"
+}

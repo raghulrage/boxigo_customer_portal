@@ -2,10 +2,10 @@
 <section class="section" class="padding-top:100px">
 	<div class="container">
 		<?php if($this->session->flashdata('success_message')): ?>
-			<div class="alert alert-success"><?= $this->session->flashdata('success_message'); ?></div>
+			<div class="alert alert-success text-center"><?= $this->session->flashdata('success_message'); ?></div>
 		<?php endif; ?>
 		<?php if($this->session->flashdata('error_message')): ?>
-			<div class="alert alert-danger"><?= $this->session->flashdata('error_message'); ?></div>
+			<div class="alert alert-danger text-center"><?= $this->session->flashdata('error_message'); ?></div>
 		<?php endif; ?>
 	</div>
 	<div class="personal-info-section py-5 my-5">

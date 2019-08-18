@@ -38,6 +38,10 @@ class Estimate extends CI_Controller
 		$this->load->template('Summary');
 	}
 
+	public function api(){
+		$this->load->template('Api');
+	}
+
 	public function form_one_validate(){
 		$this->form_validation->set_rules('property_size','Property','required|trim');
 		$this->form_validation->set_rules('from_area','From Area','required|trim');
@@ -59,6 +63,7 @@ class Estimate extends CI_Controller
 	}
 
 	public function property_info_validate(){
+		
 		$this->form_validation->set_rules('current_floor','Floor Number','required|trim');
 		$this->form_validation->set_rules('old_elevator_availability','Elevator Availability','required|trim');
 		$this->form_validation->set_rules('old_parking_dist','Parking Distance','required|trim');
@@ -83,11 +88,13 @@ class Estimate extends CI_Controller
 	}
 
 	public function personal_info_validate(){
+		
 		$this->form_validation->set_rules('first_name','First Name','required|trim');
 		$this->form_validation->set_rules('last_name','Last Name','required|trim');
 		$this->form_validation->set_rules('email','Email','required|trim|valid_email');
 		$this->form_validation->set_rules('phone', 'Phone Number ', 'required|regex_match[/^[0-9]{10}$/]');
 		if($this->form_validation->run()){
+			
 			if($this->session->userdata('movedata') && !empty($this->session->userdata('movedata'))){
 				$movedata = $this->session->userdata('movedata');
 			}
@@ -106,6 +113,7 @@ class Estimate extends CI_Controller
 				'phone' => $movedata['phone'],
 				'verification_key' => $movedata['verification_key']
 			);
+			
 			$insert_user_data = $this->Estimate_model->insert_personal_data($user_data);
 			if($insert_user_data === true){
 				$email_body = $this->load->view('templates/email/Email_verification',$movedata,true);
@@ -116,6 +124,10 @@ class Estimate extends CI_Controller
 				);
 				if($this->email_library->send_email($emailData)){
 					$this->session->set_flashdata('success_message','A verification link has been sent to your email. Please click on the link to verify your email address.');
+					redirect('estimate/personal_info');
+				}
+				else{
+					$this->session->set_flashdata('error_message','Error sending email');
 					redirect('estimate/personal_info');
 				}
 			}else{
@@ -185,6 +197,8 @@ class Estimate extends CI_Controller
 			'moving_from'=>$movedata['moving_from'],
 			'moving_to'=>$movedata['moving_to'],
 			'moving_on'=>$movedata['moving_date'],
+			'distance'=>$movedata['distance'],
+			'duration'=>$movedata['duration'],
 			'property_size'=>$movedata['property_size'],
 			'old_floor_no'=>$movedata['current_floor'],
 			'new_floor_no'=>$movedata['new_floor'],

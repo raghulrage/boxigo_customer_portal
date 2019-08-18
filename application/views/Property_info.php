@@ -29,21 +29,33 @@ $form_one_data = $this->session->userdata('movedata');
 							<div class="col" style="border-left: 1px solid rgba(0,0,0,0.1);border-right: 1px solid rgba(0,0,0,0.1);padding-left: 12px;" >
 								<div class="form-group">
 									<label for="from-elevator-item">Is elevator available?</label>
-									<div class="row">
-										<div class="col">
+									<div class="row text-center">
+										<div class="col-sm">
+											<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											  <label class="btn btn-dark btn-lg">
+											    <input type="radio" name="old_elevator_availability" value="<?= set_value('old_elevator_availability','Yes');?>"> YES
+											  </label>
+											  <label class="btn btn-dark btn-lg">
+											    <input type="radio" name="old_elevator_availability"  value="<?= set_value('old_elevator_availability','No');?>"> NO
+											  </label>
+											</div>
+										</div>
+
+
+										<!-- <div class="col">
 											<div class="btn-group-toggle " data-toggle="buttons">
-												<label class="btn btn-success btn btn-block btn-radio btn-radio-1 btn-md">
+												<label class="btn btn-block btn-radio btn-radio-1 btn-md">
 													<input type="radio" name="old_elevator_availability"  value="<?= set_value('old_elevator_availability','Yes');?>"> Available
 												</label>
 											</div>
 										</div>
 										<div class="col">
 											<div class="btn-group-toggle " data-toggle="buttons">
-												<label class="btn btn-success btn btn-block btn-radio btn-radio-1 btn-md">
+												<label class="btn btn-block btn-radio btn-radio-1 btn-md">
 													<input type="radio" name="old_elevator_availability"  value="<?= set_value('old_elevator_availability','No');?>"> Not Available
 												</label>
 											</div>
-										</div>
+										</div> -->
 									</div>								
 								</div>							
 							</div>
@@ -112,21 +124,33 @@ $form_one_data = $this->session->userdata('movedata');
 							<div class="col" style="border-left: 1px solid rgba(0,0,0,0.1);border-right: 1px solid rgba(0,0,0,0.1);padding-left: 12px;">
 								<div class="form-group">
 									<label for="from-elevator-item">Is elevator available?</label>
-									<div class="row">
-										<div class="col">
+									<div class="row text-center">
+
+										<div class="col-sm">
+											<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											  <label class="btn btn-dark btn-lg">
+											    <input type="radio" name="new_elevator_availability" value="<?= set_value('new_elevator_availability','Yes');?>"> YES
+											  </label>
+											  <label class="btn btn-dark btn-lg">
+											    <input type="radio" name="new_elevator_availability"  value="<?= set_value('new_elevator_availability','No');?>"> NO
+											  </label>
+											</div>
+										</div>
+
+										<!-- <div class="col">
 											<div class="btn-group-toggle " data-toggle="buttons">
-												<label class="btn btn-success btn btn-block btn-radio btn-radio-1 btn-md">
+												<label class="btn btn-block btn-radio btn-radio-1 btn-md">
 													<input type="radio" name="new_elevator_availability" value="<?= set_value('new_elevator_availability','Yes');?>"  checked autocomplete="off"> Available
 												</label>
 											</div>
 										</div>
 										<div class="col">
 											<div class="btn-group-toggle " data-toggle="buttons">
-												<label class="btn btn-success btn btn-block btn-radio btn-radio-1 btn-md">
+												<label class="btn btn-block btn-radio btn-radio-1 btn-md">
 													<input type="radio" name="new_elevator_availability" value="<?= set_value('new_elevator_availability','No');?>"  checked autocomplete="off"> Not Available
 												</label>
 											</div>
-										</div>
+										</div> -->
 									</div>
 								</div>
 							</div>

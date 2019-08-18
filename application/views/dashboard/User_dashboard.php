@@ -106,7 +106,7 @@
 		<?php } else: ?>
 		<h4 class="text-center">You have not made any estimates.</h4>
 		<div class="d-flex flex-row justify-content-center">
-			<a href="<?= base_url(); ?>estimate" class="btn btn-info btn-raised">Make an estimate now</a>
+			<a href="<?= base_url(); ?>estimate" class="btn btn-success btn-raised">Make an estimate now</a>
 		</div>
 		<?php endif; ?>
 	</div>

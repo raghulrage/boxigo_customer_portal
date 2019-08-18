@@ -1,12 +1,18 @@
 html{
-	font-family: 'Varela', san-serif;
+	font-family: 'Oxygen';
+
 	font-size:14px;
 }
 
 body{
 	background-color: #F0F3F4;
 }
-
+a{
+	color: #888;
+}
+a:hover{
+	color: #4caf70;
+}
 .form-control, .is-focused .form-control {
     background-image: linear-gradient(to top, #4caf50 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
@@ -16,11 +22,15 @@ body{
 .dropdown-toggle::after{
 	display: none;
 }
+.dropdown-toggle{
+	cursor: pointer;
+}
 .nav-link i{
 	font-size: 16px;
 }
 .title, .info-title, h1, h2, h3, h4, h5, h6{
-	font-family: 'Varela','Arial',san-serif;
+	font-family: 'Oxygen';
+
 }
 .bmd-form-group{
 	padding-top:0;
@@ -117,8 +127,12 @@ body{
 .nav-item{
 	z-index: 10;
 }
-
-
+.footer-logo i{
+	font-size: 1.5rem;
+}
+footer-logo{
+	text-align: center;
+}
 @media(max-width:620px){
 	h1{
 		font-size: 2rem;
@@ -126,4 +140,18 @@ body{
 	h2{
 		font-size:1.5rem;
 	}
+	.footer-logo{
+		margin-top: 0px
+	}
+}
+
+.pac-container:after{
+    content:none !important;
+}
+.pac-container{
+	border-radius: 5px;
+	font-family: 'Oxygen'
+}
+.pac-matched{
+	color: #4caf50;
 }

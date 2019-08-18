@@ -32,11 +32,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <!-- <div class="info"> -->
                     <div class="info">
                       <img src="<?= base_url();?>includes/img/icons/bank.svg" width="56" height="56">
+                      <h4 class='info-title'>Save money</h4><br>
+                      <p class='text-justify'>With Boxigo, you get to choose from a wide selection of certified professionals vetted by us and recommended by other users.
+                      </p>
                     </div>
-                    <h4 class='info-title'>Save money</h4><br>
-                    <p class='text-justify'>
-                      With Boxigo, you get to choose from a wide selection of certified professionals vetted by us and recommended by other users.
-                    </p>
                   </div>
                 <!-- </div> -->
                 <div class="col-sm-3">
