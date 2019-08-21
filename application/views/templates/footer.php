@@ -29,8 +29,8 @@
             <h3 class="info-title text-justify pl-2">Important Links</h1>
               <ul class="navbar-nav text-justify pt-0">
                 <li class="nav-item">
-                  <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link">
-                    <!-- <i class="fas fa-users"></i>  -->About Us
+                  <a href="<?= base_url(); ?>home/how_it_works" class="dropdown-toggle nav-link">
+                    <!-- <i class="fas fa-users"></i>  -->How it works
                   </a>
                 </li>
                 <li class="nav-item">

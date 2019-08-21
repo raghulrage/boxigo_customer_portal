@@ -6,7 +6,7 @@
 
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url(); ?>includes/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="<?= base_url(); ?>includes/img/favicon.png">
+  <link rel="icon" type="image/png" href="<?= base_url(); ?>includes/img/boxigo-icon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>Boxigo</title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -27,9 +27,7 @@
   <nav class="navbar <?php if($this->router->fetch_class() === $this->router->default_controller): ?>navbar-transparent navbar-color-on-scroll<?php endif;?>  fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="<?= base_url(); ?>">
-         Boxigo
-        </a>
+        <img class="navbar-brand p-0" src="<?= base_url(); ?>includes/img/boxigo.png" href="<?= base_url();?>home" style="height:auto;width:100px">
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
