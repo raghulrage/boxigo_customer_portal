@@ -14,20 +14,28 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
 
   <link href="https://fonts.googleapis.com/css?family=Oxygen&Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> -->
   <!-- CSS Files -->
   <link href="<?= base_url(); ?>includes/css/material-kit.css?v=2.0.5" rel="stylesheet" />
   <link href="<?= base_url(); ?>includes/css/style.css" rel="stylesheet" />
+
+
 </head>
 
 
 <body class="landing-page sidebar-collapse">
+
+<i id="to-top"></i>
+
+
+
   <nav class="navbar <?php if($this->router->fetch_class() === $this->router->default_controller): ?>navbar-transparent navbar-color-on-scroll<?php endif;?>  fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <img class="navbar-brand p-0" src="<?= base_url(); ?>includes/img/boxigo.png" href="<?= base_url();?>home" style="height:auto;width:100px">
+        <a href="<?=base_url();?>home"> <img class="navbar-brand p-0" src="<?= base_url(); ?>includes/img/boxigo.png" href="<?= base_url();?>home" style="height:auto;width:100px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>

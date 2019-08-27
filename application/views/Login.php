@@ -1,5 +1,9 @@
 <section class="section d-flex justify-content-center align-items-center" style='min-height:90vh;background-color:white;'>
+
   <div class="container ">
+          <?php if($this->session->flashdata('login_err_msg')): ?>
+              <div class="alert alert-danger text-center"><?= $this->session->flashdata('login_err_msg'); ?></div>
+          <?php endif; ?>
           <div class="row text-center">
             <div class="col-sm">
               <div class="info">
@@ -34,9 +38,9 @@
             </div>
           </div>
           <div class="modal-body">
-          <?php if($this->session->flashdata('login_err_msg')): ?>
+          <!-- <?php if($this->session->flashdata('login_err_msg')): ?>
             <div class="alert alert-danger"><?= $this->session->flashdata('login_err_msg'); ?></div>
-              <?php endif; ?>
+              <?php endif; ?> -->
               <div class="row">
                 <div class="col-sm-12 col-md-9 col-lg-7 mx-auto">
                   <div class="card card-signin my-5">

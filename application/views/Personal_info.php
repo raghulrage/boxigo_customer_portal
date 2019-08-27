@@ -1,5 +1,5 @@
 <?php $movedata = $this->session->userdata('movedata'); ?>
-<section class="section" class="padding-top:100px">
+<section class="section bg-white" class="padding-top:100px ">
 	<div class="container">
 		<?php if($this->session->flashdata('success_message')): ?>
 			<div class="alert alert-success text-center"><?= $this->session->flashdata('success_message'); ?></div>
@@ -9,8 +9,11 @@
 		<?php endif; ?>
 	</div>
 	<div class="personal-info-section py-5 my-5">
+		<div class="text-center">
+			<img src="https://cdn.dribbble.com/users/644659/screenshots/4438517/icon_9.gif" style="height: 250px;width: 350px">
+		</div>
 		<?php echo form_open('estimate/personal_info_validate',array('class'=>'form form-horizontal')); ?>
-		<div class="d-flex flex-row justify-content-center align-items-center">
+		<div class="row d-flex flex-row justify-content-center align-items-center">
 			<p class="px-2">My first name is</p>
 			<div class="form-group mx-2 text-center <?php if(form_error('first_name')): ?>has-danger<?php endif;?>">
 				<input type="text" name="first_name" class="form-control" value="<?= set_value('first_name');?>">
@@ -24,7 +27,7 @@
 				<span class="text-danger"><?= form_error('last_name'); ?></span>
 			</div>
 		</div>
-		<div class="d-flex flex-row justify-content-center align-items-center">
+		<div class=" row d-flex flex-row justify-content-center align-items-center">
 			<p class="px-2">My email is</p>
 			<div class="form-group mx-2 text-center <?php if(form_error('email')): ?>has-danger<?php endif;?>">
 				<input type="email" name="email" class="form-control" value="<?= set_value('email');?>">

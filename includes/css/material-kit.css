@@ -11185,13 +11185,13 @@ label {
   min-height: 32px;
 }
 
-#map {
+/* #map {
   position: relative;
   z-index: 2;
   width: 100%;
   height: calc(100vh - 70px);
   margin-top: 70px;
-}
+} */
 
 .tim-typo {
   padding-left: 25%;

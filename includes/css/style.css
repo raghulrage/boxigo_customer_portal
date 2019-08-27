@@ -36,7 +36,11 @@ a:hover{
 	padding-top:0;
 }
 .form-control-feedback{
-	top:0;
+	top:1;
+	width: 25px;
+	height:25px;
+	padding: 0px;
+	margin-top: 0px;
 }
 .text-xs{
 	font-size: 8px !important;
@@ -89,6 +93,7 @@ a:hover{
 .card .card-header:not([class*="header-"]){
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 8px 5px 0 rgba(0, 0, 0, 0.12);
 }
+
 .pointer{
 	cursor:pointer;
 }
@@ -130,6 +135,9 @@ a:hover{
 .footer-logo i{
 	font-size: 1.5rem;
 }
+footer{
+	text-align: justify;
+}
 footer-logo{
 	text-align: center;
 }
@@ -144,7 +152,7 @@ footer-logo{
 		margin-top: 0px
 	}
 }
-
+/*------------------------------------ google api styles--------------------------------- */
 .pac-container:after{
     content:none !important;
 }
@@ -152,6 +160,74 @@ footer-logo{
 	border-radius: 5px;
 	font-family: 'Oxygen'
 }
+.pac-icon{
+	width: 0;
+  	background-image: none;
+}
 .pac-matched{
 	color: #4caf50;
+}
+.gm-style a, .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div{
+	display:none !important;
+}
+#map{
+	margin-top: 25px;
+	height: 225px;
+	width: 100%;
+	padding: 10px;
+	z-index: 1000;
+}
+/* google maps script ends-------------------- */
+
+/* to top button style----------------------- */
+#to-top {
+  display: inline-block;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#to-top::after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #4caf70;
+}
+#to-top:hover::after{
+  color:#fff;
+}
+#to-top:hover {
+  cursor: pointer;
+  background-color: #4caf50;
+}
+#to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/*nav_item_with_badge nav_item_with_badge nav_item_with_badge nav_item_with_badge*/
+.nav_item_with_badge{
+	position: relative;
+}
+.badge{
+	border-radius: 50px;
+	padding: 10px;
+}
+.nav_item_with_badge .badge{
+	position: absolute;
+	top:7px;
+	right: -10px;
 }

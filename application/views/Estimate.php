@@ -8,10 +8,32 @@
 	<div class="estimate-section container">
 		<div class="alert alert-success text-center" id="flashmsg" style="display: none">Calculating.....</div>
 		<div class="estimate-form-one py-5">
-			<div class="d-flex justify-content-center">
-				<img src="<?= base_url();?>includes/img/move-whole.png" class="img" height="200">
+		<h2 class="text-center m-2">Move details</h2>
+		<h4 class="text-center">Enter your moving details and property size</h4>
+		<?php echo form_open('estimate/form_one_validate',array('class'=>'form form-horizontal')); ?>
+			<div class="row d-flex justify-content align-items-end mb-5 mt-5">
+				<div class="col-sm text-center">
+
+					<a onclick="show_city()">
+						<label class="btn btn-radio btn-md w-50 add-active2">
+							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" class=" " value="<?=set_value('city_type','Within City');?>">Within The City
+						</label>
+					</a>
+
+				</div>
+				<div class="col-sm">
+					<div class="d-flex justify-content-center ">
+						<img src="<?= base_url();?>includes/img/move-whole.png" class="img" height="200">
+					</div>
+				</div>
+				<div class="col-sm text-center">
+					<a onclick="hide_city()">
+						<label class="btn btn-radio btn-md w-50 add-active2">
+							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" class=" " value="<?=set_value('city_type','Between City');?>">Between The City
+						</label>
+					</a>
+				</div>
 			</div>
-			<?php echo form_open('estimate/form_one_validate',array('class'=>'form form-horizontal')); ?>
 				<!-- <div class="d-flex flex-row justify-content-center align-items-center mt-5">
 					<p class="text-center px-2">I am plannig to move my </p>
 					<div class="form-group mx-2 text-center <?php if(form_error('property_size')): ?>has-danger<?php endif;?>">
@@ -27,10 +49,27 @@
 					<p class="mx-2">property</p>
 				</div> -->
 
-				<h3 class="text-center mt-5">Move details</h3>
+
+
+
+
+
+
+
+				
 					<div class="row">
+
+						<div class="col-sm" id="city_condition">
+							<h4 class="px-2 m-0">Select City</h4>
+							<div class="form-group mx-2 text-center <?php if(form_error('select_city')): ?>has-danger<?php endif;?>">
+								<input type="text" name="select_city" class="form-control" value="<?= set_value('select_city');?>" id="select_city" placeholder=" ">
+								<span class="material-icons form-control-feedback">clear</span>
+								<span class="text-danger"><?= form_error('select_city'); ?></span>
+							</div>
+						</div>
+
 						<div class="col-sm">
-							<h4 class="px-2 m-0">From</h4>
+							<h4 class="px-2 m-0">Moving From</h4>
 							<div class="form-group mx-2 text-center <?php if(form_error('from_area')): ?>has-danger<?php endif;?>">
 								<input type="text" name="from_area" class="form-control" value="<?= set_value('from_area');?>" id="from" placeholder=" ">
 								<span class="material-icons form-control-feedback">clear</span>
@@ -38,15 +77,15 @@
 							</div>
 						</div>
 						<div class="col-sm">
-							<h4 class="px-2 m-0">To</h4>
+							<h4 class="px-2 m-0">Moving To</h4>
 							<div class="form-group mx-2 text-center <?php if(form_error('to_area')): ?>has-danger<?php endif;?>">
-								<input type="text" name="to_area" class="form-control" value="<?= set_value('to_area');?>" id="to" placeholder=" ">
+								<input type="text" name="to_area" class="form-control" value="<?= set_value('to_area');?>" id="to" placeholder=" " onfocusout = "showmsg(),getdistance()">
 								<span class="material-icons form-control-feedback">clear</span>
 								<span class="text-danger"><?= form_error('to_area'); ?></span>
 							</div>
 						</div>
 						<div class="col-sm">
-							<h4 class="px-2 m-0">On</h4>
+							<h4 class="px-2 m-0">Moving On</h4>
 							<div class="form-group mx-2 text-center <?php if(form_error('move_date')): ?>has-danger<?php endif;?>">
 								<input type="text" name="move_date" class="form-control datetimepicker" value="<?= set_value('move_date');?>"/>
 								<span class="material-icons form-control-feedback">clear</span>
@@ -54,13 +93,27 @@
 							</div>
 						</div>	
 					</div>
-					<div class="text-center">	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- <div class="text-center">	
 						<input type="button" id="flashmsg" class="btn btn-sm btn-success" onclick="showmsg(),getdistance()" value="Calculate Distance">
-					</div>	
+					</div>	 -->
 					
 					<div class="text-center mt-3 mb-5">
 						<div class="mb-5">
-							<h3>House Size</h3>
+							<!-- <h3>House Size</h3> -->
 							<p>Items will be grouped based on the property size.</p>
 						</div>
 							<div class="row">
@@ -109,7 +162,7 @@
 					</div>
 
 					<div class="d-flex justify-content-center my-5">	
-						<input type="submit" name="form-one-next" class="btn btn-success btn-raised" value="Next">
+						<input id="next" type="submit" name="form-one-next" class="btn btn-success btn-raised" value="Next" style="pointer-events:none">
 					</div>
 			</form>
 		</div>

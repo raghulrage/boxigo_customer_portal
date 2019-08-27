@@ -47,10 +47,13 @@ class Estimate extends CI_Controller
 		$this->form_validation->set_rules('from_area','From Area','required|trim');
 		$this->form_validation->set_rules('to_area','To Area','required|trim');
 		$this->form_validation->set_rules('move_date','Move Date','required');
+		// $this->form_validation->set_rules('select_city','Select City','required');
 		if($this->form_validation->run()){
 			if($this->session->userdata('movedata') && !empty($this->session->userdata('movedata'))){
 				$movedata = $this->session->userdata('movedata');
 			}
+			$movedata['city_type']= $this->input->post('city_type');
+			$movedata['select_city']= $this->input->post('select_city');
 			$movedata['property_size']= $this->input->post('property_size');
 			$movedata['moving_from'] = $this->input->post('from_area');
 			$movedata['moving_to'] = $this->input->post('to_area');
@@ -66,9 +69,11 @@ class Estimate extends CI_Controller
 		
 		$this->form_validation->set_rules('current_floor','Floor Number','required|trim');
 		$this->form_validation->set_rules('old_elevator_availability','Elevator Availability','required|trim');
+		$this->form_validation->set_rules('packing_service','Packing Service','required|trim');
 		$this->form_validation->set_rules('old_parking_dist','Parking Distance','required|trim');
 		$this->form_validation->set_rules('new_floor','Floor Number','required|trim');
 		$this->form_validation->set_rules('new_elevator_availability','Elevator Availability','required|trim');
+		$this->form_validation->set_rules('unpacking_service','Unpacking Service','required|trim');
 		$this->form_validation->set_rules('new_parking_dist','Parking Distance','required|trim');
 		if($this->form_validation->run()){
 			if($this->session->userdata('movedata') && !empty($this->session->userdata('movedata'))){
@@ -76,9 +81,11 @@ class Estimate extends CI_Controller
 			}
 			$movedata['current_floor']= $this->input->post('current_floor');
 			$movedata['old_elevator_availability'] = $this->input->post('old_elevator_availability');
+			$movedata['packing_service'] = $this->input->post('packing_service');
 			$movedata['old_parking_dist'] = $this->input->post('old_parking_dist');
 			$movedata['new_floor'] = $this->input->post('new_floor');
 			$movedata['new_elevator_availability'] = $this->input->post('new_elevator_availability');
+			$movedata['unpacking_service'] = $this->input->post('unpacking_service');
 			$movedata['new_parking_dist'] = $this->input->post('new_parking_dist');
 			$this->session->set_userdata('movedata',$movedata);
 			redirect('estimate/items_info');
@@ -194,6 +201,8 @@ class Estimate extends CI_Controller
 		$finalData = array(
 			'estimate_id'=>$movedata['estimate_id'],
 			'user_id'=>$user_id,
+			'city_type'=>$movedata['city_type'],
+			'select_city'=>$movedata['select_city'],
 			'moving_from'=>$movedata['moving_from'],
 			'moving_to'=>$movedata['moving_to'],
 			'moving_on'=>$movedata['moving_date'],
@@ -203,7 +212,9 @@ class Estimate extends CI_Controller
 			'old_floor_no'=>$movedata['current_floor'],
 			'new_floor_no'=>$movedata['new_floor'],
 			'old_elevator_availability'=>$movedata['old_elevator_availability'],
+			'packing_service'=>$movedata['packing_service'],
 			'new_elevator_availability'=>$movedata['new_elevator_availability'],
+			'unpacking_service'=>$movedata['unpacking_service'],
 			'old_parking_distance'=>$movedata['old_parking_dist'],
 			'new_parking_distance'=>$movedata['new_parking_dist'],
 			'items'=>$movedata['items'],

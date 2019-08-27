@@ -42,4 +42,9 @@ class Home extends CI_Controller {
 	{
 		$this->load->template('faq');
 	}
+
+	public function admin()
+	{
+		$this->load->template('admin');
+	}
 }
