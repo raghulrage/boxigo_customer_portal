@@ -421,7 +421,7 @@ function getdistance() {
 
 // show msg script----------------------------------------//
 function showmsg(){
-    document.getElementById('flashmsg').style.display="block";
+    document.getElementById('flashmsg').style.display="none";
     document.getElementById('next').disabled = false;
     document.getElementById('next').style.pointerEvents="auto";
 }

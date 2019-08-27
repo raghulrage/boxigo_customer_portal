@@ -9,17 +9,17 @@ $form_one_data = $this->session->userdata('movedata');
 			<?php echo form_open('estimate/property_info_validate',array('class'=>'form form-horizontal')); ?>
 	
 				<div class="text-center mb-5">
-					<h2>Move Details</h2>
+				<h3>Move Details - Fill to get accurate quotation</h3>
 				</div>
-				<div class="mb-3">
-					<h4><span class="green"><i class="fas fa-home"></i></span> &nbsp; Existing House Details</h4>
+				<div >
+					<h5><span class="green"><i class="fas fa-home"></i></span> &nbsp; Existing House Details</h5>
 					<hr><br>
 				</div>
 				<div>
 						<div class="row">
 							<div class="col-sm">
 								<div class="form-group <?php if(form_error('current_floor')): ?>has-danger<?php endif;?>">
-									<h4 for="fromfloorno">Floor No</h4>
+									<h6 for="fromfloorno">Floor No</h6>
 										<!-- <div class="input-group-prepend">
 											<span class="input-group-text pointer btn-number bg-info text-white" disabled="disabled" data-type="minus" data-field="">-</span>
 										</div>
@@ -46,7 +46,7 @@ $form_one_data = $this->session->userdata('movedata');
 							</div>
 							<div class="col-sm" style="border-left: 1px solid rgba(0,0,0,0.1);border-right: 1px solid rgba(0,0,0,0.1);padding-left: 12px;" >
 								<div class="form-group">
-									<h4 for="from-elevator-item">elevator Available?</h4>
+									<h6 for="from-elevator-item">Elevator Available?</h6>
 									<div class="row text-center">
 										<div class="col-sm">
 											<div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -65,7 +65,7 @@ $form_one_data = $this->session->userdata('movedata');
 
 							<div class="col-sm " style="border-right: 1px solid rgba(0,0,0,0.1);padding-left: 12px;" >
 								<div class="form-group">
-									<h4 for="from-elevator-item">packing service?</h4>
+									<h6 for="from-elevator-item">Packing service?</h6>
 									<div class="row text-center">
 										<div class="col-sm">
 											<div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -106,19 +106,15 @@ $form_one_data = $this->session->userdata('movedata');
 							<div class="col-sm">
 
 								<div class="form-group <?php if(form_error('old_parking_dist')): ?>has-danger<?php endif;?>">
-									<h4 for="appx-distance">Distance from door to parking</h4>
+									<h6 for="appx-distance">Distance from door to truck parking</h6>
 									<!-- <input type="number" name="old_parking_dist" class="form-control " id="appx-distance" value="<?= set_value('old_parking_dist');?>">
 									<span class="material-icons form-control-feedback">clear</span>
 									<span class="text-danger"><?= form_error('old_parking_dist'); ?></span> -->
 
 											<div class="input-group mt-4">
-												<div class="input-group-prepend "onclick="decreaseValue2()">
-													<span class="input-group-text pointer btn-number bg-success text-white" disabled="disabled" data-type="minus" data-field="">-</span>
-												</div>
-												<input type="text" min="0" name="old_parking_dist" class="form-control input-number text-center text-bold" value="<?= set_value('old_parking_dist');?>" id="inc_dec_val2"/>
-												<div class="input-group-append "onclick="increaseValue2()">
-													<span class="input-group-text pointer btn-number bg-success text-white" data-type="plus" data-field="">+</span>
-												</div>
+												
+												<input type="text" min="0" name="old_parking_dist" class="form-control input-number text-center text-bold" value="<?= set_value('old_parking_dist');?>" id="inc_dec_val2"/> Meter
+												
 												<span class="material-icons form-control-feedback">clear</span>
 												<span class="text-danger"><?= form_error('old_parking_dist'); ?></span>
 											</div>
@@ -141,14 +137,14 @@ $form_one_data = $this->session->userdata('movedata');
 						</div>
 						</div><br>
 						<div class="my-3">
-							<h4><span class="green"><i class="fas fa-home"></i></span> &nbsp;  New House Details</h4>
+							<h5><span class="green"><i class="fas fa-home"></i></span> &nbsp;  New House Details</h5>
 							<hr><br>
 						</div>
 						<div>
 						<div class="row">
 							<div class="col-sm">
 								<div class="form-group <?php if(form_error('new_floor')): ?>has-danger<?php endif;?>">
-									<h4 for="tofloorno">Floor No</h4>
+									<h6 for="tofloorno">Floor No</h6>
 									<!-- <input type="number" name="new_floor" class="form-control " value="<?= set_value('new_floor');?>">
 									<span class="material-icons form-control-feedback">clear</span>
 									<span class="text-danger"><?= form_error('new_floor'); ?></span> -->
@@ -169,7 +165,7 @@ $form_one_data = $this->session->userdata('movedata');
 							</div>
 							<div class="col-sm" style="border-left: 1px solid rgba(0,0,0,0.1);border-right: 1px solid rgba(0,0,0,0.1);padding-left: 12px;">
 								<div class="form-group">
-									<h4 for="from-elevator-item">elevator Available?</h4>
+									<h6 for="from-elevator-item">Elevator Available?</h6>
 									<div class="row text-center">
 										<div class="col-sm">
 											<div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -191,7 +187,7 @@ $form_one_data = $this->session->userdata('movedata');
 
 							<div class="col-sm" style="border-right: 1px solid rgba(0,0,0,0.1);padding-left: 12px;" >
 								<div class="form-group">
-									<h4 for="from-elevator-item">unpacking service?</h4>
+									<h6 for="from-elevator-item">Unpacking Service?</h6>
 									<div class="row text-center">
 										<div class="col-sm">
 											<div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -224,7 +220,7 @@ $form_one_data = $this->session->userdata('movedata');
 											<div class="btn-group-toggle " data-toggle="buttons">
 												<label class="btn btn-success btn btn-block btn-radio btn-radio-1 btn-md">
 													<input type="radio" name="property_size" class=" <?php if(form_error('property_size')): ?>has-danger<?php endif;?>" value="<?= set_value('property_size','No');?>"  checked autocomplete="off"> No
-												</label>
+												</label>	
 											</div>
 										</div>
 									</div>
@@ -232,19 +228,15 @@ $form_one_data = $this->session->userdata('movedata');
 							</div> -->
 							<div class="col-sm">
 								<div class="form-group <?php if(form_error('new_parking_dist')): ?>has-danger<?php endif;?>">
-									<h4 for="appx-distance">Distance from door to parking</h4>
+									<h6 for="appx-distance">Distance from door to truck parking</h6>
 									<!-- <input type="number" name="new_parking_dist" class="form-control " id="appx-distance" value="<?= set_value('new_parking_dist');?>">
 									<span class="material-icons form-control-feedback">clear</span>
 									<span class="text-danger"><?= form_error('new_parking_dist'); ?></span> -->
 
 											<div class="input-group mt-4">
-												<div class="input-group-prepend" onclick="decreaseValue4()">
-													<span class="input-group-text pointer btn-number bg-success text-white" disabled="disabled" data-type="minus" data-field="">-</span>
-												</div>
-												<input type="text" min="0" name="new_parking_dist" class="form-control input-number text-center text-bold" value="<?= set_value('new_parking_dist');?>" id="inc_dec_val4"/>
-												<div class="input-group-append" onclick="increaseValue4()">
-													<span class="input-group-text pointer btn-number bg-success text-white" data-type="plus" data-field="">+</span>
-												</div>
+												
+												<input type="text" min="0" name="new_parking_dist" class="form-control input-number text-center text-bold" value="<?= set_value('new_parking_dist');?>" id="inc_dec_val4"/>Meter
+												
 												<span class="material-icons form-control-feedback">clear</span>
 												<span class="text-danger"><?= form_error('new_parking_dist'); ?></span>
 											</div>
@@ -255,7 +247,7 @@ $form_one_data = $this->session->userdata('movedata');
 						<!--<div class="row">-->
 						<!--	<div class="col">-->
 						<!--		<div class="form-group">-->
-						<!--			<h4 for="appx-distance">Any additional information?</h4>-->
+						<!--			<h6 for="appx-distance">Any additional information?</h6>-->
 						<!--			<textarea class="form-control" name="additional-info" rows="2"></textarea>-->
 						<!--		</div>-->
 						<!--	</div>-->
