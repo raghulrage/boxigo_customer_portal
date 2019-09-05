@@ -47,4 +47,9 @@ class Home extends CI_Controller {
 	{
 		$this->load->template('admin');
 	}
+
+	public function customer_support()
+	{
+		$this->load->template('customer_support');
+	}
 }

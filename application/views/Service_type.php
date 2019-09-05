@@ -15,8 +15,6 @@ $movedata = $this->session->userdata('movedata');
 <!-- end -->
 
 
-
-
 <section class="section" style="padding-top:100px">
 	<div class="container">
 		

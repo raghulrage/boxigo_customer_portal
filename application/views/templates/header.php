@@ -51,7 +51,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url();?>estimate" rel="tooltip" title="" data-placement="bottom"  data-original-title="Know more about move">
+            <a class="nav-link" href="<?= base_url();?>estimate" rel="tooltip" title="" data-placement="bottom"  data-original-title="Get Free Quotes">
             <i class="fas fa-info-circle"></i> &nbsp;Estimate Now
             </a>
           </li>

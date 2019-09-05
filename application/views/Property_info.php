@@ -1,8 +1,12 @@
 <?php 
 
 $form_one_data = $this->session->userdata('movedata');
-
+// echo "<pre>";
+// print_r($form_one_data);
+// exit;
 ?>
+
+
 <div class="section container p-4 mt-5">
 	
 	

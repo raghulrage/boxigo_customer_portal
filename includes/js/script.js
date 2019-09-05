@@ -12,17 +12,14 @@ $('.datetimepicker').datetimepicker({
     }
 });
 
+// ---------------------------------item_info input increment script--------------------------------------
 
 
-
-
-
-
-$('.btn-number').click(function(e){
+$('.btn-number1').click(function(e){
     e.preventDefault();
     fieldName = $(this).attr('data-field');
     type      = $(this).attr('data-type');
-    var input = $("input[name='"+fieldName+"']");
+    var input = $("#pills-livingroom input[name='"+fieldName+"']");
     var currentVal = parseInt(input.val());
     if (!isNaN(currentVal)) {
         if(type == 'minus') {
@@ -52,7 +49,7 @@ $('.living_room_items_input').change(function() {
     valueCurrent = parseInt($(this).val());
     name = $(this).attr('name');
     if(valueCurrent >= minValue || isNaN(valueCurrent)) {
-        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+        $(".btn-number1[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
     } else {
         alert('Sorry, the minimum value was reached');
         $(this).val($(this).data('oldValue'));
@@ -72,7 +69,7 @@ $('.btn-number2').click(function(e){
     e.preventDefault();
     fieldName = $(this).attr('data-field');
     type      = $(this).attr('data-type');
-    var input = $("input[name='"+fieldName+"']");
+    var input = $("#pills-bedroom input[name='"+fieldName+"']");
     var currentVal = parseInt(input.val());
     if (!isNaN(currentVal)) {
         if(type == 'minus') {
@@ -102,7 +99,7 @@ $('.bed_room_items_input').change(function() {
     valueCurrent = parseInt($(this).val());
     name = $(this).attr('name');
     if(valueCurrent >= minValue || isNaN(valueCurrent)) {
-        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+        $(".btn-number2[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
     } else {
         alert('Sorry, the minimum value was reached');
         $(this).val($(this).data('oldValue'));
@@ -122,7 +119,7 @@ $('.btn-number3').click(function(e){
     e.preventDefault();
     fieldName = $(this).attr('data-field');
     type      = $(this).attr('data-type');
-    var input = $("input[name='"+fieldName+"']");
+    var input = $("#pills-kitchen input[name='"+fieldName+"']");
     var currentVal = parseInt(input.val());
     if (!isNaN(currentVal)) {
         if(type == 'minus') {
@@ -152,7 +149,7 @@ $('.kitchen_room_items_input').change(function() {
     valueCurrent = parseInt($(this).val());
     name = $(this).attr('name');
     if(valueCurrent >= minValue || isNaN(valueCurrent)) {
-        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+        $(".btn-number3[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
     } else {
         alert('Sorry, the minimum value was reached');
         $(this).val($(this).data('oldValue'));
@@ -172,7 +169,7 @@ $('.btn-number4').click(function(e){
     e.preventDefault();
     fieldName = $(this).attr('data-field');
     type      = $(this).attr('data-type');
-    var input = $("input[name='"+fieldName+"']");
+    var input = $("#pills-other input[name='"+fieldName+"']");
     var currentVal = parseInt(input.val());
     if (!isNaN(currentVal)) {
         if(type == 'minus') {
@@ -202,7 +199,7 @@ $('.other_items_input').change(function() {
     valueCurrent = parseInt($(this).val());
     name = $(this).attr('name');
     if(valueCurrent >= minValue || isNaN(valueCurrent)) {
-        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+        $(".btn-number4[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
     } else {
         alert('Sorry, the minimum value was reached');
         $(this).val($(this).data('oldValue'));
@@ -218,6 +215,7 @@ $(".other_items_input").keydown(function (e) {
     });
 
 
+// ---------------------------------item_info input increment script end -------------------------------------
 
 
 
@@ -373,10 +371,16 @@ var from, to;
 var directionsService = new google.maps.DirectionsService();  
 google.maps.event.addDomListener(window, 'load', function () { 
         
+     var options = {
+          types: ['(cities)'],
+          componentRestrictions: {country: "in"}
+         };
+
+    var input = document.getElementById('select_city');
     
     new google.maps.places.SearchBox(document.getElementById('from'));
-    new google.maps.places.SearchBox(document.getElementById('to'));    
-    new google.maps.places.Autocomplete(document.getElementById('select_city'));
+    new google.maps.places.SearchBox(document.getElementById('to'));
+    new google.maps.places.Autocomplete(input,options);    
 });  
 
 
@@ -463,37 +467,68 @@ btn.on('click', function() {
 
 
 $('.living_room_items_input').on('change',function(){
-    var items_value = 0;
+    var items_value = total_items_value = 0;
     $(".living_room_items_input").each(function() {
         items_value += parseInt( $(this).val());
     });
     $('.living_room_item_count').html(items_value);
+    $('.living_room_item_count').attr('data-indv-value',items_value);
+    $(".data-indv-count").each(function() {
+        total_items_value += parseInt( $(this).attr('data-indv-value'));
+    });
+    $('.total_items_count').html(total_items_value);
+
 });
 
 
 $('.bed_room_items_input').on('change',function(){
-    var items_value = 0;
+    var items_value2 = total_items_value = 0;
     $(".bed_room_items_input").each(function() {
-        items_value += parseInt( $(this).val());
+        items_value2 += parseInt( $(this).val());
     });
-    $('.bed_room_item_count').html(items_value);
+    $('.bed_room_item_count').html(items_value2);
+    $('.bed_room_item_count').attr('data-indv-value',items_value2);
+    $(".data-indv-count").each(function() {
+        total_items_value += parseInt( $(this).attr('data-indv-value'));
+    });
+    $('.total_items_count').html(total_items_value);
 });
 
 $('.kitchen_room_items_input').on('change',function(){
-    var items_value = 0;
+    var items_value3 = total_items_value = 0;
     $(".kitchen_room_items_input").each(function() {
-        items_value += parseInt( $(this).val());
+        items_value3 += parseInt( $(this).val());
     });
-    $('.kitchen_room_item_count').html(items_value);
+    $('.kitchen_room_item_count').html(items_value3);
+    $('.kitchen_room_item_count').attr('data-indv-value',items_value3);
+    $(".data-indv-count").each(function() {
+        total_items_value += parseInt( $(this).attr('data-indv-value'));
+    });
+    $('.total_items_count').html(total_items_value);
 });
 
 $('.other_items_input').on('change',function(){
-    var items_value = 0;
+    var items_value4 = total_items_value = 0;
     $(".other_items_input").each(function() {
-        items_value += parseInt( $(this).val());
+        items_value4 += parseInt( $(this).val());
     });
-    $('.other_item_count').html(items_value);
+    $('.other_item_count').html(items_value4);
+    $('.other_item_count').attr('data-indv-value',items_value4);
+    $(".data-indv-count").each(function() {
+        total_items_value += parseInt( $(this).attr('data-indv-value'));
+    });
+    $('.total_items_count').html(total_items_value);
 });
+
+
+// $('.living_room_item_count').on('change',function(){
+//     var total_items_value = 0;
+//     $(".data-indv-count").each(function() {
+//         total_items_value += parseInt( $(this).attr('data-indv-value'));
+//     });
+// });
+
+
 // count items script ends====================================
 
 

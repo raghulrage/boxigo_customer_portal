@@ -45,7 +45,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="#">
+                    <a href="<?= base_url(); ?>home/customer_support" class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" >
                       <!-- <i class="fas fa-hands-helping"></i> &nbsp; -->Customer Support
                     </a>
                 </li>

@@ -47,7 +47,7 @@ class Estimate extends CI_Controller
 		$this->form_validation->set_rules('from_area','From Area','required|trim');
 		$this->form_validation->set_rules('to_area','To Area','required|trim');
 		$this->form_validation->set_rules('move_date','Move Date','required');
-		// $this->form_validation->set_rules('select_city','Select City','required');
+		// $this->form_validation->set_rules('select_city','Select City','required|trim');
 		if($this->form_validation->run()){
 			if($this->session->userdata('movedata') && !empty($this->session->userdata('movedata'))){
 				$movedata = $this->session->userdata('movedata');
@@ -59,7 +59,7 @@ class Estimate extends CI_Controller
 			$movedata['moving_to'] = $this->input->post('to_area');
 			$movedata['moving_date'] = $this->input->post('move_date');
 			$this->session->set_userdata('movedata',$movedata);
-			redirect('estimate/property_info');
+			redirect('estimate/personal_info');
 		}else{
 			$this->index();
 		}
@@ -88,7 +88,7 @@ class Estimate extends CI_Controller
 			$movedata['unpacking_service'] = $this->input->post('unpacking_service');
 			$movedata['new_parking_dist'] = $this->input->post('new_parking_dist');
 			$this->session->set_userdata('movedata',$movedata);
-			redirect('estimate/items_info');
+			redirect('estimate/service_type');
 		}else{
 			$this->property_info();
 		}
@@ -155,6 +155,7 @@ class Estimate extends CI_Controller
 				list($k,$v) = explode("=", $value);
 				$param[$k] = $v;
 			}
+				
 			if($this->Estimate_model->verify_email($param)){
 				$movedata = $this->session->userdata('movedata');
 				$movedata['is_email_verified'] = "yes";
@@ -162,7 +163,7 @@ class Estimate extends CI_Controller
 				$insert_response = $this->insert_items($movedata);
 				if($insert_response === true){
 					$this->session->set_flashdata('items_success_message','Your request for quote has been received succedfully. We will get you the quotes from our trusted vendors less than 24 hours. Please login with your phone number to update your request');
-					redirect('estimate/summary');
+					redirect('estimate/items_info');
 				}else{
 					$this->session->set_flashdata('error_message',$insert_response);
 					redirect('estimate/personal_info');
@@ -188,11 +189,35 @@ class Estimate extends CI_Controller
 		    	return sprintf("%s=%s", $k, $v);
 		    },$data,array_keys($data)
 		));
+
+
+
+
+		$newitems = explode('|',$itemData);
+		for($i=0; $i < count($newitems ); $i++){
+		    $key_value = explode('=', $newitems [$i]);
+		    $data_array[$key_value [0]] = $key_value [1];
+		}
+		$data_items = json_encode($data_array);
+
+
+
+
+
+
+
+
+
 		$movedata = $this->session->userdata('movedata');
-		$movedata['items'] = $itemData;
+		$movedata['items'] = $data_items;
 		$movedata['total_items'] = $count;
+		// echo "<pre>";
+		// print_r($movedata);exit;
+		
 		$this->session->set_userdata('movedata',$movedata);
-		redirect('estimate/service_type');
+		redirect('estimate/property_info');
+
+		
 
 	}
 
@@ -239,7 +264,7 @@ class Estimate extends CI_Controller
 			$movedata['service_type'] = $service_type;
 			$this->session->set_userdata('movedata',$movedata);
 			if(!$this->session->userdata('user_id')){
-				redirect('estimate/personal_info');
+				redirect('estimate/summary');
 			}else{
 				$res_result = $this->insert_items($movedata);
 				if($res_result === true){
@@ -247,7 +272,7 @@ class Estimate extends CI_Controller
 					redirect('estimate/summary');
 				}else{
 					$this->session->set_flashdata('error_message',$res_result);
-					redirect('estimate/personal_info');
+					redirect('estimate');
 				}
 			}
 		}

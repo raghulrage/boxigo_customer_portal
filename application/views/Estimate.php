@@ -15,8 +15,8 @@
 				<div class="col-sm text-center">
 
 					<a onclick="show_city()">
-						<label class="btn btn-radio btn-md w-50 add-active2">
-							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" class=" " value="<?=set_value('city_type','Within City');?>">Within The City
+						<label class="btn btn-radio btn-md w-50 add-active2 btn-success">
+							<input style="opacity:0;margin-left:-10px" type="radio" checked name="city_type" class="" value="<?=set_value('city_type','Within City');?>">Within The City
 						</label>
 					</a>
 
@@ -63,6 +63,15 @@
 							<h4 class="px-2 m-0">Select City</h4>
 							<div class="form-group mx-2 text-center <?php if(form_error('select_city')): ?>has-danger<?php endif;?>">
 								<input type="text" name="select_city" class="form-control" value="<?= set_value('select_city');?>" id="select_city" placeholder=" ">
+									<!-- <option hidden value="Bengalore"></option>
+									<option value="None">None</option>
+									<option value="Bengalore">Bengalore</option>
+									<option value="Chennai">Chennai</option>
+									<option value="Kochi">Kochi</option>
+									<option value="Coimbatore">Coimbatore</option>
+									<option value="Madurai">Madurai</option>
+									<option value="Tiruvananthapuram">Tiruvananthapuram</option>
+								</select> -->
 								<span class="material-icons form-control-feedback">clear</span>
 								<span class="text-danger"><?= form_error('select_city'); ?></span>
 							</div>

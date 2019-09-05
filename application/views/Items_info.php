@@ -83,6 +83,10 @@ function filter_array($array) {
 
 ?>
 
+
+
+
+
 <section class="section" style="padding-top:100px">
 	<div class="container-fluid">
 		<div class="row">
@@ -91,20 +95,20 @@ function filter_array($array) {
 				<?php echo form_open('estimate/items_data',array('class'=>'form')); ?>
 				<ul class="nav nav-pills mb-3 justify-content-center d-block" id="pills-tab" role="tablist">
 					<li class="nav-item mt-4 mb-5 nav_item_with_badge">
-						<a class="nav-link active rounded" id="pills-livingroom-tab" data-toggle="pill" href="#pills-livingroom" role="tab" aria-controls="pills-livingroom" aria-selected="true">Living Room <span class="living_room_item_count badge badge-warning"></span></a>
+						<a class="nav-link active rounded" id="pills-livingroom-tab" data-toggle="pill" href="#pills-livingroom" role="tab" aria-controls="pills-livingroom" aria-selected="true">Living Room <span data-indv-value="0" class="data-indv-count living_room_item_count badge badge-warning"></span></a>
 					</li>
 					<li class="nav-item mt-4 mb-5 nav_item_with_badge">
-						<a class="nav-link rounded" id="pills-bedroom-tab" data-toggle="pill" href="#pills-bedroom" role="tab" aria-controls="pills-bedroom" aria-selected="false">Bed Room <span class="bed_room_item_count badge badge-warning"></span></a>
+						<a class="nav-link rounded" id="pills-bedroom-tab" data-toggle="pill" href="#pills-bedroom" role="tab" aria-controls="pills-bedroom" aria-selected="false">Bed Room <span data-indv-value="0" class="data-indv-count bed_room_item_count badge badge-warning"></span></a>
 					</li>
 					<li class="nav-item mt-4 mb-5 nav_item_with_badge">
-						<a class="nav-link rounded" id="pills-kitchen-tab" data-toggle="pill" href="#pills-kitchen" role="tab" aria-controls="pills-kitchen" aria-selected="false">Kitchen <span class="kitchen_room_item_count badge badge-warning"></span></a>
+						<a class="nav-link rounded" id="pills-kitchen-tab" data-toggle="pill" href="#pills-kitchen" role="tab" aria-controls="pills-kitchen" aria-selected="false">Kitchen <span data-indv-value="0" class="data-indv-count kitchen_room_item_count badge badge-warning"></span></a>
 					</li>
 					<li class="nav-item mt-4 mb-5 nav_item_with_badge">
-						<a class="nav-link rounded" id="pills-other-tab" data-toggle="pill" href="#pills-other" role="tab" aria-controls="pills-other" aria-selected="false">Other <span class="other_item_count badge badge-warning"></span></a>
+						<a class="nav-link rounded" id="pills-other-tab" data-toggle="pill" href="#pills-other" role="tab" aria-controls="pills-other" aria-selected="false">Other Items<span data-indv-value="0" class="data-indv-count other_item_count badge badge-warning"></span></a>
 					</li>
 				</ul>
-				<h4 class="text-center pt-4 text-success info-title">Total Number Of Items Added</h4>
-				<h1 class="total_items text-success info-title text-center living_room_item_count"></h1>
+				<h4 class="text-center pt-4 info-title">Total Number Of Items Added</h4>
+				<h1 class="total_items text-warning info-title text-center total_items_count"></h1>
 
 			</div>
 
@@ -113,21 +117,34 @@ function filter_array($array) {
 					<div class="tab-pane fade show active" id="pills-livingroom" role="tabpanel" aria-labelledby="pills-livingroom-tab">
 						<?php $i=0; foreach ($living_room_item as $key => $value) { ?>
 							<h4 class="title">Select Your&nbsp;<?= ucwords($key); ?>&nbsp;Items</h4>
-							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center">
+							<div class="row justify-content-md-start justify-content-center align-items-center pl-md-5 pr-md-5">
 								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
 									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
-		 								<div class="form-group mx-2 text-center">
+		 								<div class="col-sm-3 col-md-2 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
+		 									
 											<div class="input-group">
-												<div class="input-group-prepend">
-													<span class="input-group-text pointer btn-number bg-success text-white" disabled="disabled" data-type="minus" data-field="<?= $k; ?>">-</span>
-												</div>
-												<input type="text" min="0" name="<?= $k; ?>" class="living_room_items_input form-control input-number text-center text-bold" value="<?= set_value($k,$v);?>">
-												<div class="input-group-append">
-													<span class="input-group-text pointer btn-number bg-success text-white" data-type="plus" data-field="<?= $k; ?>">+</span>
+												<div class="row d-flex justify-content-center align-items-center">
+													<div class="col col-sm-6">
+
+													<input type="text" min="0" name="living_<?= $k; ?>" class="living_room_items_input form-control2 input-number text-center info-title" value="<?= set_value($k,$v);?>">
+													
+													</div>
+
+													<div class="col col-sm-6">
+														<img src="<?=base_url();?>images/items/<?= $k;?>.png" alt='image'/>
+													</div>
 												</div>
 											</div>
 											<p class="mx-2 mt-2"><?= ucwords(str_replace("_", " ", $k)); ?></p>
+											<div class="input-group">
+												<div class="input-group-prepend mr-auto">
+													<span class="input-group-text pointer btn-number1 item_style_btn" disabled="disabled" data-type="minus" data-field="living_<?= $k; ?>">-</span>
+												</div>
+												<div class="input-group-append ml-auto">
+													<span class="input-group-text pointer btn-number1 item_style_btn" data-type="plus" data-field="living_<?= $k; ?>">+</span>
+												</div>
+											</div>
 										</div>
 
 								<?php } ?>
@@ -137,21 +154,31 @@ function filter_array($array) {
 					<div class="tab-pane fade" id="pills-bedroom" role="tabpanel" aria-labelledby="pills-bedroom-tab">
 						<?php $i=0; foreach ($bed_room_item as $key => $value) { ?>
 							<h4 class="title">Select Your&nbsp;<?= ucwords($key); ?>&nbsp;Items</h4>
-							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center">
+							<div class="row justify-content-md-start justify-content-center align-items-center pl-md-5 pr-md-5">
 								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
 									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
-										<div class="form-group mx-2 text-center">
+										<div class="col-sm-3 col-md-2 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
 											<div class="input-group">
-												<div class="input-group-prepend">
-													<span class="input-group-text pointer btn-number2 bg-success text-white" disabled="disabled" data-type="minus" data-field="<?= $k; ?>">-</span>
-												</div>
-												<input type="text" min="0" name="<?= $k; ?>" class="bed_room_items_input form-control input-number text-center text-bold" value="<?= set_value($k,$v);?>">
-												<div class="input-group-append">
-													<span class="input-group-text pointer btn-number2 bg-success text-white" data-type="plus" data-field="<?= $k; ?>">+</span>
+												<div class="row d-flex justify-content-center align-items-center">
+													<div class="col col-sm-6">
+														<input type="text" min="0" name="bed_<?= $k; ?>" class="bed_room_items_input form-control2 input-number text-center info-title" value="<?= set_value($k,$v);?>">
+													</div>
+													<div class="col col-sm-6">
+                                                        <img src="<?=base_url();?>images/items/<?= $k;?>.png" alt='image'/>
+													</div>
 												</div>
 											</div>
 											<p class="mx-2 mt-2"><?= ucwords(str_replace("_", " ", $k)); ?></p>
+												<div class="input-group">
+													<div class="input-group-prepend mr-auto">
+														<span class="input-group-text pointer btn-number2 item_style_btn" disabled="disabled" data-type="minus" data-field="bed_<?= $k; ?>">-</span>
+													</div>
+												
+													<div class="input-group-append ml-auto">
+														<span class="input-group-text pointer btn-number2 item_style_btn" data-type="plus" data-field="bed_<?= $k; ?>">+</span>
+													</div>
+												</div>
 										</div>
 										
 								<?php } ?>
@@ -161,21 +188,31 @@ function filter_array($array) {
 					<div class="tab-pane fade" id="pills-kitchen" role="tabpanel" aria-labelledby="pills-kitchen-tab">
 						<?php $i=0; foreach ($kitchen_item as $key => $value) { ?>
 							<h4 class="title">Select Your&nbsp;<?= ucwords($key); ?>&nbsp;Items</h4>
-							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center">
+							<div class="row justify-content-md-start justify-content-center align-items-center pl-md-5 pr-md-5">
 								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
 									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
-										<div class="form-group mx-2 text-center">
+										<div class="col-sm-3 col-md-2 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
 											<div class="input-group">
-												<div class="input-group-prepend">
-													<span class="input-group-text pointer btn-number3 bg-success text-white" disabled="disabled" data-type="minus" data-field="<?= $k; ?>">-</span>
-												</div>
-												<input type="text" min="0" name="<?= $k; ?>" class="kitchen_room_items_input form-control input-number text-center text-bold" value="<?= set_value($k,$v);?>">
-												<div class="input-group-append">
-													<span class="input-group-text pointer btn-number3 bg-success text-white" data-type="plus" data-field="<?= $k; ?>">+</span>
+												<div class="row d-flex justify-content-center align-items-center">
+													<div class="col col-sm-6">
+														<input type="text" min="0" name="kitchen_<?= $k; ?>" class="kitchen_room_items_input form-control2 input-number text-center info-title" value="<?= set_value($k,$v);?>">
+													</div>
+													<div class="col col-sm-6">
+                                                        <img src="<?=base_url();?>images/items/<?= $k;?>.png" alt='image'/>
+													</div>
 												</div>
 											</div>
 											<p class="mx-2 mt-2"><?= ucwords(str_replace("_", " ", $k)); ?></p>
+												<div class="input-group">
+													<div class="input-group-prepend mr-auto">
+														<span class="input-group-text pointer btn-number3 item_style_btn" disabled="disabled" data-type="minus" data-field="kitchen_<?= $k; ?>">-</span>
+													</div>
+												
+													<div class="input-group-append ml-auto">
+														<span class="input-group-text pointer btn-number3 item_style_btn" data-type="plus" data-field="kitchen_<?= $k; ?>">+</span>
+													</div>
+												</div>
 										</div>
 										
 								<?php } ?>
@@ -185,23 +222,33 @@ function filter_array($array) {
 					<div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">
 						<?php $i=0; foreach ($misc_item as $key => $value) { ?>
 							<h4 class="title">Select Your&nbsp;<?= ucwords($key); ?>&nbsp;Items</h4>
-							<div class="d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center">
+							<div class="row justify-content-md-start justify-content-center align-items-center pl-md-5 pr-md-5">
 								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
 									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
-										<div class="form-group mx-2 text-center">
+										<div class="col-sm-3 col-md-2 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
 											<div class="input-group">
-												<div class="input-group-prepend">
-													<span class="input-group-text pointer btn-number4 bg-success text-white" disabled="disabled" data-type="minus" data-field="<?= $k; ?>">-</span>
-												</div>
-												<input type="text" min="0" name="<?= $k; ?>" class="other_items_input form-control input-number text-center text-bold" value="<?= set_value($k,$v);?>">
-												<div class="input-group-append">
-													<span class="input-group-text pointer btn-number4 bg-success text-white" data-type="plus" data-field="<?= $k; ?>">+</span>
+												<div class="row d-flex justify-content-center align-items-center">
+													<div class="col col-sm-6">
+														<input type="text" min="0" name="other_<?= $k; ?>" class="other_items_input form-control2 input-number text-center info-title" value="<?= set_value($k,$v);?>">
+													</div>
+													<div class="col col-sm-6">
+                                                        <img src="<?=base_url();?>images/items/<?= $k;?>.png" alt='image'/>
+													</div>
 												</div>
 											</div>
 											<p class="mx-2 mt-2"><?= ucwords(str_replace("_", " ", $k)); ?></p>
+												<div class="input-group">
+													<div class="input-group-prepend mr-auto">
+														<span class="input-group-text pointer btn-number4 item_style_btn" disabled="disabled" data-type="minus" data-field="other_<?= $k; ?>">-</span>
+													</div>
+												
+													<div class="input-group-append ml-auto">
+														<span class="input-group-text pointer btn-number4 item_style_btn" data-type="plus" data-field="other_<?= $k; ?>">+</span>
+													</div>
+												</div>
 										</div>
-										
+											
 								<?php } ?>
 							</div>
 						<?php } ?>
