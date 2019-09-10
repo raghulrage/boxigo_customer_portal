@@ -424,6 +424,7 @@ function getdistance() {
 // google maps script end------------------------------------------------------//
 
 // show msg script----------------------------------------//
+
 function showmsg() {
     document.getElementById('flashmsg').style.display = "block";
     document.getElementById('next').disabled = false;

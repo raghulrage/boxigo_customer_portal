@@ -8,7 +8,9 @@
 	<div class="estimate-section container">
 		<div class="alert alert-success text-center" id="flashmsg" style="display: none">Calculating.....</div>
 		<div class="estimate-form-one py-5">
+
 		<div class="estimate-form-one py-5">
+
 		<h3 class="text-center m-2">Move Details</h3>
 		<h5 class="text-center">Enter your moving details and property size</h5>
 		<?php echo form_open('estimate/form_one_validate',array('class'=>'form form-horizontal')); ?>
@@ -51,17 +53,10 @@
 					<p class="mx-2">property</p>
 				</div> -->
 
-
-
-
-
-
-
-
-				
 					<div class="row">
 
 					<!--	<div class="col-sm" id="city_condition">
+
 							<h6 class="px-2 m-0">Select City</h6>
 							<div class="form-group mx-2 text-center <?php if(form_error('select_city')): ?>has-danger<?php endif;?>">
 								<input type="text" name="select_city" class="form-control" value="<?= set_value('select_city');?>" id="select_city" placeholder=" ">

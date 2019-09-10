@@ -26,7 +26,7 @@ a:hover{
 	cursor: pointer;
 }
 .nav-link i{
-	font-size: 16px;
+	font-size: 11;
 }
 .title, .info-title, h1, h2, h3, h4, h5, h6{
 	font-family: 'Oxygen';
@@ -240,6 +240,7 @@ footer-logo{
 	top:7px;
 	right: -10px;
 }
+
 .contact-icon i{
 	font-size: 30px;
 	padding: 20px;
@@ -334,12 +335,14 @@ footer-logo{
 
 /* ------- Edwin Home page Style Changes ---------------------- */
 
+
 .navbar {
 	padding: .1rem 0;
 }
 .btn {
 	font-size: .85rem;
 }
+
 .navbar .navbar-nav .nav-item .nav-link {
 	font-size: 12px;
 	font-weight: 600;
@@ -348,6 +351,7 @@ footer-logo{
 
 .navbar-nav .nav-link {
 	padding: 0.1rem;
+
 }
 
 .pt-5, .py-5 {
@@ -371,9 +375,11 @@ h4, .h4 {
 	padding-left: 90px;
 }	
 
+
 .input-group-text {
 	font-size: 1.3rem;
 }
+
 
 .info p {
     color: #2e2e2e;
@@ -428,3 +434,17 @@ h4, .h4 {
     padding: 0px 15px;
     line-height: 0px;
 }
+
+/*
+.h2 {
+	font-size: 1.7rem;
+	line-height: 1.5em;
+  }
+
+  .m-2 {
+	margin: 0.rem !important;
+  }
+
+
+*/
+
