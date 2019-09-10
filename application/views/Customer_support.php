@@ -1,41 +1,14 @@
 <div class="page-header header-filter" data-parallax="true" style="height:100px;background: linear-gradient(25deg,#61ce70,yellow);"></div>
 	<!--<div class="main section">-->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="images"style="background-image: url('<?= base_url(); ?>includes/img/profile_city.jpg')">
-					<div class="col-md-6 sizing text-center">
-						<h3>Select the items,</h3>
-						<h3>Compare packers and movers,</h3> 
-						<h3>Book with Boxigo</h3>
-						<button class="btn btn-success btn-raised btn-lg"><a href="" >
-            			<i class="fa fa-play"></i> Get Free Quotes</a>
-        				</button>
-
-					</div>
-				</div>
-				
-
-
-
-
-			</div>
-			
-
-
-
-
-
-		</div>
-		<div class="container-fluid p-5">
-
-
+	
+		<div class="main main-raised min-vh-100 p-5">
 			<div class="row">
 				<div class="col-sm text-center">
-					<img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:200px;width:550px">
-				</div>
-				<div class="col-sm text-justify d-flex flex-column  justify-content-center align-items-start">
 					<h2 class="info-title">Boxigo Customer Service</h2>
 					<h3 class="info-title ">Find common questions and answers in our <a class='text-success' href="<?= base_url();?>home/faq">FAQ</a></h3>
+				</div>
+				<div class="col-sm text-left">
+					<img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:200px;width:550px">
 				</div>
 			</div><br>
 			<div class="container "style="border: 2px solid lightgrey">
@@ -73,6 +46,8 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="main main-raised min-vh-100 p-1">
 		<h3 style="text-align: center;">Want to read more about moving with Boxigo?</h3>
 		<div class="container">
 			<div class="row">
@@ -86,8 +61,10 @@
 					<p>Become and Boxigo Verified Vendor</p>
 					<p>JOIN TODAY</p>
 					
+					
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>

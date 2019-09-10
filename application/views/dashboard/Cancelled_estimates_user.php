@@ -1,4 +1,4 @@
-<div class="col-9">
+<div class="col-sm-9">
 <?php 
 	$userdata = $this->session->userdata('logged_user');
 	$delete_message = $this->session->flashdata('delete_message');

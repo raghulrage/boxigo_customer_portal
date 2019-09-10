@@ -16,11 +16,11 @@ class Dashboard extends CI_Controller{
 	}
 
 	public function index(){
-		$this->load->user_dashboard('user_dashboard',$this->data);
+		$this->load->user_dashboard('User_dashboard',$this->data);
 	}
 
 	public function cancelled_estimates(){
-		$this->load->user_dashboard('cancelled_estimates_user',$this->data);
+		$this->load->user_dashboard('Cancelled_estimates_user',$this->data);
 	}
 
 	function fetch_estimates($id){

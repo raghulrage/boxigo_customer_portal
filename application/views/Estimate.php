@@ -8,27 +8,29 @@
 	<div class="estimate-section container">
 		<div class="alert alert-success text-center" id="flashmsg" style="display: none">Calculating.....</div>
 		<div class="estimate-form-one py-5">
-		<h2 class="text-center m-2">Move details</h2>
-		<h4 class="text-center">Enter your moving details and property size</h4>
+		<div class="estimate-form-one py-5">
+		<h3 class="text-center m-2">Move Details</h3>
+		<h5 class="text-center">Enter your moving details and property size</h5>
 		<?php echo form_open('estimate/form_one_validate',array('class'=>'form form-horizontal')); ?>
-			<div class="row d-flex justify-content align-items-end mb-5 mt-5">
-				<div class="col-sm text-center">
+		<div class="col-sm">
+					<div class="d-flex justify-content-center ">
+						<img src="<?= base_url();?>includes/img/move-whole.png" class="img" height="170">
+					</div>
+		</div>	
+		
+		<div class="row d-flex justify-content align-items-end mb-5 mt-5">
+				
+			<div class="col-sm text-center">
 
 					<a onclick="show_city()">
-						<label class="btn btn-radio btn-md w-50 add-active2 btn-success">
-							<input style="opacity:0;margin-left:-10px" type="radio" checked name="city_type" class="" value="<?=set_value('city_type','Within City');?>">Within The City
+						<label class="btn btn-radio btn-md w-40 add-active2 btn-success">
+							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" class=" " value="<?=set_value('city_type','Within City');?>">Within The City
 						</label>
 					</a>
-
-				</div>
-				<div class="col-sm">
-					<div class="d-flex justify-content-center ">
-						<img src="<?= base_url();?>includes/img/move-whole.png" class="img" height="200">
-					</div>
-				</div>
-				<div class="col-sm text-center">
+			</div>
+			<div class="col-sm text-center">
 					<a onclick="hide_city()">
-						<label class="btn btn-radio btn-md w-50 add-active2">
+						<label class="btn btn-radio btn-md w-40 add-active2">
 							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" class=" " value="<?=set_value('city_type','Between City');?>">Between The City
 						</label>
 					</a>
@@ -59,11 +61,20 @@
 				
 					<div class="row">
 
-						<div class="col-sm" id="city_condition">
-							<h4 class="px-2 m-0">Select City</h4>
+					<!--	<div class="col-sm" id="city_condition">
+							<h6 class="px-2 m-0">Select City</h6>
 							<div class="form-group mx-2 text-center <?php if(form_error('select_city')): ?>has-danger<?php endif;?>">
 								<input type="text" name="select_city" class="form-control" value="<?= set_value('select_city');?>" id="select_city" placeholder=" ">
-									<!-- <option hidden value="Bengalore"></option>
+								<span class="material-icons form-control-feedback">clear</span>
+								<span class="text-danger"><?= form_error('select_city'); ?></span>
+							</div>
+						</div>
+-->						
+							<div class="col-sm" id="city_condition">
+							<h6 class="px-2 m-0">Select City</h6>
+							<div class="form-group mx-2 text-center <?php if(form_error('select_city')): ?>has-danger<?php endif;?>">
+								<select type="text" name="select_city" class="form-control" value="<?= set_value('select_city');?>" id="select_city" placeholder=" ">
+									<option hidden value="Bengalore"></option>
 									<option value="None">None</option>
 									<option value="Bengalore">Bengalore</option>
 									<option value="Chennai">Chennai</option>
@@ -71,14 +82,14 @@
 									<option value="Coimbatore">Coimbatore</option>
 									<option value="Madurai">Madurai</option>
 									<option value="Tiruvananthapuram">Tiruvananthapuram</option>
-								</select> -->
+								</select>
 								<span class="material-icons form-control-feedback">clear</span>
 								<span class="text-danger"><?= form_error('select_city'); ?></span>
 							</div>
 						</div>
 
 						<div class="col-sm">
-							<h4 class="px-2 m-0">Moving From</h4>
+							<h6 class="px-2 m-0">Moving From</h6>
 							<div class="form-group mx-2 text-center <?php if(form_error('from_area')): ?>has-danger<?php endif;?>">
 								<input type="text" name="from_area" class="form-control" value="<?= set_value('from_area');?>" id="from" placeholder=" ">
 								<span class="material-icons form-control-feedback">clear</span>
@@ -86,7 +97,7 @@
 							</div>
 						</div>
 						<div class="col-sm">
-							<h4 class="px-2 m-0">Moving To</h4>
+							<h6 class="px-2 m-0">Moving To</h6>
 							<div class="form-group mx-2 text-center <?php if(form_error('to_area')): ?>has-danger<?php endif;?>">
 								<input type="text" name="to_area" class="form-control" value="<?= set_value('to_area');?>" id="to" placeholder=" " onfocusout = "showmsg(),getdistance()">
 								<span class="material-icons form-control-feedback">clear</span>
@@ -94,7 +105,7 @@
 							</div>
 						</div>
 						<div class="col-sm">
-							<h4 class="px-2 m-0">Moving On</h4>
+							<h6 class="px-2 m-0">Moving On</h6>
 							<div class="form-group mx-2 text-center <?php if(form_error('move_date')): ?>has-danger<?php endif;?>">
 								<input type="text" name="move_date" class="form-control datetimepicker" value="<?= set_value('move_date');?>"/>
 								<span class="material-icons form-control-feedback">clear</span>
@@ -123,7 +134,7 @@
 					<div class="text-center mt-3 mb-5">
 						<div class="mb-5">
 							<!-- <h3>House Size</h3> -->
-							<p>Items will be grouped based on the property size.</p>
+							<h5> Items will be grouped based on the property size.</h5>
 						</div>
 							<div class="row">
 								<div class="col-sm">	

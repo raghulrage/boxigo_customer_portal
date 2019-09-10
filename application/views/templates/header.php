@@ -15,6 +15,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Oxygen&Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <script src="https://kit.fontawesome.com/b3d9fc0789.js"></script>
 
 
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> -->
@@ -47,12 +48,12 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link">
-              <i class="fas fa-users"></i> About Us
+            About Us
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url();?>estimate" rel="tooltip" title="" data-placement="bottom"  data-original-title="Get Free Quotes">
-            <i class="fas fa-info-circle"></i> &nbsp;Estimate Now
+            <a class="nav-link" href="<?= base_url();?>estimate" rel="tooltip" title="" data-placement="bottom"  data-original-title="Know more about move">
+            Estimate Now
             </a>
           </li>
           <!-- <li class="nav-item">
@@ -67,7 +68,7 @@
           </li> -->
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider"  data-original-title="For the Vendors">
-              <i class="fab fa-black-tie"></i> &nbsp;For Service Provider
+            For Service Provider
             </a>
           </li>
           <li class="nav-item">
@@ -100,7 +101,7 @@
                 </a> -->
             <?php else: ?>
               <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="<?= base_url();?>login" data-original-title="Click here to login">
-                <i class="fas fa-user-check"></i> &nbsp;Login
+              Login
               </a>
             <?php endif; ?>
           </li>

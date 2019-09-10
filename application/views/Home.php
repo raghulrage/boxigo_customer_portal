@@ -24,14 +24,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row">
           <div class="ml-auto mr-auto">
             <h1 class="text-center title">Boxigo</h1>
-            <h2 class="text-center ml-3 mr-3">An online Marketplace for Smart, Simple and Secure Way To Move</h2>
-              
-              <br><br>
+            <h3 class="text-center ml-3 mr-3">An online Marketplace for Smart, Simple and Secure Way To Move</h3>
               <div class="row text-center pl-3 pr-3">
                 <div class="col-sm-3">
                   <!-- <div class="info"> -->
                     <div class="info">
-                      <img src="<?= base_url();?>includes/img/icons/bank.svg" width="56" height="56">
+                      <img src="<?= base_url();?>includes/img/icons/bank.svg" width="75" height="75">
                       <h4 class='info-title'>Save money</h4><br>
                       <p class='text-justify'>With Boxigo, you get to choose from a wide selection of certified professionals vetted by us and recommended by other users.
                       </p>
@@ -41,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-sm-3">
                   <!-- <div class="info"> -->
                     <div class="info">
-                      <img src="<?= base_url();?>includes/img/icons/license.svg" width="56" height="56">
+                      <img src="<?= base_url();?>includes/img/icons/license.svg" width="75" height="75  ">
                       <h4 class='info-title'>Licensed, Insured & Recommended Movers</h4>
                       <p class='text-justify'>Handpicked by us and recommended by other users, our movers won’t let you down…and if they do, we’ll hold them accountable. 
                         Our movers license and insurance credentials are available on our site for your review</p>
@@ -50,7 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <div class="col-sm-3">
                   <div class="info">
-                    <img src="<?= base_url();?>includes/img/icons/payment-security.svg" width="56" height="56">
+                    <img src="<?= base_url();?>includes/img/icons/payment-security.svg" width="75" height="75">
                     <h4 class='info-title'>Payment Security</h4><br>
                     <p class='text-justify'>We handle the money part, so that you don’t have to. We wait 3 days after the move is complete to pay imover's in full, 
                       in order to fully protect you. Only pay for what you end up moving. All quotes are binding, with no added fees.</p>
@@ -58,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <div class="col-sm-3">
                   <div class="info">
-                    <img src="<?= base_url();?>includes/img/icons/customer-service.svg" width="56" height="56">
+                    <img src="<?= base_url();?>includes/img/icons/customer-service.svg" width="75" height="75">
                     <h4 class='info-title'>Customer Support</h4><br>
                     <p class='text-justify'>Have questions? Need advice? Our team is on your side and here to help. Live chat, email or call us.</p>
                   </div>
@@ -82,7 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-sm-3">
               <div class="info">
                 <div class="icon icon-info">
-                  <img src="<?= base_url();?>includes/img/icons/thinking.svg" width="56" height="56">
+                  <img src="<?= base_url();?>includes/img/icons/thinking.svg" width="75" height="75">
                 </div>
                 <h4 class="info-title">Plan</h4>
                 <p class='text-justify'>Create your inventory list using our easy planner. 
@@ -92,7 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-sm-3">
               <div class="info">
                 <div class="icon icon-success">
-                  <img src="<?= base_url();?>includes/img/icons/compare.svg" width="56" height="56">
+                  <img src="<?= base_url();?>includes/img/icons/compare.svg" width="75" height="75">
                 </div>
                 <h4 class="info-title">Compare</h4>
                 <p class='text-justify'>Compare prices from multiple local and long distance moving companies for free. 
@@ -103,7 +101,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-sm-3">
               <div class="info">
                 <div class="icon icon-danger">
-                  <img src="<?= base_url();?>includes/img/icons/medal.svg" width="56" height="56">
+                  <img src="<?= base_url();?>includes/img/icons/medal.svg" width="75" height="75">
                 </div>
                 <h4 class="info-title">Book</h4>
                 <p class='text-justify'>Book your move to lock your price. Make changes even after you book. Pay through Unpakt only 2 business days before your move. 
@@ -114,7 +112,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-sm-3">
               <div class="info">
                 <div class="icon icon-danger">
-                  <img src="<?= base_url();?>includes/img/icons/move.svg" width="56" height="56">
+                  <img src="<?= base_url();?>includes/img/icons/move.svg" width="75" height="75">
                 </div>
                 <h4 class="info-title">Move</h4>
                 <p class='text-justify'>Relax. Boxigo will handle payments so you don't need to worry about surprises on your move day. 
@@ -201,31 +199,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       	<h2 class="text-center title mb-5">Why booking with Boxigo?</h2>
       	<div class="row my-3 py-2">
       		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/change.svg" width="48" height="48">&nbsp;&nbsp; Guaranteed Prices</h4>
+      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/change.svg" width="50" height="50">&nbsp;&nbsp; Guaranteed Prices</h4>
       			<p>Your price will not change unless you change your plan. Prices are fixed and transparent based on each mover’s rates. You can see exactly how much it will cost to add or remove an item or service.</p>
       		</div>
       		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/money-bag.svg" width="48" height="48">&nbsp;&nbsp; Huge Savings</h4>
+      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/money-bag.svg" width="50" height="50">&nbsp;&nbsp; Huge Savings</h4>
       			<p>For the first time you can compare prices from multiple moving companies for one single move plan in one place. That creates real competition and huge savings that can be achieved only when you book through Boxigo.</p>
       		</div>
       	</div>
       	<div class="row my-3 py-2">
       		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/telemarketer.svg" width="48" height="48">&nbsp;&nbsp; Live Customer Support</h4>
+      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/telemarketer.svg" width="50" height="50">&nbsp;&nbsp; Live Customer Support</h4>
       			<p>Our associates are here to answer any question you may have and to make sure you always have someone to speak with. Call, chat or email us anytime. You are not alone!</p>
       		</div>
       		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/new-product.svg" width="48" height="48">&nbsp;&nbsp; All-in Package</h4>
+      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/new-product.svg" width="50" height="50">&nbsp;&nbsp; All-in Package</h4>
       			<p>When you book with Boxigo you pay less and get more! See what is included in every move booked through Boxigo.</p>
       		</div>
       	</div>
       	<div class="row my-3 py-2">
       		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/giftbox.svg" width="48" height="48">&nbsp;&nbsp; No move day surprises</h4>
+      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/giftbox.svg" width="50" height="50">&nbsp;&nbsp; No move day surprises</h4>
       			<p>You pay through Boxigo 2 business days before your move, so there is no need to exchange money with the moving crew on the move day itself. Boxigo will review all documentation after your move is completed and will make sure you received the services you paid for.</p>
       		</div>
       		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/review.svg" width="48" height="48">&nbsp;&nbsp; Guaranteed Satisfaction</h4>
+      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/review.svg" width="50" height="50">&nbsp;&nbsp; Guaranteed Satisfaction</h4>
       			<p>Get your services you requested with utmost professionalism you deserve. Need custom requirements or refunds from a mover, we make sure you get it</p>
       		</div>
       	</div>

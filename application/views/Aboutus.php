@@ -21,31 +21,31 @@
                         <img style='height:auto;width:100%'src="https://cdn.dribbble.com/users/537533/screenshots/3112302/preview.gif" alt="image">
                 </div>
             </div>
-            <br><br><h4 class='text-center'>Our users rate our movers based on our community standards and are held accountable by us.</h4><br><br>
+            <br><h4 class='text-center'>Our users rate our movers based on our community standards and are held accountable by us.</h4>
               <div class="row text-center">
                 <div class="col-sm info">
                   <h4 class='info-title'>Professionalism</h4>
-                  <img src="<?= base_url();?>includes/img/icons/professionalism.svg" width="56" height="56">
+                  <img src="<?= base_url();?>includes/img/icons/professionalism.svg" width="60" height="60">
                 </div>
                 <div class="col-sm info">
                   <h4 class='info-title'>Transparency</h4>
-                  <img src="<?= base_url();?>includes/img/icons/transparency.svg" width="56" height="56">
+                  <img src="<?= base_url();?>includes/img/icons/transparency.svg" width="60" height="60">
                 </div>
                 <div class="col-sm info">
                   <h4 class='info-title'>Respect</h4>
-                  <img src="<?= base_url();?>includes/img/icons/respect.svg" width="56" height="56">
+                  <img src="<?= base_url();?>includes/img/icons/respect.svg" width="60" height="60">
                 </div>
                 <div class="col-sm info">
                   <h4 class='info-title'>Reliability</h4>
-                  <img src="<?= base_url();?>includes/img/icons/reliable.svg" width="56" height="56">
+                  <img src="<?= base_url();?>includes/img/icons/reliable.svg" width="60" height="60">
                 </div>
                 <div class="col-sm info">
                   <h4 class='info-title'>Honest Pricing</h4>
-                  <img src="<?= base_url();?>includes/img/icons/pricing.svg" width="56" height="56">
+                  <img src="<?= base_url();?>includes/img/icons/pricing.svg" width="60" height="60">
                 </div>
               </div>
 
-              <br><br>
+              <br>
               <h4 class='text-justify description'>
               Handpicked by us, Movers are then reviewed and rated by our users based on our community standards above. A mover must maintain 3 points on our review system in order to remain on board. 
               If any Mover drops below 3 points, they are automatically removed from our system.

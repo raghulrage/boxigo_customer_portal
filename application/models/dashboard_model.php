@@ -4,7 +4,7 @@ class Dashboard_model extends CI_Model{
 
 	function fetch_estimates($id){
 		$this->db->where('user_id',$id);
-		$this->db->where('status',0);
+		$this->db->where('status',1);
 		$this->db->order_by('moving_on','asc');
 		$query = $this->db->get('estimate');
 		$result = $this->generate_result($query->result());
@@ -21,6 +21,7 @@ class Dashboard_model extends CI_Model{
 	}
 
 	function generate_result($arr){
+	   // $arr = (is_object($arr)) ? json_decode(json_encode($arr), true) : $arr;
 		$finalData['total'] = sizeof($arr);
 		$finalData['data'] = array();
 		foreach ($arr as $key1 => $value1) {
