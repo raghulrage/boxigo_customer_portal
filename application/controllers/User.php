@@ -49,6 +49,20 @@ class User extends CI_Controller{
 		}
 	}
 
+	public function otp_validate(){
+		$this->form_validation->set_rules('login_otp','OTP','required|trim|regex_match[/^[0-9]{4}$/]');
+		if($this->form_validation->run()){
+			$otp_data =$this->input->post('otp');
+			if (strpos($this->session->flashdata('otp_message'), $otp_data) == false) { 
+				$this->session->set_flashdata('login_err_msg','Incorrect OTP');
+			}else{
+				redirect('user/login');
+			}
+		}else{
+			$this->login();
+		}
+	}
+
 	public function logout(){
 		$data = $this->session->all_userdata();
 		foreach ($data as $key => $value) {

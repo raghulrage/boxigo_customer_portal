@@ -76,8 +76,9 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'password',
+
+	'username' => 'boxigo_root',
+	'password' => 'boxigo@123',
 	'database' => 'boxigo',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

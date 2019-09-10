@@ -21,6 +21,7 @@ class Dashboard_model extends CI_Model{
 	}
 
 	function generate_result($arr){
+	   // $arr = (is_object($arr)) ? json_decode(json_encode($arr), true) : $arr;
 		$finalData['total'] = sizeof($arr);
 		$finalData['data'] = array();
 		foreach ($arr as $key1 => $value1) {
