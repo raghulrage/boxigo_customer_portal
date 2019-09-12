@@ -377,7 +377,7 @@ h4, .h4 {
 
 
 .input-group-text {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 }
 
 
@@ -409,10 +409,7 @@ h4, .h4 {
 
 /* items Page */
 
-.col-sm-3 {
-    flex: 0 0 25%;
-    max-width: 23%;
-}
+
 
 .nav_item_with_badge .badge {
     position: absolute;
@@ -435,6 +432,10 @@ h4, .h4 {
     line-height: 0px;
 }
 
+.col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
 /*
 .h2 {
 	font-size: 1.7rem;
@@ -447,4 +448,33 @@ h4, .h4 {
 
 
 */
+
+/* Ediwn Items Info Css */
+
+
+.input-group .input-group-text {
+    background-color: #f4f4f4;
+    border-color: #f5f5f5;
+}
+
+.item_style_btn {
+    height: 28px;
+    color: #212529;
+}
+
+
+
+
+.item_style_box img {
+    width: 30px;
+    height: 30px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+p{
+	font-weight: 400;
+}
 
