@@ -35,10 +35,6 @@ $movedata = $this->session->userdata('movedata');
 									<h4><?= $value->display_name; ?></h4>
 								</div>
 								<div class="card-body">
-									<div class="price-tag">
-										<h3>This service type has</h3>
-									</div>
-
 									<div class="price-item">
 										<ul class="list-group list-group-flush">
 										

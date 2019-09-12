@@ -87,7 +87,7 @@ function filter_array($array) {
 
 
 
-<section class="section" style="padding-top:100px">
+<section class="section" style="padding-top:70px">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-3 border-right">
@@ -108,7 +108,7 @@ function filter_array($array) {
 					</li>
 				</ul>
 				<h4 class="text-center pt-4 info-title">Total Number Of Items Added</h4>
-				<h1 class="total_items text-warning info-title text-center total_items_count"></h1>
+				<h2 class="total_items text-warning info-title text-center total_items_count"></h2>
 
 			</div>
 
@@ -121,7 +121,7 @@ function filter_array($array) {
 								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
 									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
-		 								<div class="col-sm-3 col-md-2 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
+		 								<div class="col-sm-1 col-md-1 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
 		 									
 											<div class="input-group">
 												<div class="row d-flex justify-content-center align-items-center">
@@ -158,7 +158,7 @@ function filter_array($array) {
 								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
 									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
-										<div class="col-sm-3 col-md-2 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
+										<div class="col-sm-1 col-md-1 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
 											<div class="input-group">
 												<div class="row d-flex justify-content-center align-items-center">
 													<div class="col col-sm-6">
@@ -192,7 +192,7 @@ function filter_array($array) {
 								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
 									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
-										<div class="col-sm-3 col-md-2 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
+										<div class="col-sm-1 col-md-1 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
 											<div class="input-group">
 												<div class="row d-flex justify-content-center align-items-center">
 													<div class="col col-sm-6">
@@ -226,7 +226,7 @@ function filter_array($array) {
 								<!-- <?php if($i++ == 0): ?><p class="mx-2">I have </p><?php endif; ?> -->
 								<?php $j=1; foreach ($value as $k => $v) { ?>
 									<!-- <?php if($j == count($value)){ echo " <p>and</p> "; } ?> -->
-										<div class="col-sm-3 col-md-2 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
+										<div class="col-sm-1 col-md-1 col-lg-2 form-group mx-2 text-center card item_style_box p-0">
 											<div class="input-group">
 												<div class="row d-flex justify-content-center align-items-center">
 													<div class="col col-sm-6">

@@ -26,7 +26,7 @@
 
 					<a onclick="show_city()">
 						<label class="btn btn-radio btn-md w-40 add-active2 btn-success">
-							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" class=" " value="<?=set_value('city_type','Within City');?>">Within The City
+							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" selected="selected" class=" " value="<?=set_value('city_type','Within City');?>">Within The City
 						</label>
 					</a>
 			</div>
@@ -89,7 +89,7 @@
 								<input type="text" name="from_area" class="form-control" value="<?= set_value('from_area');?>" id="from" placeholder=" ">
 								<span class="material-icons form-control-feedback">clear</span>
 								<span class="text-danger"><?= form_error('from_area'); ?></span>
-							</div>
+							</div>  
 						</div>
 						<div class="col-sm">
 							<h6 class="px-2 m-0">Moving To</h6>
