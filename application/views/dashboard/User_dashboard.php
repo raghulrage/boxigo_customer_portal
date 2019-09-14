@@ -2,6 +2,8 @@
 <?php 
 	$userdata = $this->session->userdata('logged_user');
 	$delete_message = $this->session->flashdata('delete_message');
+	//echo "<pre>";print_r($estimate_list);exit;
+
 ?>
 
 <?php 
@@ -12,7 +14,7 @@
 	}
 ?>
 
-<div class="card-deck mb-5">
+<div class="card-deck section mb-5">
 	<div class="card">
 		<div class="card-header"><p class="card-title my-0">Personal Info</p></div>
 		<div class="card-body d-flex justify-content-center align-items-center">
@@ -41,13 +43,14 @@
 	</div>
 </div>
 
-<div class="card mb-5">
+<div class="card mt-5 mb-5">
 	<div class="card-header">
 		<p class="card-title my-0">Your Moves</p>
 	</div>
 	<div class="card-body">
 		<div id="accordion">
-		<?php 
+		<?php
+
 		if($estimate_list['total']>0):
 		foreach ($estimate_list['data'] as $row) { ?>
 		<div class="panel">
@@ -91,12 +94,20 @@
 			<div id="collapse<?= $row->estimate_id; ?>" class="collapse" aria-labelledby="heading<?= $row->estimate_id; ?>" data-parent="#accordion">
 				<div class="card-body px-0">
 					<?php if (!empty($row->items)): ?>
+						<div class="row">
 						<?php foreach ($row->items as $key => $value): ?>
-							<li class="list-inline-item my-2">
-								<?= ucfirst(str_replace("_", " ", $key)); ?>&nbsp;
-								<span class="badge badge-info badge-pill"><?= $value; ?></span>
-							</li>
+							<div class="col-sm-3">
+								<div class="row border">
+									<div class="col-md-10 col-sm-4 d-flex justify-content-start align-items-center">
+										<?= ucfirst(str_replace("_", " ", $key)); ?>&nbsp;
+									</div>
+									<div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+										<div class="badge badge-info badge-pill"><?= $value; ?></div>
+									</div>
+								</div>
+							</div>
 						<?php endforeach ?>
+						</div>
 					<?php else: ?>
 						<div class="alert alert-info">There are no items in your list.</div>
 					<?php endif; ?>
@@ -110,6 +121,4 @@
 		</div>
 		<?php endif; ?>
 	</div>
-		
-	</ul>
 </div>

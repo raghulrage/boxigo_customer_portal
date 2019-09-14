@@ -22,22 +22,25 @@ class Dashboard_model extends CI_Model{
 
 	function generate_result($arr){
 	   // $arr = (is_object($arr)) ? json_decode(json_encode($arr), true) : $arr;
+		// foreach ($arr as $key1 => $value1) {
+		// 	$items = explode("|", $value1->items);
+		// 	$items = array_filter($items);
+		// 	if(!empty($items)){
+		// 		foreach ($items as $key => $value) {
+		// 			list($k,$v) = explode("=", $value);
+		// 			$result[$k] = $v;
+		// 		}
+		// 	}else{
+		// 		$result = array();
+		// 	}
+		// 	$arr[$key1]->items = $result;
+		// 	$finalData['data'] = $arr;
+		// }
 		$finalData['total'] = sizeof($arr);
-		$finalData['data'] = array();
-		foreach ($arr as $key1 => $value1) {
-			$items = explode("|", $value1->items);
-			$items = array_filter($items);
-			if(!empty($items)){
-				foreach ($items as $key => $value) {
-					list($k,$v) = explode("=", $value);
-					$result[$k] = $v;
-				}
-			}else{
-				$result = array();
-			}
-			$arr[$key1]->items = $result;
-			$finalData['data'] = $arr;
+		foreach ($arr as $key => $value) {
+			$value->items = json_decode($value->items,true);
 		}
+		$finalData['data'] = $arr;
 		return $finalData;
 	}
 

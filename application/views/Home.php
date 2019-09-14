@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="main main-raised">
     <div class="container">
 
-      <div class="section section-contacts">
+      <div class="home-section">
         <div class="row">
           <div class="ml-auto mr-auto">
             <h1 class="text-center title">Boxigo</h1>
@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-sm-3">
                   <!-- <div class="info"> -->
                     <div class="info">
-                      <img src="<?= base_url();?>includes/img/icons/license.svg" width="75" height="75  ">
+                      <img src="<?= base_url();?>includes/img/icons/license.svg" width="75" height="75">
                       <h4 class='info-title'>Licensed, Insured & Recommended Movers</h4>
                       <p class='text-justify'>Handpicked by us and recommended by other users, our movers won’t let you down…and if they do, we’ll hold them accountable. 
                         Our movers license and insurance credentials are available on our site for your review</p>
@@ -68,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-      <div class="section text-center">
+      <div class="home-section text-center">
         <div class="row">
           <div class="col-md-12 ml-auto mr-auto">
             <h2 class="title">How moving with Boxigo works?</h2>
@@ -195,7 +195,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
         </div>
       </div> -->
-    <div class="section section-why">
+    <div class="home-section section-why">
       	<h2 class="text-center title mb-5">Why booking with Boxigo?</h2>
       	<div class="row my-3 py-2">
       		<div class="col-sm-6">
@@ -228,7 +228,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       		</div>
       	</div>
     </div>
-    <div class="section section-book-move text-center">
+    <div class="home-section section-book-move text-center">
     	<h2 class="text-center title mb-5">Interested in comparing different moving companies and getting guaranteed prices?</h2>
     	<a href="<?= base_url(); ?>estimate" class="btn btn-success btn-raised">Book My Move</a>
     </div>

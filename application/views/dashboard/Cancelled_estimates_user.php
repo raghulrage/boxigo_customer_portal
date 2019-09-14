@@ -59,12 +59,20 @@
 			<div id="collapse<?= $row->estimate_id; ?>" class="collapse" aria-labelledby="heading<?= $row->estimate_id; ?>" data-parent="#accordion">
 				<div class="card-body px-0">
 					<?php if (!empty($row->items)): ?>
+						<div class="row">
 						<?php foreach ($row->items as $key => $value): ?>
-							<li class="list-inline-item my-2">
-								<?= ucfirst(str_replace("_", " ", $key)); ?>&nbsp;
-								<span class="badge badge-info badge-pill"><?= $value; ?></span>
-							</li>
+							<div class="col-sm-3">
+								<div class="row border">
+									<div class="col-md-10 col-sm-4 d-flex justify-content-start align-items-center">
+										<?= ucfirst(str_replace("_", " ", $key)); ?>&nbsp;
+									</div>
+									<div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+										<div class="badge badge-info badge-pill"><?= $value; ?></div>
+									</div>
+								</div>
+							</div>
 						<?php endforeach ?>
+						</div>
 					<?php else: ?>
 						<div class="alert alert-info">There are no items in your list.</div>
 					<?php endif; ?>

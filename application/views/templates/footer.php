@@ -4,73 +4,71 @@
 </div>
 </div>
 <?php endif; ?>
+<?php if($this->router->fetch_class() !='estimate'): ?>
 <footer class="footer footer-default sticky-bottom p-3">
-<div class="container-fluid footer-padding">
-<div class="row">
+  <div class="container footer-padding">
+    <div class="row">
 
-<div class="col-sm">
-    <h4 class="info-title text-justify">About Boxigo</h4> 
-      <ul class="navbar-nav text-justify pt-0">
-        <li class="nav-item">
-          <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link pl-0">
-            <!-- <i class="fas fa-users"></i>  -->About Us
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="<?= base_url(); ?>home/how_it_works" class="dropdown-toggle nav-link pl-0">
-            <!-- <i class="fas fa-users"></i>  -->How it works
-          </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link pl-0" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom" >
-            <!-- <i class="fas fa-question-circle"></i> &nbsp; -->FAQ
-            </a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link pl-0" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom" >
-            <!-- <i class="fas fa-question-circle"></i> &nbsp; -->Privacy Policy
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?= base_url(); ?>home/customer_support" class="dropdown-toggle nav-link pl-0">
-              <!-- <i class="fas fa-hands-helping"></i> &nbsp; -->Customer Support
-            </a>
-        </li>
-      </ul>
-</div>
-<div class="col-sm">
-    <h4 class="info-title text-justify">Partnership</h4> 
-      <ul class="navbar-nav text-justify pt-0">
-        <li class="nav-item">
-          <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
-            <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vendor Registration
-          </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav text-justify pt-0">
-        <li class="nav-item">
-          <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
-            <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vendor Agreement
-          </a>
-        </li>
-      </ul>
-</div>
-
-<div class="col-sm-3">
-    <div id="map"></div>
-</div>
-<div class="col-sm-3 footer-logo d-flex justify-content-top align-items-center flex-column">
-    <h2 class='info-title mt-3'>Boxigo</h2>
-    <h4 class='descriiption'>Pack your emotions, with us</h4>
-    <p>follow us on</p>
-    <div class="footer-logo text-center">
-        <i class="fab fa-instagram footer-logo m-2 "></i>
-        <i class="fab fa-facebook-f footer-logo m-2"></i>
-        <i class="fab fa-linkedin-in footer-logo m-2 "></i>
-        <i class="fab fa-twitter footer-logo m-2 "></i>
+      <div class="col-sm">
+          <h4 class="info-title text-justify">About Boxigo</h4> 
+            <ul class="navbar-nav text-justify pt-0">
+              <li class="nav-item">
+                <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link pl-0">
+                  <!-- <i class="fas fa-users"></i>  -->About Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url(); ?>home/how_it_works" class="dropdown-toggle nav-link pl-0">
+                  <!-- <i class="fas fa-users"></i>  -->How it works
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link pl-0" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom" >
+                  <!-- <i class="fas fa-question-circle"></i> &nbsp; -->FAQ
+                  </a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link pl-0" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom" >
+                  <!-- <i class="fas fa-question-circle"></i> &nbsp; -->Privacy Policy
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url(); ?>home/customer_support" class="dropdown-toggle nav-link pl-0">
+                    <!-- <i class="fas fa-hands-helping"></i> &nbsp; -->Customer Support
+                  </a>
+              </li>
+            </ul>
+      </div>
+      <div class="col-sm">
+          <h4 class="info-title text-justify">Partnership</h4> 
+            <ul class="navbar-nav text-justify pt-0">
+              <li class="nav-item">
+                <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
+                  <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vendor Registration
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav text-justify pt-0">
+              <li class="nav-item">
+                <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
+                  <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vendor Agreement
+                </a>
+              </li>
+            </ul>
+      </div>
+      <div class="col-sm   footer-logo d-flex justify-content-center align-items-center flex-column">
+          <h2 class='info-title mt-0'>Boxigo</h2>
+          <h4 class='descriiption'>Pack your emotions, with us</h4>
+          <p>follow us on</p>
+          <div class="footer-logo text-center">
+              <i class="fab fa-instagram footer-logo m-2 "></i>
+              <i class="fab fa-facebook-f footer-logo m-2"></i>
+              <i class="fab fa-linkedin-in footer-logo m-2 "></i>
+              <i class="fab fa-twitter footer-logo m-2 "></i>
+          </div>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 </footer>
 <div class="container-fluid bg-dark text-center p-3">
 <div class="copyright text-light">
@@ -78,9 +76,10 @@
 <script>
 document.write(new Date().getFullYear())
 </script>, copyrights hold by
-<a style="color:#61ce70" href="http://boxigo.planpackersandmovers.com/" target="_blank">Boxigo</a>
+<a style="color:#61ce70" href="http://boxigo.in/" target="_blank">Boxigo</a>
 </div>
 </div>
+<?php endif; ?>
 <!--   Core JS Files   -->
 <script src="<?= base_url(); ?>includes/js/core/jquery.min.js" type="text/javascript"></script>
 <script src="<?= base_url(); ?>includes/js/core/popper.min.js" type="text/javascript"></script>

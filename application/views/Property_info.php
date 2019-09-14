@@ -53,8 +53,8 @@ $form_one_data = $this->session->userdata('movedata');
 											  <label class="btn btn-block add-active3">
 											    <input type="radio" name="old_elevator_availability" value="<?= set_value('old_elevator_availability','Yes');?>"> YES
 											  </label>
-											  <label class="btn btn-block add-active3 btn-success active">
-											    <input type="radio" name="old_elevator_availability"  value="<?= set_value('old_elevator_availability','No');?>"> NO
+											  <label class="btn btn-block add-active3 btn-success">
+											    <input type="radio" name="old_elevator_availability" checked="checked" value="<?= set_value('old_elevator_availability','No');?>"> NO
 											  </label>
 											</div>
 										</div>
@@ -69,8 +69,8 @@ $form_one_data = $this->session->userdata('movedata');
 									<div class="row text-center">
 										<div class="col-sm">
 											<div class="btn-group btn-group-toggle" data-toggle="buttons">
-											  <label class="btn btn-block add-active4 btn-success active">
-											    <input type="radio" name="packing_service" value="<?= set_value('packing_service','Yes');?>"> YES
+											  <label class="btn btn-block add-active4 btn-success">
+											    <input type="radio" name="packing_service" checked="checked" value="<?= set_value('packing_service','Yes');?>"> YES
 											  </label>
 											  <label class="btn btn-block add-active4">
 											    <input type="radio" name="packing_service"  value="<?= set_value('packing_service','No');?>"> NO
@@ -172,8 +172,8 @@ $form_one_data = $this->session->userdata('movedata');
 											  <label class="btn btn-block add-active5">
 											    <input type="radio" name="new_elevator_availability" value="<?= set_value('new_elevator_availability','Yes');?>"> YES
 											  </label>
-											  <label class="btn btn-block add-active5 btn-success active">
-											    <input type="radio" name="new_elevator_availability"  value="<?= set_value('new_elevator_availability','No');?>"> NO
+											  <label class="btn btn-block add-active5 btn-success">
+											    <input type="radio" name="new_elevator_availability" checked="checked"  value="<?= set_value('new_elevator_availability','No');?>"> NO
 											  </label>
 											</div>
 										</div>
@@ -191,8 +191,8 @@ $form_one_data = $this->session->userdata('movedata');
 									<div class="row text-center">
 										<div class="col-sm">
 											<div class="btn-group btn-group-toggle" data-toggle="buttons">
-											  <label class="btn btn-block add-active6 btn-success active">
-											    <input type="radio" name="unpacking_service" value="<?= set_value('unpacking_service','Yes');?>"> YES
+											  <label class="btn btn-block add-active6 btn-success">
+											    <input type="radio" name="unpacking_service" checked="checked" value="<?= set_value('unpacking_service','Yes');?>"> YES
 											  </label>
 											  <label class="btn btn-block add-active6">
 											    <input type="radio" name="unpacking_service"  value="<?= set_value('unpacking_service','No');?>"> NO

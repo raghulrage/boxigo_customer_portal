@@ -1,5 +1,3 @@
-
-
 <!-- fetch data from api -->
 <?php
 	$url['onebhk'] = 'http://boxigo.in//boxigo-backend-api/product/itemsInfo_search_service.php?move_size=1bhk'; // path to your JSON file

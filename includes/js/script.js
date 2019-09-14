@@ -13,6 +13,48 @@ $('.datetimepicker').datetimepicker({
 });
 
 // ---------------------------------item_info input increment script--------------------------------------
+$(document).ready(function(){
+    var count = 0;
+    $('#pills-livingroom .living_room_items_input').each(function (index, value) {
+    count += parseInt($(value).attr('value'));
+    });
+    $('.living_room_item_count').text(count);
+})
+
+$(document).ready(function(){
+    var count = 0;
+    $('#pills-bedroom .bed_room_items_input').each(function (index, value) {
+    count += parseInt($(value).attr('value'));
+    });
+    $('.bed_room_item_count').text(count);
+})
+
+$(document).ready(function(){
+    var count = 0;
+    $('#pills-kitchen .kitchen_room_items_input').each(function (index, value) {
+    count += parseInt($(value).attr('value'));
+    });
+    $('.kitchen_room_item_count').text(count);
+})
+
+$(document).ready(function(){
+    var count = 0;
+    $('#pills-other .other_items_input').each(function (index, value) {
+    count += parseInt($(value).attr('value'));
+    });
+    $('.other_item_count').text(count);
+})
+
+
+$(document).ready(function(){
+    var count=0
+    $('.data-indv-count').each(function(index,value){
+        count +=parseInt($(value).text());
+    });
+    $('.total_items_count').text(count);
+})
+
+
 
 
 $('.btn-number1').click(function (e) {
@@ -35,6 +77,7 @@ $('.btn-number1').click(function (e) {
     } else {
         input.val(input.val());
     }
+
 });
 $('.living_room_items_input').focusin(function () {
     $(this).data('oldValue', $(this).val());
@@ -85,6 +128,7 @@ $('.btn-number2').click(function (e) {
     } else {
         input.val(input.val());
     }
+
 });
 $('.bed_room_items_input').focusin(function () {
     $(this).data('oldValue', $(this).val());
@@ -135,6 +179,7 @@ $('.btn-number3').click(function (e) {
     } else {
         input.val(input.val());
     }
+
 });
 $('.kitchen_room_items_input').focusin(function () {
     $(this).data('oldValue', $(this).val());
@@ -185,6 +230,7 @@ $('.btn-number4').click(function (e) {
     } else {
         input.val(input.val());
     }
+
 });
 $('.other_items_input').focusin(function () {
     $(this).data('oldValue', $(this).val());
@@ -371,16 +417,10 @@ var from, to;
 var directionsService = new google.maps.DirectionsService();
 google.maps.event.addDomListener(window, 'load', function () {
 
-    var options = {
-        types: ['(cities)'],
-        componentRestrictions: { country: "in" }
-    };
-
-    var input = document.getElementById('select_city');
 
     new google.maps.places.SearchBox(document.getElementById('from'));
     new google.maps.places.SearchBox(document.getElementById('to'));
-    new google.maps.places.Autocomplete(input, options);
+    
 });
 
 
@@ -426,7 +466,7 @@ function getdistance() {
 // show msg script----------------------------------------//
 
 function showmsg() {
-    document.getElementById('flashmsg').style.display = "block";
+    // document.getElementById('flashmsg').style.display = "block";
     document.getElementById('next').disabled = false;
     document.getElementById('next').style.pointerEvents = "auto";
 }
@@ -474,8 +514,8 @@ $('.living_room_items_input').on('change', function () {
     });
     $('.living_room_item_count').html(items_value);
     $('.living_room_item_count').attr('data-indv-value', items_value);
-    $(".data-indv-count").each(function () {
-        total_items_value += parseInt($(this).attr('data-indv-value'));
+    $(".data-indv-count").each(function (index,value) {
+        total_items_value += parseInt($(value).text());
     });
     $('.total_items_count').html(total_items_value);
 
@@ -489,10 +529,11 @@ $('.bed_room_items_input').on('change', function () {
     });
     $('.bed_room_item_count').html(items_value2);
     $('.bed_room_item_count').attr('data-indv-value', items_value2);
-    $(".data-indv-count").each(function () {
-        total_items_value += parseInt($(this).attr('data-indv-value'));
+    $(".data-indv-count").each(function (index,value) {
+        total_items_value += parseInt($(value).text());
     });
     $('.total_items_count').html(total_items_value);
+
 });
 
 $('.kitchen_room_items_input').on('change', function () {
@@ -502,8 +543,8 @@ $('.kitchen_room_items_input').on('change', function () {
     });
     $('.kitchen_room_item_count').html(items_value3);
     $('.kitchen_room_item_count').attr('data-indv-value', items_value3);
-    $(".data-indv-count").each(function () {
-        total_items_value += parseInt($(this).attr('data-indv-value'));
+    $(".data-indv-count").each(function (index,value) {
+        total_items_value += parseInt($(value).text());
     });
     $('.total_items_count').html(total_items_value);
 });
@@ -515,8 +556,8 @@ $('.other_items_input').on('change', function () {
     });
     $('.other_item_count').html(items_value4);
     $('.other_item_count').attr('data-indv-value', items_value4);
-    $(".data-indv-count").each(function () {
-        total_items_value += parseInt($(this).attr('data-indv-value'));
+    $(".data-indv-count").each(function (index,value) {
+        total_items_value += parseInt($(value).text());
     });
     $('.total_items_count').html(total_items_value);
 });

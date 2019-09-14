@@ -9,7 +9,7 @@
 		<div class="alert alert-success text-center" id="flashmsg" style="display: none">Calculating.....</div>
 		<div class="estimate-form-one py-5">
 
-		<div class="estimate-form-one py-5">
+		<!-- <div class="estimate-form-one py-5"> -->
 
 		<h3 class="text-center m-2">Move Details</h3>
 		<h5 class="text-center">Enter your moving details and property size</h5>
@@ -26,14 +26,14 @@
 
 					<a onclick="show_city()">
 						<label class="btn btn-radio btn-md w-40 add-active2 btn-success">
-							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" selected="selected" class=" " value="<?=set_value('city_type','Within City');?>">Within The City
+							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" selected="selected" value="<?=set_value('city_type','Within City');?>">Within The City
 						</label>
 					</a>
 			</div>
 			<div class="col-sm text-center">
 					<a onclick="hide_city()">
 						<label class="btn btn-radio btn-md w-40 add-active2">
-							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" class=" " value="<?=set_value('city_type','Between City');?>">Between The City
+							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" value="<?=set_value('city_type','Between City');?>">Between The City
 						</label>
 					</a>
 				</div>
@@ -177,7 +177,7 @@
 					</div>
 
 					<div class="d-flex justify-content-center my-5">	
-						<input id="next" type="submit" name="form-one-next" class="btn btn-success btn-raised" value="Next" style="pointer-events:none">
+						<input id="next" type="submit" name="form-one-next" class="btn btn-success btn-raised" value="Next">
 					</div>
 			</form>
 		</div>
