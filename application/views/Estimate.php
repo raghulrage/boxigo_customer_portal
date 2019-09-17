@@ -25,15 +25,15 @@
 			<div class="col-sm text-center">
 
 					<a onclick="show_city()">
-						<label class="btn btn-radio btn-md w-40 add-active2 btn-success">
-							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" selected="selected" value="<?=set_value('city_type','Within City');?>">Within The City
+						<label class="btn btn-radio btn-md w-50 add-active2 btn-success">
+							<input style="opacity:0;margin-left:-15px" type="radio" name="city_type" checked="checked" value="<?=set_value('city_type','Within City');?>">Within The City
 						</label>
 					</a>
 			</div>
 			<div class="col-sm text-center">
 					<a onclick="hide_city()">
-						<label class="btn btn-radio btn-md w-40 add-active2">
-							<input style="opacity:0;margin-left:-10px" type="radio" name="city_type" value="<?=set_value('city_type','Between City');?>">Between The City
+						<label class="btn btn-radio btn-md w-50 add-active2">
+							<input style="opacity:0;margin-left:-15px" type="radio" name="city_type" value="<?=set_value('city_type','Between City');?>">Between The City
 						</label>
 					</a>
 				</div>
@@ -143,8 +143,8 @@
 								<div class="col-sm">
 
 									<div class="btn-group-toggle " data-toggle="buttons">
-										<label class="btn btn-block btn-radio btn-radio-1 btn-md add-active">
-											<input type="radio" name="property_size" class=" <?php if(form_error('property_size')): ?>has-danger<?php endif;?>" value="<?= set_value('property_size','2 BHK');?>"> 2 BHK
+										<label class="btn btn-block btn-radio btn-radio-1 btn-md add-active btn-success">
+											<input type="radio" name="property_size" checked="checked" class=" <?php if(form_error('property_size')): ?>has-danger<?php endif;?>" value="<?= set_value('property_size','2 BHK');?>"> 2 BHK
 										</label>
 									</div>
 								</div>

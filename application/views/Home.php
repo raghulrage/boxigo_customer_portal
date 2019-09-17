@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h1 class="text-center title">Boxigo</h1>
             <h3 class="text-center ml-3 mr-3">An online Marketplace for Smart, Simple and Secure Way To Move</h3>
               <div class="row text-center pl-3 pr-3">
-                <div class="col-sm-3">
+                <div class="col-sm">
                   <!-- <div class="info"> -->
                     <div class="info">
                       <img src="<?= base_url();?>includes/img/icons/bank.svg" width="75" height="75">
@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                   </div>
                 <!-- </div> -->
-                <div class="col-sm-3">
+                <div class="col-sm">
                   <!-- <div class="info"> -->
                     <div class="info">
                       <img src="<?= base_url();?>includes/img/icons/license.svg" width="75" height="75">
@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                   <!-- </div> -->
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm">
                   <div class="info">
                     <img src="<?= base_url();?>includes/img/icons/payment-security.svg" width="75" height="75">
                     <h4 class='info-title'>Payment Security</h4><br>
@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       in order to fully protect you. Only pay for what you end up moving. All quotes are binding, with no added fees.</p>
                   </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm">
                   <div class="info">
                     <img src="<?= base_url();?>includes/img/icons/customer-service.svg" width="75" height="75">
                     <h4 class='info-title'>Customer Support</h4><br>
@@ -77,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="features">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm">
               <div class="info">
                 <div class="icon icon-info">
                   <img src="<?= base_url();?>includes/img/icons/thinking.svg" width="75" height="75">
@@ -87,7 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   You can make changes any time and see exactly how much it will cost to move each item from our registred movers.</p>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm">
               <div class="info">
                 <div class="icon icon-success">
                   <img src="<?= base_url();?>includes/img/icons/compare.svg" width="75" height="75">
@@ -98,7 +98,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </p>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm">
               <div class="info">
                 <div class="icon icon-danger">
                   <img src="<?= base_url();?>includes/img/icons/medal.svg" width="75" height="75">
@@ -109,7 +109,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </p>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm">
               <div class="info">
                 <div class="icon icon-danger">
                   <img src="<?= base_url();?>includes/img/icons/move.svg" width="75" height="75">
