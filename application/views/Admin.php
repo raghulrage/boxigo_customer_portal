@@ -30,7 +30,7 @@
         <div class="col-sm-2">
             <div class="card px-0">
                 <div class="card-body px-0">
-                    <ul class="d-flex flex-column nav nav-pills nav-pills-icons" role="tablist"">
+                    <ul class="d-flex flex-column nav nav-pills nav-pills-icons" role="tablist">
                         <li class="list-group-item  align-items-center">
                             <a href="#dashboard-1" role="tab" data-toggle="tab"> <i class="fa fa-home"></i> &nbsp; Dashboard</a>
                             <!-- <span class="badge badge-primary badge-pill">14</span> -->

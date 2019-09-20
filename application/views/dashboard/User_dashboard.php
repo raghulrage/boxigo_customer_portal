@@ -1,9 +1,7 @@
-<div class="col-9">	
+<div class="col-md-9">	
 <?php 
 	$userdata = $this->session->userdata('logged_user');
 	$delete_message = $this->session->flashdata('delete_message');
-	//echo "<pre>";print_r($estimate_list);exit;
-
 ?>
 
 <?php 
@@ -55,38 +53,40 @@
 		foreach ($estimate_list['data'] as $row) { ?>
 		<div class="panel">
 			<div class="card-heading" id="heading<?= $row->estimate_id; ?>">
-				<div class="d-flex flex-sm-row align-items-center my-3">
-					<div class="d-flex flex-sm-row align-items-center pointer" data-toggle="collapse" data-target="#collapse<?= $row->estimate_id; ?>" aria-expanded="true" aria-controls="collapse<?= $row->estimate_id; ?>">
-						<div class="mx-3">
-							<h4 class="my-0">#<?= $row->estimate_id; ?></h4>
-							<div class="bhk_detail"><i class="fa fa-home"></i>&nbsp; <?= $row->property_size; ?></div>
-						</div>
-						<div class="mx-3 d-flex flex-row justify-content-center">
-							<div class="mx-3 from_detail">
-								<h4 class="my-0"><?= $row->moving_from; ?></h4>
-							</div>
-							<div class="mx-0 move_date_detail">
-								<p class="my-0 arrow_bottom"><small><?= $row->moving_on; ?></small></p>
-								<svg width="100%">
-									<line y1="31" x2="95" y2="31" style="fill:none;stroke:#4CAF50;stroke-width:2"></line>
-									<polyline points="88 25 95 31 88 36" style="fill:none;stroke:#4CAF50;stroke-width:2"></polyline>
-									<font>07/13/2019 4:42 PM</font>
-								</svg>
-							</div>
-							<div class="mx-3 to_detail">
-								<h4 class="my-0"><?= $row->moving_to; ?></h4>
-							</div>
+				<div class="row p-2 border-bottom">
+					<div class="col-sm-2 col-md-3 col-lg-2 mt-1 mb-2 mt-3">
+						<div class="row d-flex justify-content-between align-items-center">
+							<h4 class="mr-2 my-0 ">#<?= $row->estimate_id; ?></h4>
+							<div class="ml-2 my-0 bhk_detail"><i class="fa fa-home"></i>&nbsp; <?= $row->property_size; ?></div>
 						</div>
 					</div>
-					<div class="mx-3 d-flex flex-row ml-auto">
-						<div class="mx-2" data-toggle="tooltip" data-placement="top" title="View Quote">
-							<span class="badge badge-info badge-pill p-2"><i class="fa fa-link"></i></span>
-						</div>
-						<div class="mx-2" data-toggle="tooltip" data-placement="top" title="Edit">
-							<span class="badge badge-success badge-pill p-2"><i class="fa fa-pen"></i></span>
-						</div>
-						<div class="mx-2" data-toggle="tooltip" data-placement="top" title="Cancel">
-							<a href="<?= base_url(); ?>estimate/cancel/<?= $row->estimate_id; ?>" class="badge badge-danger badge-pill p-2"><i class="fa fa-ban"></i></a>
+					<div class="col-sm-8 col-md-8 col-lg-8 d-flex justify-content-around align-items-center mt-2 mb-2">
+							<div class="col-sm from_detail p-0">
+								<h4 class="my-0"><?= $row->moving_from; ?></h4>
+							</div>
+							<div class="col-sm move_date_detail  d-flex justify-content-around align-items-center p-0">
+								<p class="arrow_bottom"><small><?= $row->moving_on; ?></small></p>
+								<svg width="100%">
+									<line y1="31" x2="95" y2="31" style="fill:none;stroke:#4CAF50;stroke-width:2;"></line>
+									<polyline points="88 25 95 31 88 36" style="fill:none;stroke:#4CAF50;stroke-width:2"></polyline>
+									<!-- <font>07/13/2019 4:42 PM</font> -->
+								</svg>
+							</div>
+							<div class="col-sm to_detail p-0">
+								<h4 class="my-0"><?= $row->moving_to; ?></h4>
+							</div>
+					</div>
+					<div class="col-sm-2 col-md-1 col-lg-2 mt-2 mb-2">
+						<div class="row d-flex justify-content-around align-items-center">
+							<div data-toggle="tooltip" data-placement="top" title="View Quote">
+								<span class="badge badge-info badge-pill p-2 pointer" data-toggle="collapse" data-target="#collapse<?= $row->estimate_id; ?>" aria-expanded="true" aria-controls="collapse<?= $row->estimate_id; ?>"><i class="fa fa-link"></i></span>
+							</div>
+							<div data-toggle="tooltip" data-placement="top" title="Edit">
+								<span class="badge badge-success badge-pill p-2 pointer"><i class="fa fa-pen"></i></span>
+							</div>
+							<div data-toggle="tooltip" data-placement="top" title="Cancel">
+								<a href="<?= base_url(); ?>estimate/cancel/<?= $row->estimate_id; ?>" class="badge badge-danger badge-pill p-2 pointer"><i class="fa fa-ban"></i></a>
+							</div>
 						</div>
 					</div>
 				</div>

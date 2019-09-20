@@ -1,4 +1,4 @@
-<div class="col-sm-3">
+<div class="col-md-3">
 <div class="section">
 	<div class="card px-0">
 		<div class="card-body px-0">

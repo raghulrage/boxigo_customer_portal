@@ -478,3 +478,30 @@ p{
 	font-weight: 400;
 }
 
+/*customer portal styles*/
+
+.move_date_detail svg{
+	left:35px;
+}
+@media(max-width: 1240px){
+	.move_date_detail small{
+		margin-right: 20px;
+		font-size: 8px;
+	}
+	.move_date_detail svg{
+		left:25px;
+	}
+	.from_detail h4,.to_detail h4{
+		padding: 10px;
+		font-size: 1.2rem;
+	}
+}
+@media(max-width: 720px){
+	.move_date_detail svg{
+		left:0px;
+	}
+	.from_detail h4,.to_detail h4{
+		padding: 10px;
+		font-size: 1rem;
+	}
+}
