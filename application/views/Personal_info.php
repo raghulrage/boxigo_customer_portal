@@ -2,7 +2,7 @@
 
 
 
-<section class="section" class="padding-top:100px ">
+<section class="home-section mt-5">
 	<div class="container">
 		<?php if($this->session->flashdata('success_message')): ?>
 			<div class="alert alert-success text-center"><?= $this->session->flashdata('success_message'); ?></div>
@@ -14,7 +14,7 @@
 	<div class="personal-info-section d-flex flex-wrap justify-content-center align-items-center pl-5 pr-5">			
 		<div class="offset-md-1 col-sm-4 card" style="border-radius: 10px;">
 			<div class="text-center">
-				<img src="https://cdn.dribbble.com/users/644659/screenshots/4438517/icon_9.gif" style="height: auto;width: 100%">
+				<img src="https://cdn.dribbble.com/users/644659/screenshots/4438517/icon_9.gif" style="height: auto;width: 75%">
 			</div>
 			<?php echo form_open('estimate/personal_info_validate',array('class'=>'form form-horizontal')); ?>
 			<div class="row">

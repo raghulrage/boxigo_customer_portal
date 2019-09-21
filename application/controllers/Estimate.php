@@ -202,17 +202,11 @@ class Estimate extends CI_Controller
 			$count += $value;
 		}
 
-		$itemData = implode('|', array_map(
-			function ($v, $k) {
+		$itemData = implode('|', array_map(function ($v, $k) {
 				return sprintf("%s=%s", $k, $v);
-			},
-			$data,
-			array_keys($data)
-		));
+			},$data,array_keys($data)));
 
-
-
-
+		
 		$newitems = explode('|', $itemData);
 		for ($i = 0; $i < count($newitems); $i++) {
 			$key_value = explode('=', $newitems[$i]);

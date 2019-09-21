@@ -336,9 +336,9 @@ footer-logo{
 /* ------- Edwin Home page Style Changes ---------------------- */
 
 
-.navbar {
+/*.navbar {
 	padding: .1rem 0;
-}
+}*/
 .btn {
 	font-size: .85rem;
 }
@@ -385,7 +385,7 @@ h4, .h4 {
     color: #2e2e2e;
 }
 
-.section {
+.home-section {
     padding: 10px 0;
 }
 
@@ -400,9 +400,9 @@ h4, .h4 {
 .info-title {
 	padding: 10px 0 10px;
 }
-.footer-padding{
+/*.footer-padding{
 	padding:  0px 60px 0px 90px;
-}
+}*/
 
 
 /* Edwin Estimate page Style --------------- */
@@ -425,12 +425,12 @@ h4, .h4 {
 }
 
 
-.alert {
+/*.alert {
     border: 0;
     border-radius: 0;
     padding: 0px 15px;
     line-height: 0px;
-}
+}*/
 
 .col-sm-3 {
     flex: 0 0 25%;
@@ -478,3 +478,30 @@ p{
 	font-weight: 400;
 }
 
+/*customer portal styles*/
+
+.move_date_detail svg{
+	left:35px;
+}
+@media(max-width: 1240px){
+	.move_date_detail small{
+		margin-right: 20px;
+		font-size: 8px;
+	}
+	.move_date_detail svg{
+		left:25px;
+	}
+	.from_detail h4,.to_detail h4{
+		padding: 10px;
+		font-size: 1.2rem;
+	}
+}
+@media(max-width: 720px){
+	.move_date_detail svg{
+		left:0px;
+	}
+	.from_detail h4,.to_detail h4{
+		padding: 10px;
+		font-size: 1rem;
+	}
+}
