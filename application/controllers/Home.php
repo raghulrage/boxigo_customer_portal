@@ -59,4 +59,14 @@ $this->load->template('Forserviceprovider');
 	{
 		$this->load->template('Customer_support');
 	}
+
+	public function privacy_policies()
+	{
+		$this->load->template('privacy_policies');
+	}
+
+	public function terms_and_condition()
+	{
+		$this->load->template('Terms_and_condition');
+	}
 }

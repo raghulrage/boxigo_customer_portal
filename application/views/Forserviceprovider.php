@@ -163,7 +163,7 @@
               </div>
 
               <div class="col-sm-6">
-                <p class="mt-2 ml-2">Click here for <a href="">Terms and Conditions</a></p>
+                <p class="mt-2 ml-2">Click here for <a href="<?= base_url(); ?>home/terms_and_condition">Terms and Conditions</a></p>
               </div>
 
             </div>

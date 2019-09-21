@@ -28,7 +28,7 @@
                   </a>
                 </li>
               <li class="nav-item">
-                  <a class="nav-link pl-0" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom" >
+                  <a class="nav-link pl-0" href="<?= base_url(); ?>home/privacy_policies" rel="tooltip" title="" data-placement="bottom" >
                   <!-- <i class="fas fa-question-circle"></i> &nbsp; -->Privacy Policy
                   </a>
                 </li>
