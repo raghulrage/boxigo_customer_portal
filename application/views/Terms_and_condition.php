@@ -10,13 +10,13 @@
 				A copy of said documentation must be delivered by the Service Provider(Vendor) to Boxigo, immediately and no later than within 3 (three) calendar days following the date in which it is required by Boxigo.<br><br>The Service Provider(Vendor) undertakes to provide the services with care and professionalism and, especially, to:</p>
 				<div class="container p-4">
 
-				<i class="fas fa-reply-all"></i> Offer a quick and priority response to service requests from Boxigo;<br>
-				<i class="fas fa-hands-helping"></i> Satisfy the service requests that have been booked in advance and make the greatest efforts for the execution of the services that could be requested in real time;<br>
-				<i class="fas fa-clock"></i> Provide the services with punctuality and accuracy with respect to the indications received from Boxigo;<br>
-				<i class="fas fa-vote-yea"></i>	Immediately notify Boxigo of any incident that occurs during the execution of the services;<br>
-				<i class="fas fa-arrows-alt-h"></i>	Not modify the route that has been assigned, even at the Client's request, unless expressly authorized by Boxigo.<br>
-				<i class="fas fa-user-friends"></i>	Make every effort to resolve any incident or misunderstanding with the Client in a friendly manner, in the most favorable way possible for the Client;<br>
-				<i class="fas fa-info-circle"></i>	Provide as many details and evidence as required, in case of a complaint or claim.
+				<i class="fas fa-reply-all mr-3"></i>Offer a quick and priority response to service requests from Boxigo;<br>
+				<i class="fas fa-hands-helping mr-3"></i>Satisfy the service requests that have been booked in advance and make the greatest efforts for the execution of the services that could be requested in real time;<br>
+				<i class="fas fa-clock mr-3"></i>Provide the services with punctuality and accuracy with respect to the indications received from Boxigo;<br>
+				<i class="fas fa-vote-yea mr-3"></i>Immediately notify Boxigo of any incident that occurs during the execution of the services;<br>
+				<i class="fas fa-arrows-alt-h mr-3"></i>Not modify the route that has been assigned, even at the Client's request, unless expressly authorized by Boxigo.<br>
+				<i class="fas fa-user-friends mr-3"></i>Make every effort to resolve any incident or misunderstanding with the Client in a friendly manner, in the most favorable way possible for the Client;<br>
+				<i class="fas fa-info-circle mr-3"></i>Provide as many details and evidence as required, in case of a complaint or claim.
 
 				</div>
 				<p>The staff of Boxigo will be the only one authorized to make the request or cancellation of services to the Service Provider(Vendor), either by email, by the Site or by telephone.<br><br>

@@ -336,17 +336,17 @@
                         Keeping in mind the general essentials in house shifting, Boxigo has bundled the following services as one package 
                         for which you will receive quotations from our partnered packers and movers:
                         <br>
-                        •	Basic packing of electronic and fragile items that needs care.
+                        •   Basic packing of electronic and fragile items that needs care.
                         <br><br>
-                        •	Carton boxes to keep small items. (The boxes will be taken away in case of local moves unless you wish to retain them.)
+                        •   Carton boxes to keep small items. (The boxes will be taken away in case of local moves unless you wish to retain them.)
                         <br><br>
-                        •	Carpentry work of disassembling and assembling of basic furniture that does not involve sophisticated skills.
+                        •   Carpentry work of disassembling and assembling of basic furniture that does not involve sophisticated skills.
                         <br><br>
-                        •	Packing and Unpacking services unless you opt out of it.
+                        •   Packing and Unpacking services unless you opt out of it.
                         <br><br>
-                        •	Loading and unloading services by the ground team.
+                        •   Loading and unloading services by the ground team.
                         <br><br>
-                        •	Transport vehicle suitable to your fitment needs with fuel, toll and other charges included
+                        •   Transport vehicle suitable to your fitment needs with fuel, toll and other charges included
 
                         <br><br>
                         All packers and movers adhere to our All-in package and provide quotations for the same furnishing 

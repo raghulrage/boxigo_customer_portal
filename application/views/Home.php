@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('<?= base_url(); ?>includes/img/landing_image.jpeg')">
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('<?= base_url(); ?>includes/img/background2.jpg')">
     <div class="container">
       <div class="row">
         <div class="col-md-6">

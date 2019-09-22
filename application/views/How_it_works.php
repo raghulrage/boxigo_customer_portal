@@ -24,10 +24,10 @@
                         <div class="col-sm-8">
                             <h2 class='text-center title'>Yes. It’s Simple. But How’s it Safe?</h2><br>
                             <h4 class='text-justify'>
-                            •	All our Shifting Partners are registered, trusted and experienced in relocation. <br>
-                            •	Boxigo ensure safety against damages of your belongings during house shifting following best packaging guidelines.<br>
-                            •	All our packers and movers adhere to Boxigo’s service standards policy. <br>
-                            •	You can opt for Insurance during transit with a variety of options for full repair or replacement or refund.
+                            •   All our Shifting Partners are registered, trusted and experienced in relocation. <br>
+                            •   Boxigo ensure safety against damages of your belongings during house shifting following best packaging guidelines.<br>
+                            •   All our packers and movers adhere to Boxigo’s service standards policy. <br>
+                            •   You can opt for Insurance during transit with a variety of options for full repair or replacement or refund.
                             </h4>
 
                             <h4 class="text-justify description"><b>Compare prices • Book it yourself online • Save on your time and  moving costs.</b></h4><br>
