@@ -50,7 +50,7 @@
             </ul>
             <ul class="navbar-nav text-justify pt-0">
               <li class="nav-item">
-                <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
+                <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/vendor_agreement">
                   <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vendor Agreement
                 </a>
               </li>

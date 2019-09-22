@@ -23,17 +23,110 @@
               <button data-toggle="modal" data-target="#myModal" class="btn btn-success btn-raised btn-md">
               <i class="material-icons">group</i>&nbsp;&nbsp;Join with us
               </button>
+              <p> Or already a member? <a href="">Login</a></p>
 
           </div>
           <div class="col-sm-4">
             <img style='height:auto;width:100%'src="https://cdn.dribbble.com/users/767646/screenshots/1943995/team.gif" alt="image">
           </div>
+          <h2 class="title ml-auto mr-auto">Benefit of Registering with Boxigo</h2>
         </div>
       </div>
       
     </div>
+    <div class="container ml-auto mr-auto">
+      <div class="row">
+        <div class="col-sm-3 text-center rupesh">
+          <i class="fas fa-smile"style="color: lightblue"></i>
+        </div>
+        <div class="col-sm-3 ">
+          <h3>MAKE SALES DAY AND NIGHT</h3>
+          <p>It is the age of internet, make your online presence,build your portfolio. Help customers find you easily. We'll never send you  low quality leads.</p>
+        </div>
+        <div class="col-sm-3 text-center rupesh">
+          <i class="fas fa-smile"style="color: lightblue"></i>
+        </div>
+        <div class="col-sm-3 ">
+          <h3>EXPAND YOUR ONLINE PRESENCE</h3>
+          <p>National marketing and advertising support. Beneﬁt from Boxigo’s extensive sales and marketing efforts</p>
+        </div>
+        <div class="col-sm-3  text-center rupesh">
+          <i class="fas fa-smile"style="color: lightblue"></i>
+        </div>
+        <div class="col-sm-3 ">
+          <h3>HIGH GROWTH</h3>
+          <p>Grow your business with our next generation smart moving solution. Customer friendly service, billing management and many more. we take care of the service, while you are on the move.</p>
+        </div>
+        <div class="col-sm-3  text-center rupesh">
+          <i class="fas fa-smile" style="color: lightblue"></i>
+        </div>
+        <div class="col-sm-3 ">
+          <h3>REDUCE MANAGEMENT TIME</h3>
+          <p>Customer service and sales management. We’ll take care of customer service, billing and more so you can focus on what you do best – providing professional moving services.</p>
+        </div>
+        <h2 class="title ml-auto mr-auto">How Do We Rate Our Movers</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 ">
+          <h3>Pricing :</h3>
+          <p>We believe that our clients deserve to get the best prices<br>for the best service.</p>
+        </div>
+        <div class="col-sm-4 ">
+          <h3>Precision time :</h3>
+          <p>We value your time: Your move should be right on <br>time and as agreed.</p>
+        </div>
+        <div class="col-sm-8">
+          <h3>Professionalism :</h3>
+          <p>It all comes down to that: the best way to handle<br> your next move</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Problem-solving :</h3>
+          <p>When things don't go smoothly, resilience and <br>professionalism are key factors.</p>
+        </div>
+        <div class="col-sm-8">
+          <h3>Reliability :</h3>
+          <p>Things should run as agreed; this is what Boxigo <br> is all about.</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Kindness :</h3>
+          <p>Courtesy is a key factor and value here at <br> Boxigo. Expect nothing less.</p>
+        </div>
+                
+        
+      </div>
+    </div>
+    <div class="container"style="background:lightblue">
+      <h2 class="title text-center">What our Partners are saying</h2><br><br><br>
+      <div class="row">
+        <div class="col-sm-2 text-left">
+          <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
+        </div>
+        <div class="col-sm-10">
+          <h5 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h4 style="color:white">Pinto | Director, Plan Packers and Movers<h5><br><br><br><br>
+        </div>
+      </div>
+    </div>
+    <h2 class="title text-center">Boxigo - The Online Moving Marketplace</h2>
+    <div class="container">
+      <div class="row">
+        <div class="rup ml-auto mr-auto">
+          <button data-toggle="modal" data-target="#myModal" class="btn btn-success btn-raised btn-md ml-auto mr-auto">
+          <i class="material-icons">group</i>&nbsp;&nbsp;Join Us Today
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <h4 class="text-center"> Got Questions? We're here to help<br>
+        Email us at <a href="">support@boxigo.com</a><br>
+        or give us a call<a href=""> (91)1234567890</a></h4>
+
 
   </div>
+
 
 
 
@@ -163,7 +256,7 @@
               </div>
 
               <div class="col-sm-6">
-                <p class="mt-2 ml-2">Click here for <a href="<?= base_url(); ?>home/terms_and_condition">Terms and Conditions</a></p>
+                <p class="mt-2 ml-2">Click here for <a style="color:green"href="<?= base_url(); ?>home/terms_and_condition">Terms and Conditions</a></p>
               </div>
 
             </div>

@@ -69,4 +69,9 @@ $this->load->template('Forserviceprovider');
 	{
 		$this->load->template('Terms_and_condition');
 	}
+
+	public function vendor_agreement()
+	{
+		$this->load->template('Vendor_agreement');
+	}
 }

@@ -59,7 +59,7 @@
 				<div class="col-sm-6 text-center">
 					<h3>Service Provider</h3>
 					<p>Become and Boxigo Verified Vendor</p>
-					<p>JOIN TODAY</p>
+					<p><a style="color: green"href="<?= base_url();?>home/forserviceprovider">JOIN TODAY</a></p>
 					
 					
 				</div>
