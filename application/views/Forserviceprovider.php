@@ -35,75 +35,124 @@
       
     </div>
     <h2 class="title text-center">Benefit of Registering with Boxigo</h2>
-    <div class="container ml-auto mr-auto">
-      <div class="row text-center">
-        <div class="col-sm info">
-          <h4 class='info-title'>MAKE SALES DAY AND NIGHT</h4>
-          <img src="<?= base_url();?>includes/img/icons/curriculum.svg" width="56" height="56">
-          <p>It is the age of internet, make your online presence,build your portfolio. Help customers find you easily. We'll never send you  low quality leads.</p>
-        </div>
-        <div class="col-sm info">
-          <h4 class='info-title'>EXPAND YOUR ONLINE PRESENCE</h4>
-          <img src="<?= base_url();?>includes/img/icons/computer.svg" width="56" height="56">
-          <p>National marketing and advertising support. Beneﬁt from Boxigo’s extensive sales and marketing efforts.</p>
-        </div>
-        <div class="col-sm info">
-          <h4 class='info-title'>HIGH GROWTH</h4>
-          <img src="<?= base_url();?>includes/img/icons/diagram.svg" width="56" height="56">
-          <p>Grow your business with our next generation smart moving solution. Customer friendly service, billing management and many more. we take care of the service, while you are on the move</p>
-        </div>
-        <div class="col-sm info">
-          <h4 class='info-title'>REDUCE MANAGEMENT TIME</h4>
-          <img src="<?= base_url();?>includes/img/icons/time-management.svg" width="56" height="56">
-          <p>Customer service and sales management. We’ll take care of customer service, billing and more so you can focus on what you do best – providing professional moving services.</p>
-        </div>
+     <div class="main main-raised">
+    <div class="container">
 
+      <div class="home-section">
+        <div class="row">
+          <div class="ml-auto mr-auto">
+              <div class="row text-center pl-3 pr-3">
+                <div class="col-sm">
+                  <!-- <div class="info"> -->
+                    <div class="info">
+                      <img src="<?= base_url();?>includes/img/icons/reliable.svg" width="75" height="75">
+                      <h4 class='info-title'>MAKE SALES DAY AND NIGHT</h4><br>
+                      <p class='text-justify'>It is the age of internet, make your online presence,build your portfolio. Help customers find you easily. We'll never send you  low quality leads.
+
+                      </p>
+                    </div>
+                  </div>
+                <!-- </div> -->
+                <div class="col-sm">
+                  <!-- <div class="info"> -->
+                    <div class="info">
+                      <img src="<?= base_url();?>includes/img/icons/computer.svg" width="75" height="75">
+                      <h4 class='info-title'>EXPAND YOUR ONLINE PRESENCE</h4><br>
+                      <p class='text-justify'>National marketing and advertising support. Beneﬁt from Boxigo’s extensive sales and marketing efforts.
+                      </p>
+                    </div>
+                  <!-- </div> -->
+                </div>
+                <div class="col-sm">
+                  <div class="info">
+                    <img src="<?= base_url();?>includes/img/icons/diagram.svg" width="75" height="75">
+                    <h4 class='info-title'>HIGH GROWTH</h4><br>
+                    <p class='text-justify'>Grow your business with our next generation smart moving solution. Customer friendly service, billing management and many more. we take care of the service, while you are on the move.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="info">
+                    <img src="<?= base_url();?>includes/img/icons/time-management.svg" width="75" height="75">
+                    <h4 class='info-title'>REDUCE MANAGEMENT TIMEt</h4><br>
+                    <p class='text-justify'>Customer service and sales management. We’ll take care of customer service, billing and more so you can focus on what you do best – providing professional moving services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
       </div>
-    </div>
     <div class="home-section section-why">
-      <div class="container text-center">
         <h2 class="text-center title mb-5">How Do We Rate Our Movers</h2>
+        <div class="container">
         <div class="row my-3 py-2">
           <div class="col-sm-6">
-            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/affordable.svg" width="50" height="50">&nbsp;&nbsp; Pricing :</h4>
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/affordable.svg" width="50" height="50">&nbsp;&nbsp; Pricing </h4>
             <p>We believe that our clients deserve to get the best prices for the best service.</p>
           </div>
           <div class="col-sm-6">
-            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/punctuality.svg" width="50" height="50">&nbsp;&nbsp; Precision time :</h4>
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/punctuality.svg" width="50" height="50">&nbsp;&nbsp; Precision time </h4>
             <p>We value your time: Your move should be right on time and as agreed.</p>
           </div>
         </div>
         <div class="row my-3 py-2">
           <div class="col-sm-6">
-            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/professionalism.svg" width="50" height="50">&nbsp;&nbsp; Professionalism :</h4>
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/professionalism.svg" width="50" height="50">&nbsp;&nbsp; Professionalism </h4>
             <p>It all comes down to that: the best way to handle your next move</p>
           </div>
           <div class="col-sm-6">
-            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/problem.svg" width="50" height="50">&nbsp;&nbsp; Problem-solving :</h4>
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/problem.svg" width="50" height="50">&nbsp;&nbsp; Problem-solving </h4>
             <p>When things don't go smoothly, resilience and professionalism are key factors.</p>
           </div>
         </div>
         <div class="row my-3 py-2">
           <div class="col-sm-6">
-            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/reliability.svg" width="50" height="50">&nbsp;&nbsp; Reliability :</h4>
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/reliability.svg" width="50" height="50">&nbsp;&nbsp; Reliability </h4>
             <p>Things should run as agreed; this is what Boxigo is all about.</p>
           </div>
           <div class="col-sm-6">
-            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/kindness.svg" width="50" height="50">&nbsp;&nbsp; Kindness :</h4>
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/kindness.svg" width="50" height="50">&nbsp;&nbsp; Kindness </h4>
             <p>Courtesy is a key factor and value here at Boxigo. Expect nothing less.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="container"style="background:lightblue">
-      <h2 class="title text-center">What our Partners are saying</h2><br><br><br>
-      <div class="row">
-        <div class="col-sm-2 text-left">
-          <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
+    <h2 class="title text-center">What our Partners are saying</h2><br>
+    <div class="bs-example">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
+               <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4>
+             
+            </div>
+            <div class="carousel-item">
+                  <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
+               <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4>
+                </div>
+            <div class="carousel-item">
+                  <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
+               <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4>
+            
         </div>
-        <div class="col-sm-10">
-          <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
-            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4><br><br><br><br>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
         </div>
       </div>
     </div>
@@ -118,9 +167,17 @@
 
       </div>
     </div>
-    <h4 class="text-center"> Got Questions? We're here to help<br>
-        Email us at <a href="">support@boxigo.com</a><br>
+
+
+
+
+
+
+    <h4 class="text-center"> Got Questions? We're here to help<br><br>
+        Email us at support<a href="<?= base_url(); ?>home" style="color: green">@boxigo.in</a><br>
         or give us a call<a href=""> (91)1234567890</a></h4>
+
+
 
 
   </div>
