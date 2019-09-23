@@ -4,7 +4,7 @@ class Dashboard_model extends CI_Model{
 
 	function fetch_estimates($id){
 		$this->db->where('user_id',$id);
-		$this->db->where('status',1);
+		//$this->db->where('status',1);
 		$this->db->order_by('moving_on','asc');
 		$query = $this->db->get('estimate');
 		$result = $this->generate_result($query->result());

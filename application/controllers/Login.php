@@ -24,8 +24,8 @@ class Login extends CI_Controller{
 				'phone'=>$this->input->post('phone'),
 				'otp'=>$this->input->post('otp')
 			);
-			//$login_result = $this->User_model->login($login_data);
-			$login_result = $this->post('http://boxigo.in/boxigo-backend-api/product/customer_estimate_flow_service.php',$login_data);
+			$login_result = $this->User_model->login($login_data);
+			// $login_result = $this->load->post('http://boxigo.in/boxigo-backend-api/product/customer_estimate_flow_service.php',$login_data);
 			if($login_result['status'] == 200){
 				$result = $login_result['result'][0];
 				foreach ($result as $key => $value) {
