@@ -23,21 +23,18 @@
               <button data-toggle="modal" data-target="#myModal" class="btn btn-success btn-raised btn-md">
               <i class="material-icons">group</i>&nbsp;&nbsp;Join with us
               </button>
-              <p> Or already a member? <a style="color: green" href="<?= base_url();?>login">Login</a></p>
 
           </div>
           <div class="col-sm-4">
             <img style='height:auto;width:100%'src="https://cdn.dribbble.com/users/767646/screenshots/1943995/team.gif" alt="image">
           </div>
-          
         </div>
       </div>
-      
     </div>
-    <h2 class="title text-center">Benefit of Registering with Boxigo</h2>
-     <div class="main main-raised">
-    <div class="container">
 
+
+    <h2 class="title text-center">Benefit of Registering with Boxigo</h2>
+    <div class="container">
       <div class="home-section">
         <div class="row">
           <div class="ml-auto mr-auto">
@@ -74,7 +71,7 @@
                 <div class="col-sm">
                   <div class="info">
                     <img src="<?= base_url();?>includes/img/icons/time-management.svg" width="75" height="75">
-                    <h4 class='info-title'>REDUCE MANAGEMENT TIME</h4><br>
+                    <h4 class='info-title'>REDUCE MANAGEMENT TIMEt</h4><br>
                     <p class='text-justify'>Customer service and sales management. We’ll take care of customer service, billing and more so you can focus on what you do best – providing professional moving services.
                     </p>
                   </div>
@@ -83,7 +80,12 @@
           </div>
         </div>
       </div>
-    <div class="home-section section-why">
+    </div>
+
+
+
+
+        <div class="home-section section-why">
         <h2 class="text-center title mb-5">How Do We Rate Our Movers</h2>
         <div class="container">
         <div class="row my-3 py-2">
@@ -118,37 +120,40 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
     <h2 class="title text-center">What our Partners are saying</h2><br>
     <div class="bs-example">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <!-- Wrapper for carousel items -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-              <br>
-              <img src="http://localhost/boxigo_customer_portal/includes/img/icons/reliable.svg" style="height:100px;width:100px">
-               <h4 style="color: black">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
-            <br><h3 style="color:black">Pinto | Director, Brainsys Technologies</h3></h4>
+              <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
+               <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4>
              
             </div>
             <div class="carousel-item">
-            <br>
-                  <img src="http://localhost/boxigo_customer_portal/includes/img/icons/reliable.svg" style="height:100px;width:100px">
-               <h4 style="color: black">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
-            <br><h3 style="color:black">Preeth | Owner, Pan India cargo Movers</h3></h4>
-                </div>
+                  <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
+               <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4>
+            </div>
             <div class="carousel-item">
-            <br>
-                  <img src="http://localhost/boxigo_customer_portal/includes/img/icons/reliable.svg" style="height:100px;width:100px">
-               <h4 style="color: black">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
-            <br><h3 style="color:black">Lourd Raj | Director, Plan Packers and Movers</h3></h4>
+                  <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
+               <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4>
             
-        </div>
+            </div>
         <!-- Carousel controls -->
         <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -158,30 +163,37 @@
         </a>
         </div>
       </div>
-    </div>
+    </div><br>
+
+
+
+
+
     <h2 class="title text-center">Boxigo - The Online Moving Marketplace</h2>
     <div class="container">
       <div class="row">
         <div class="rup ml-auto mr-auto">
-          <button data-toggle="modal" data-target="#myModal" class="btn btn-success btn-raised btn-md ml-auto mr-auto">
+          <button data-toggle="modal" data-target="#myModal-2" class="btn btn-success btn-raised btn-md ml-auto mr-auto">
           <i class="material-icons">group</i>&nbsp;&nbsp;Join Us Today
           </button>
         </div>
 
       </div>
-    </div>
+    </div> 
 
 
-
-
-
-
-    <h4 class="text-center"> Got Questions? We're here to help<br><br>
-        Email us at <a href="<?= base_url(); ?>home" style="color: green">support@boxigo.in</a><br>
+    <h4 class="text-center"> Got Questions? We're here to help<br>
+        Email us at support<a href="<?= base_url(); ?>home" style="color: green">@boxigo.in</a><br>
         or give us a call<a href=""> (91)1234567890</a></h4>
 
-  </div>
 
+
+
+
+
+
+
+  </div>
 
 
 
@@ -211,7 +223,7 @@
                           <i class="material-icons">person</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Your Name">
+                      <input type="text" class="form-control" id="name" placeholder=" Your Name">
                     </div>
                   </div>
 
@@ -222,7 +234,7 @@
                           <i class="material-icons">email</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Your E-Mail">
+                      <input type="text" class="form-control" id="email" placeholder=" Your E-Mail">
                     </div>
                   </div>
 
@@ -233,7 +245,7 @@
                           <i class="material-icons">phone</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Your Phone No"><span><button type="button"class="btn btn-success btn-sm" onclick="showotp()">Send OTP</button></span>
+                      <input type="text" class="form-control" id="phone" placeholder=" Your Phone No"><span><button type="button"class="btn btn-success btn-sm" onclick="showotp()">Send OTP</button></span>
                     </div>
                   </div>
 
@@ -246,7 +258,7 @@
                           <i class="material-icons">group</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Business Name">
+                      <input type="text" class="form-control" id="bname" placeholder=" Business Name">
                     </div>
                   </div>
 
@@ -257,7 +269,7 @@
                           <i class="material-icons">web</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Business Website URL">
+                      <input type="text" class="form-control" id="bweb" placeholder=" Business Website URL">
                     </div>
                   </div>
 
@@ -268,7 +280,7 @@
                           <i class="material-icons">phone</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Business Phone No">
+                      <input type="text" class="form-control" id="bphone" placeholder=" Business Phone No">
                     </div>
                   </div>
               </div>
@@ -311,12 +323,146 @@
               </div>
 
               <div class="col-sm-6">
-                <p class="mt-2 ml-2">Click here for <a style="color:green"href="<?= base_url(); ?>home/terms_and_condition">Terms and Conditions</a></p>
+                <p class="mt-2 ml-2">Click here for <a style="color: green" href="<?= base_url(); ?>home/Terms_and_condition">Terms and Conditions</a></p>
               </div>
 
             </div>
           </div>
-          <div class="modal-Director, Plan Packers and Movers">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link btn-success" onclick="submiting()">submit</button>
+            <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3 class="modal-title mt-0 text-center">Create your mover account at Boxigo</h3> 
+                  <p class="text-center">You can start creating your mover profile. Boxigo will review your application for approval.</p>
+              </div>  
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">person</i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder=" Your Name">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">email</i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder=" Your E-Mail">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">phone</i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder=" Your Phone No"><span><button type="button"class="btn btn-success btn-sm" onclick="showotp()">Send OTP</button></span>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">group</i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder=" Business Name">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">web</i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder=" Business Website URL">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">phone</i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder=" Business Phone No">
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row pl-1" id="otp" style="display: none">
+              <div class="col-sm-12">
+                <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fas fa-info-circle"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Enter the OTP sent to your number"><button class="btn btn-secondary btn-sm">resend OTP</button><button class="btn btn-success btn-sm">Verify OTP</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row ml-2 mt-2">
+              <div class="col-sm-6">
+                
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" required="required"> I am legally authorized to perform household goods move.
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" required="required"> I have read, understand, and accept the terms and conditions.
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="col-sm-6">
+                <p class="mt-2 ml-2">Click here for <a style="color: green" href="<?= base_url(); ?>home/Terms_and_condition">Terms and Conditions</a></p>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
             <button type="button" class="btn btn-link btn-success">submit</button>
             <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
           </div>
@@ -334,4 +480,3 @@
       document.getElementById('otp').style.display="block";
     }
   </script>
-  

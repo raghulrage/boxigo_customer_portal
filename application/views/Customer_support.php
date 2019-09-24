@@ -1,7 +1,7 @@
 <div class="page-header header-filter" data-parallax="true" style="height:100px;background: linear-gradient(25deg,#61ce70,yellow);"></div>
 	<!--<div class="main section">-->
 	
-		<div class="main main-raised min-vh-100 p-5">
+		<div class="main main-raised min-vh-10 p-5">
 			<div class="row">
 				<div class="col-sm text-center">
 					<h2 class="info-title">Boxigo Customer Service</h2>
@@ -36,7 +36,7 @@
 					<div class="col-sm"style="border-right: 1px solid lightgrey">
 						<h3><i class="fas fa-map-marker-alt"></i>&nbsp;Email Us</h3>
 						<p class="text-justify">Have any questions? Email us. We will get back to you! <br></p>
-						<p class="text-left">Email Our Support Team support<a class="text-success" href="">@boxigo.in</a>
+						<p class="text-left">Email Our Support Team support<a class="text-success" href="<?= base_url(); ?>home">@boxigo.in</a>
 						</p>
 					</div>
 					<div class="col-sm contact-icon text-center">
@@ -47,7 +47,7 @@
 			</div>
 		</div>
 
-		<div class="main main-raised min-vh-100 p-1">
+		<div class="main main-raised min-vh-10 p-1">
 		<h3 style="text-align: center;">Want to read more about moving with Boxigo?</h3>
 		<div class="container">
 			<div class="row">
@@ -66,5 +66,3 @@
 			</div>
 		</div>
 	</div>
-</div>
-</div>
