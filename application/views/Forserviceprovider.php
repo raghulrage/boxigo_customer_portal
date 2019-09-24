@@ -74,7 +74,7 @@
                 <div class="col-sm">
                   <div class="info">
                     <img src="<?= base_url();?>includes/img/icons/time-management.svg" width="75" height="75">
-                    <h4 class='info-title'>REDUCE MANAGEMENT TIMEt</h4><br>
+                    <h4 class='info-title'>REDUCE MANAGEMENT TIME</h4><br>
                     <p class='text-justify'>Customer service and sales management. We’ll take care of customer service, billing and more so you can focus on what you do best – providing professional moving services.
                     </p>
                   </div>
@@ -130,20 +130,23 @@
         <!-- Wrapper for carousel items -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
-               <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
-            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4>
+              <br>
+              <img src="http://localhost/boxigo_customer_portal/includes/img/icons/reliable.svg" style="height:100px;width:100px">
+               <h4 style="color: black">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h3 style="color:black">Pinto | Director, Brainsys Technologies</h3></h4>
              
             </div>
             <div class="carousel-item">
-                  <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
-               <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
-            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4>
+            <br>
+                  <img src="http://localhost/boxigo_customer_portal/includes/img/icons/reliable.svg" style="height:100px;width:100px">
+               <h4 style="color: black">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h3 style="color:black">Preeth | Owner, Pan India cargo Movers</h3></h4>
                 </div>
             <div class="carousel-item">
-                  <img src="https://www.libertyinsurance.in/images/support-banner.jpg" style="height:100px;width:100px">
-               <h4 style="color: white">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
-            <br><h3 style="color:white">Pinto | Director, Plan Packers and Movers</h3></h4>
+            <br>
+                  <img src="http://localhost/boxigo_customer_portal/includes/img/icons/reliable.svg" style="height:100px;width:100px">
+               <h4 style="color: black">“ Boxigo makes financial sense to our growing company. Boxigo practically hand delivers moves that our resources are incapable of reaching. They only send over quality customers and they make the whole experience from start to finish, ”
+            <br><h3 style="color:black">Lourd Raj | Director, Plan Packers and Movers</h3></h4>
             
         </div>
         <!-- Carousel controls -->
@@ -174,11 +177,8 @@
 
 
     <h4 class="text-center"> Got Questions? We're here to help<br><br>
-        Email us at support<a href="<?= base_url(); ?>home" style="color: green">@boxigo.in</a><br>
+        Email us at <a href="<?= base_url(); ?>home" style="color: green">support@boxigo.in</a><br>
         or give us a call<a href=""> (91)1234567890</a></h4>
-
-
-
 
   </div>
 
@@ -316,7 +316,7 @@
 
             </div>
           </div>
-          <div class="modal-footer">
+          <div class="modal-Director, Plan Packers and Movers">
             <button type="button" class="btn btn-link btn-success">submit</button>
             <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
           </div>
