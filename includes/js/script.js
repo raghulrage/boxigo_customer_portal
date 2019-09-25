@@ -636,30 +636,40 @@ function submiting(){
     var bweb=document.getElementById("bweb").value;
     var bphone=document.getElementById("bphone").value;
 
-    // console.log(name,email,phone,bname,bweb,bphone)
+    console.log(name,email,phone,bname,bweb,bphone)
 
-     fetch("boxigo.in/boxigo-backend-api/product/vendor_request_create_service.php",{
-         method:"post",
-         headers:{"Content-Type":"application/json"},
-         body:JSON.stringify(
-
-             {
+    var data={
      name: name,
      email:email ,
      phone: phone,
      business_name: bname,
      business_contact_no: bphone,
      business_website_url: bweb,
-     verification_key: ,
-     is_phone_verified: ,
-     legally_authorised: ,
-     accept_terms_conditions: 
+     verification_key: "uhubukjgguib",
+     is_phone_verified:0 ,
+     legally_authorised: 1,
+     accept_terms_conditions: 1
  }
 
+ var jsondata=JSON.stringify(data);
+ console.log(jsondata);
 
-             );
-     })
+ fetch('http://boxigo.in/boxigo-backend-api/product/vendor_request_create_service.php',{
+    headers:{"Content-Type":"application/json"},
+    mode:"no-cors",
+    method:"post",
+    body:jsondata
+ })
+ .then(res=>res.json())
+ .then(data=>{
+    console.log(data);
+ }).catch(e=>{
+    console.log("error",e);
+ })
+
+
 }
+
 
 
 
