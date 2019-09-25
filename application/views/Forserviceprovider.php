@@ -329,7 +329,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-link btn-success" onclick="submiting()">submit</button>
+            <button type="button" class="btn btn-link btn-success" onclick="formsub()">submit1</button>
             <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -479,4 +479,48 @@
     function showotp(){
       document.getElementById('otp').style.display="block";
     }
+
+function formsub(){
+  
+    var name=document.getElementById("name").value;
+    var email=document.getElementById("email").value;
+    var phone=document.getElementById("phone").value;
+    var bname=document.getElementById("bname").value;
+    var bweb=document.getElementById("bweb").value;
+    var bphone=document.getElementById("bphone").value;
+
+    console.log(name,email,phone,bname,bweb,bphone)
+
+    var data={
+     name: name,
+     email:email ,
+     phone: phone,
+     business_name: bname,
+     business_contact_no: bphone,
+     business_website_url: bweb,
+     verification_key: "uhubukjgguib",
+     is_phone_verified:0 ,
+     legally_authorised: 1,
+     accept_terms_conditions: 1
+ }
+
+ var jsondata=JSON.stringify(data);
+ console.log(jsondata);
+
+ fetch('http://boxigo.in/boxigo-backend-api/product/vendor_request_create_service.php',{
+    headers:{"Content-Type":"application/json"},
+    mode:"no-cors",
+    method:"post",
+    body:jsondata
+ })
+ .then(res=>res.json())
+ .then(data=>{
+    console.log(data);
+ }).catch(e=>{
+    console.log("error",e);
+ })
+
+
+}
+
   </script>
