@@ -56,7 +56,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link">
+            <a class="nav-link" href="<?= base_url();?>home/aboutus" rel="tooltip" title="" data-placement="bottom"  data-original-title="Know more about us">
             About Us
             </a>
           </li>

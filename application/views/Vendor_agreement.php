@@ -2,7 +2,7 @@
 <div class="main main-raised min-vh-100">
 	<div class="container p-5">
 		<div class="section section-contacts min-vh-100">
-			<div class="row">
+			<div class="row" style="font-family: sans-serif;">
 				<h3>Terms and Conditions- Service Provider(Vendor) Services:</h3>
 				<p>By virtue of these Terms and Conditions and in accordance with the agreements and contracts that Boxigo and the Service Provider(Vendor) conclude for this purpose, the Service Provider(Vendor) agrees to collaborate with Boxigo in order to provide local and national moving services for the benefit of the Client and of Boxigo .<br><br>
 				Drivers (drivers) of the Service Provider(Vendor)'s vehicles must have a valid driver's license and, where appropriate, pass the controls established for this purpose by the applicable authorities.<br><br>The Service Provider(Vendor) undertakes to contract and keep the insurance required by the regulations issued by the applicable authorities in force.<br><br>

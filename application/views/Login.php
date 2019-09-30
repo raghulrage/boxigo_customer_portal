@@ -65,7 +65,7 @@
               </div>
           </div>
           <div class="modal-footer d-block text-center">
-            <button type="button" class="btn btn-link btn-success">submit</button>
+            <!-- <button type="button" class="btn btn-link btn-success">submit</button> -->
             <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -113,7 +113,7 @@
               </div>
           </div>
           <div class="modal-footer d-block text-center">
-            <button type="button" class="btn btn-link btn-success">submit</button>
+            <!-- <button type="button" class="btn btn-link btn-success">submit</button> -->
             <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
           </div>
         </div>

@@ -5,12 +5,11 @@
 </div>
 <?php endif; ?>
 <?php if($this->router->fetch_class() !='estimate'): ?>
-<footer class="footer footer-default sticky-bottom p-3">
+<footer class="footer footer-default sticky-bottom p-0">
   <div class="container footer-padding">
     <div class="row">
-
       <div class="col-sm">
-          <h4 class="info-title text-justify">About Boxigo</h4> 
+          <h4 class="info-title text-justify p-0">About Boxigo</h4> 
             <ul class="navbar-nav text-justify pt-0">
               <li class="nav-item">
                 <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link pl-0">
@@ -40,7 +39,7 @@
             </ul>
       </div>
       <div class="col-sm">
-          <h4 class="info-title text-justify">Partnership</h4> 
+          <h4 class="info-title text-justify p-0">Partnership</h4> 
             <ul class="navbar-nav text-justify pt-0">
               <li class="nav-item">
                 <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
@@ -57,14 +56,14 @@
             </ul>
       </div>
       <div class="col-sm   footer-logo d-flex justify-content-center align-items-center flex-column">
-          <h2 class='info-title mt-0'>Boxigo</h2>
+          <h2 class='info-title p-0'>Boxigo</h2>
           <h4 class='descriiption'>Pack your emotions, with us</h4>
           <p>follow us on</p>
           <div class="footer-logo text-center">
-              <i class="fab fa-instagram footer-logo m-2 "></i>
-              <i class="fab fa-facebook-f footer-logo m-2"></i>
-              <i class="fab fa-linkedin-in footer-logo m-2 "></i>
-              <i class="fab fa-twitter footer-logo m-2 "></i>
+              <a href="https://www.instagram.com/boxigo.official"><i class="fab fa-instagram footer-logo m-2" style="color: black"></i></a>
+              <a href="https://www.facebook.com/Boxigo.Offical"><i class="fab fa-facebook-f footer-logo m-2" style="color: black"></i></a>
+              <a href="https://www.linkedin.com/company/boxigo"><i class="fab fa-linkedin-in footer-logo m-2" style="color: black"></i></a>
+              <a href="https://www.linkedin.com/company/boxigo"><i class="fab fa-twitter footer-logo m-2" style="color: black"></i></a>
           </div>
       </div>
     </div>
