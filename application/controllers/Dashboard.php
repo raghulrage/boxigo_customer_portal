@@ -11,18 +11,35 @@ class Dashboard extends CI_Controller{
 		if(!$this->session->userdata('user_id')){
 			redirect('home');
 		}
-		$this->data['estimate_list'] = $this->fetch_estimates($this->session->userdata('user_id'));
-		$this->data['cancelled_list'] = $this->fetch_cancelled_estimates($this->session->userdata('user_id'));
-		foreach ($this->data['estimate_list']['data'] as $key => $value) {
-			$arr = $this->load->post('http://boxigo.in/boxigo-backend-api/product/customer_estimate_flow_service.php',array("estimate_status"=>"estimate_comparison","estimate_id"=>$value->estimate_id));
-			$arr = json_decode($arr,true);
-			if(array_key_exists('Customer_Estimate_Flow', $arr)){
-				$value->quotations['count'] = count($arr['Customer_Estimate_Flow']);
-				$value->quotations['data'] = $arr['Customer_Estimate_Flow']; 	
-			}else{
-				$value->quotations = '0';
-			}
+		// $this->data['estimate_list'] = $this->fetch_estimates($this->session->userdata('user_id'));
+		$this->data['estimate_list'] = $this->load->post('http://boxigo.in/boxigo-backend-api/product/customer_estimate_flow_service.php',array("user_id"=>$this->session->userdata('user_id'),"estimate_status"=>"all"));
 
+		$this->data['cancelled_list'] = $this->fetch_cancelled_estimates($this->session->userdata('user_id'));
+		$estimate_list = json_decode($this->data['estimate_list']);
+		
+		$this->data['estimate_data'] = $estimate_list->Customer_Estimate_Flow;
+
+
+		foreach ($this->data['estimate_data'] as $key => $value) {
+			$quote_comparison = json_decode($this->load->post('http://boxigo.in/boxigo-backend-api/product/customer_estimate_flow_service.php',array("user_id"=>$this->session->userdata('user_id'),"estimate_status"=>"estimate_comparison","estimate_id"=>$value->estimate_id)),true);
+			$value->quotations = array();
+			if(!is_null($quote_comparison)){
+				if(array_key_exists('Customer_Estimate_Flow', $quote_comparison)){
+					foreach ($quote_comparison as $k => $v) {
+						foreach ($v as $kk => $vv) {
+							foreach ($vv as $kkk => $vvv) {
+								if($kkk == "quote" || $kkk == "addition_info"){
+									$vvv = json_decode($vvv,true);
+								}
+								$quote_comparison[$k][$kk][$kkk] = $vvv;
+							}
+							array_push($value->quotations, $quote_comparison[$k][$kk]);
+						}
+					}
+				}else{
+					$value->quotations = $quote_comparison['message'];
+				}
+			}
 		}
 
 	}

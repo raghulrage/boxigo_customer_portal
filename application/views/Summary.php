@@ -4,6 +4,8 @@
 
 $movedata = $this->session->userdata('movedata');
 
+// echo "<pre>";print_r($movedata);exit();
+
 ?>
 
 <section class="section" style="padding-top: 100px">

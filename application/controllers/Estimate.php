@@ -202,11 +202,14 @@ class Estimate extends CI_Controller
 			$count += $value;
 		}
 
+
 		$itemData = implode('|', array_map(function ($v, $k) {
 				return sprintf("%s=%s", $k, $v);
 			},$data,array_keys($data)));
 
 		
+
+
 		$newitems = explode('|', $itemData);
 		for ($i = 0; $i < count($newitems); $i++) {
 			$key_value = explode('=', $newitems[$i]);
@@ -214,9 +217,44 @@ class Estimate extends CI_Controller
 		}
 		$data_items = json_encode($data_array);
 
+// ============================================================
+
+
+    $stmt = $data_items;
+            $arr = json_decode($data_items);
+            $final_items = array();
+            $rooms = array();
+            
+            $living_room =array();
+            $bed_room =array();
+            $kitchen =array();
+            $other =array();
+            foreach($arr as $x => $x_value) { 
+                if (strpos($x, 'living') !== false){
+                        $living_room += [substr($x,7) => (int)$x_value];
+                    }
+                else if (strpos($x, 'bed') !== false){
+                    $bed_room += [substr($x,4) => (int)$x_value];
+                }
+                else if (strpos($x, 'kitchen') !== false){
+                    $kitchen += [substr($x,8) => (int)$x_value];
+                }
+                else if (strpos($x, 'other') !== false){
+                    $other += [substr($x,6) => (int)$x_value];
+                }
+            }
+            $rooms +=["living_room" =>$living_room];
+            $rooms +=["bed_room" =>$bed_room];
+            $rooms +=["kitchen" =>$kitchen];
+            $rooms +=["others" =>$other];
+            $final_items +=["rooms" =>$rooms];
+
+   			$final_items = json_encode($final_items);
+
+// ============================================================
 
 		$movedata = $this->session->userdata('movedata');
-		$movedata['items'] = $data_items;
+		$movedata['items'] = $final_items;
 		$movedata['total_items'] = $count;
 		$data_of_items = $this->session->set_userdata('movedata', $movedata);
 		redirect('estimate/property_info');
