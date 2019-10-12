@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'http://boxigo.in/',
 
-	'username' => 'root',
-	'password' => '',
+	'username' => 'boxigo_test',
+	'password' => 'password',
 	'database' => 'boxigo',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

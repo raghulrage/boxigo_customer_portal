@@ -1,83 +1,94 @@
-<?php if($this->router->fetch_class() == 'dashboard'): ?>
+<?php if ($this->router->fetch_class() == 'dashboard') : ?>
 
-</section>
-</div>
-</div>
+  </section>
+  </div>
+  </div>
 <?php endif; ?>
-<?php if($this->router->fetch_class() !='estimate'): ?>
-<footer class="footer footer-default sticky-bottom p-0">
-  <div class="container footer-padding">
-    <div class="row">
-      <div class="col-sm">
-          <h4 class="info-title text-justify p-0">About Boxigo</h4> 
-            <ul class="navbar-nav text-justify pt-0">
-              <li class="nav-item">
-                <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link pl-0">
-                  <!-- <i class="fas fa-users"></i>  -->About Us
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?= base_url(); ?>home/how_it_works" class="dropdown-toggle nav-link pl-0">
-                  <!-- <i class="fas fa-users"></i>  -->How it works
-                </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link pl-0" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom" >
-                  <!-- <i class="fas fa-question-circle"></i> &nbsp; -->FAQ
-                  </a>
-                </li>
-              <li class="nav-item">
-                  <a class="nav-link pl-0" href="<?= base_url(); ?>home/Privacy_policies" rel="tooltip" title="" data-placement="bottom" >
-                  <!-- <i class="fas fa-question-circle"></i> &nbsp; -->Privacy Policy
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="<?= base_url(); ?>home/customer_support" class="dropdown-toggle nav-link pl-0">
-                    <!-- <i class="fas fa-hands-helping"></i> &nbsp; -->Customer Support
-                  </a>
-              </li>
-            </ul>
-      </div>
-      <div class="col-sm">
-          <h4 class="info-title text-justify p-0">Partnership</h4> 
-            <ul class="navbar-nav text-justify pt-0">
-              <li class="nav-item">
-                <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
-                  <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vendor Registration
-                </a>
-              </li>
-            </ul>
-            <ul class="navbar-nav text-justify pt-0">
-              <li class="nav-item">
-                <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/vendor_agreement">
-                  <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vendor Agreement
-                </a>
-              </li>
-            </ul>
-      </div>
-      <div class="col-sm   footer-logo d-flex justify-content-center align-items-center flex-column">
+<?php if ($this->router->fetch_class() != 'estimate') : ?>
+  <footer class="footer footer-default sticky-bottom p-0">
+    <div class="container footer-padding">
+      <div class="row">
+        <div class="col-sm">
+          <br>
+          <ul class="navbar-nav text-justify pt-0">
+            <li class="nav-item">
+              <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link pl-0">
+                <!-- <i class="fas fa-users"></i>  -->About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url(); ?>home/how_it_works" class="dropdown-toggle nav-link pl-0">
+                <!-- <i class="fas fa-users"></i>  -->How it works
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-0" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom">
+                <!-- <i class="fas fa-question-circle"></i> &nbsp; -->FAQ
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-0" href="<?= base_url(); ?>home/privacy_policies" rel="tooltip" title="" data-placement="bottom">
+                <!-- <i class="fas fa-question-circle"></i> &nbsp; -->Privacy Policy
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url(); ?>home/customer_support" class="dropdown-toggle nav-link pl-0">
+                <!-- <i class="fas fa-hands-helping"></i> &nbsp; -->Customer Support
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <br>
+          <ul class="navbar-nav text-justify pt-0">
+            <li class="nav-item">
+              <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
+                <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vendor Registration
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav text-justify pt-0">
+            <li class="nav-item">
+              <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/vendor_agreement">
+                <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vendor Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <br>
+          <ul class="navbar-nav text-justify pt-0">
+            <li class="nav-item">
+              <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
+                <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Useful Links
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-sm   footer-logo d-flex justify-content-center align-items-center flex-column">
           <h2 class='info-title p-0'>Boxigo</h2>
           <h4 class='descriiption'>Pack your emotions, with us</h4>
           <p>follow us on</p>
           <div class="footer-logo text-center">
-              <a href="https://www.instagram.com/boxigo.official"><i class="fab fa-instagram footer-logo m-2" style="color: black"></i></a>
-              <a href="https://www.facebook.com/Boxigo.Offical"><i class="fab fa-facebook-f footer-logo m-2" style="color: black"></i></a>
-              <a href="https://www.linkedin.com/company/boxigo"><i class="fab fa-linkedin-in footer-logo m-2" style="color: black"></i></a>
-              <a href="https://www.linkedin.com/company/boxigo"><i class="fab fa-twitter footer-logo m-2" style="color: black"></i></a>
+            <a target='_blank' href="https://www.instagram.com/boxigo.official"><i class="fab fa-instagram footer-logo m-2" style="color: black"></i></a>
+            <a target='_blank' href="https://www.facebook.com/Boxigo.Offical"><i class="fab fa-facebook-f footer-logo m-2" style="color: black"></i></a>
+            <a target='_blank' href="https://www.linkedin.com/company/boxigo"><i class="fab fa-linkedin-in footer-logo m-2" style="color: black"></i></a>
+            <a target='_blank' href="https://www.linkedin.com/company/boxigo"><i class="fab fa-twitter footer-logo m-2" style="color: black"></i></a>
           </div>
+        </div>
       </div>
     </div>
+  </footer>
+  <div class="container-fluid bg-dark text-center p-3">
+    <div class="copyright text-light">
+      &copy;
+      <script>
+        document.write(new Date().getFullYear())
+      </script>, copyrights hold by
+      <a style="color:#61ce70" href="http://boxigo.in/" target="_blank">Boxigo</a>
+    </div>
   </div>
-</footer>
-<div class="container-fluid bg-dark text-center p-3">
-<div class="copyright text-light">
-&copy;
-<script>
-document.write(new Date().getFullYear())
-</script>, copyrights hold by
-<a style="color:#61ce70" href="http://boxigo.in/" target="_blank">Boxigo</a>
-</div>
-</div>
 <?php endif; ?>
 <!--   Core JS Files   -->
 <script src="<?= base_url(); ?>includes/js/core/jquery.min.js" type="text/javascript"></script>

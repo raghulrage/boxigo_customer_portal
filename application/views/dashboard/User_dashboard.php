@@ -105,10 +105,7 @@
 								<div data-toggle="tooltip" data-placement="top" title="View Quotations">
 									<span class="badge badge-success badge-pill p-2 pointer" data-toggle="collapse" data-target="#vendor_collapse<?= $row->estimate_id; ?>" aria-expanded="true" aria-controls="vendor_collapse<?= $row->estimate_id; ?>"><i class="far fa-bell"></i></span>
 								</div>
-								<?php endif; ?>
-								<div data-toggle="tooltip" data-placement="top" title="Cancel">
-									<a href="<?= base_url(); ?>estimate/cancel/<?= $row->estimate_id; ?>" class="badge badge-danger badge-pill p-2 pointer"><i class="fa fa-ban"></i></a>
-								</div>
+								<?php endif; ?>								
 							</div>
 						</div>
 					</div>

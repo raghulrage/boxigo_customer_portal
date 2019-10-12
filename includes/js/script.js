@@ -9,47 +9,48 @@ $('.datetimepicker').datetimepicker({
         today: 'fa fa-screenshot',
         clear: 'fa fa-trash',
         close: 'fa fa-remove'
-    }
+    },
+    format: 'DD/MM/YYYY'
 });
 
 // ---------------------------------item_info input increment script--------------------------------------
-$(document).ready(function(){
+$(document).ready(function () {
     var count = 0;
     $('#pills-livingroom .living_room_items_input').each(function (index, value) {
-    count += parseInt($(value).attr('value'));
+        count += parseInt($(value).attr('value'));
     });
     $('.living_room_item_count').text(count);
 })
 
-$(document).ready(function(){
+$(document).ready(function () {
     var count = 0;
     $('#pills-bedroom .bed_room_items_input').each(function (index, value) {
-    count += parseInt($(value).attr('value'));
+        count += parseInt($(value).attr('value'));
     });
     $('.bed_room_item_count').text(count);
 })
 
-$(document).ready(function(){
+$(document).ready(function () {
     var count = 0;
     $('#pills-kitchen .kitchen_room_items_input').each(function (index, value) {
-    count += parseInt($(value).attr('value'));
+        count += parseInt($(value).attr('value'));
     });
     $('.kitchen_room_item_count').text(count);
 })
 
-$(document).ready(function(){
+$(document).ready(function () {
     var count = 0;
     $('#pills-other .other_items_input').each(function (index, value) {
-    count += parseInt($(value).attr('value'));
+        count += parseInt($(value).attr('value'));
     });
     $('.other_item_count').text(count);
 })
 
 
-$(document).ready(function(){
-    var count=0
-    $('.data-indv-count').each(function(index,value){
-        count +=parseInt($(value).text());
+$(document).ready(function () {
+    var count = 0
+    $('.data-indv-count').each(function (index, value) {
+        count += parseInt($(value).text());
     });
     $('.total_items_count').text(count);
 })
@@ -420,7 +421,7 @@ google.maps.event.addDomListener(window, 'load', function () {
 
     new google.maps.places.SearchBox(document.getElementById('from'));
     new google.maps.places.SearchBox(document.getElementById('to'));
-    
+
 });
 
 
@@ -514,7 +515,7 @@ $('.living_room_items_input').on('change', function () {
     });
     $('.living_room_item_count').html(items_value);
     $('.living_room_item_count').attr('data-indv-value', items_value);
-    $(".data-indv-count").each(function (index,value) {
+    $(".data-indv-count").each(function (index, value) {
         total_items_value += parseInt($(value).text());
     });
     $('.total_items_count').html(total_items_value);
@@ -529,7 +530,7 @@ $('.bed_room_items_input').on('change', function () {
     });
     $('.bed_room_item_count').html(items_value2);
     $('.bed_room_item_count').attr('data-indv-value', items_value2);
-    $(".data-indv-count").each(function (index,value) {
+    $(".data-indv-count").each(function (index, value) {
         total_items_value += parseInt($(value).text());
     });
     $('.total_items_count').html(total_items_value);
@@ -543,7 +544,7 @@ $('.kitchen_room_items_input').on('change', function () {
     });
     $('.kitchen_room_item_count').html(items_value3);
     $('.kitchen_room_item_count').attr('data-indv-value', items_value3);
-    $(".data-indv-count").each(function (index,value) {
+    $(".data-indv-count").each(function (index, value) {
         total_items_value += parseInt($(value).text());
     });
     $('.total_items_count').html(total_items_value);
@@ -556,7 +557,7 @@ $('.other_items_input').on('change', function () {
     });
     $('.other_item_count').html(items_value4);
     $('.other_item_count').attr('data-indv-value', items_value4);
-    $(".data-indv-count").each(function (index,value) {
+    $(".data-indv-count").each(function (index, value) {
         total_items_value += parseInt($(value).text());
     });
     $('.total_items_count').html(total_items_value);
@@ -623,46 +624,51 @@ $(document).ready(function () {
 
 
 // ----------------------------------------postman validation-----------------------------------------------------//
-function submiting(){
-  
-    var name=document.getElementById("name").value;
-    var email=document.getElementById("email").value;
-    var phone=document.getElementById("phone").value;
-    var bname=document.getElementById("bname").value;
-    var bweb=document.getElementById("bweb").value;
-    var bphone=document.getElementById("bphone").value;
+function submiting() {
 
-    console.log(name,email,phone,bname,bweb,bphone)
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var bname = document.getElementById("bname").value;
+    var bweb = document.getElementById("bweb").value;
+    var bphone = document.getElementById("bphone").value;
 
-    var data={
-     name: name,
-     email:email ,
-     phone: phone,
-     business_name: bname,
-     business_contact_no: bphone,
-     business_website_url: bweb,
-     verification_key: "uhubukjgguib",
-     is_phone_verified:0 ,
-     legally_authorised: 1,
-     accept_terms_conditions: 1
- }
+    console.log(name, email, phone, bname, bweb, bphone)
 
- var jsondata=JSON.stringify(data);
- console.log(jsondata);
+    var data = {
+        "name": name,
+        "email": email,
+        "phone": phone,
+        "business_name": bname,
+        "business_contact_no": bphone,
+        "business_website_url": bweb,
+        "verification_key": "sdfghjklkjhgfdsdfghj",
+        "is_phone_verified": "1",
+        "legally_authorised": "1",
+        "accept_terms_conditions": "1"
+    }
 
- fetch('http://boxigo.in/boxigo-backend-api/product/vendor_request_create_service.php',{
-    headers:{"Content-Type":"application/json"},
-    mode:"no-cors",
-    method:"post",
-    body:jsondata
- })
- .then(res=>res.json())
- .then(data=>{
-    console.log(data);
- }).catch(e=>{
-    console.log("error",e);
- })
+    var jsondata = JSON.stringify(data);
+    console.log(jsondata);
 
+    fetch('http://boxigo.in/boxigo-backend-api/product/vendor_request_create_service.php', {
+        method: 'post',
+        headers: { 'Content-Type': 'application/json' },
+        body: jsondata
+    })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+        }).catch(e => {
+            console.log("error", e);
+        })
+
+    document.getElementById("name").value = null;
+    document.getElementById("email").value = null;
+    document.getElementById("phone").value = null;
+    document.getElementById("bname").value = null;
+    document.getElementById("bweb").value = null;
+    document.getElementById("bphone").value = null;
 
 }
 

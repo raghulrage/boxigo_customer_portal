@@ -61,6 +61,11 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="<?= base_url(); ?>home/how_it_works" rel="tooltip" title="" data-placement="bottom"  data-original-title="Know more about us">
+            How it Works
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="<?= base_url();?>estimate" rel="tooltip" title="" data-placement="bottom"  data-original-title="Know more about move">
             Estimate Now
             </a>

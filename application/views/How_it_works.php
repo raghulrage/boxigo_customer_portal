@@ -14,7 +14,7 @@
                                 reputable movers that can service your move.</b><br><br>
                             
                             It’s simple: Just enter your move details, compare prices and reviews, choose a verified mover, and book online. 
-                            We will get you quotes from our registred vedors based on how much 
+                            We will get you quotes from our registered vendors based on how much 
                             stuff you have—no ballpark estimates or hourly rates. In short, you’re in control of your move.
                             </h4><br>
                         </div>

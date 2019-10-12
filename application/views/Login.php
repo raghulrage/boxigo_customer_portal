@@ -17,7 +17,7 @@
             <div class="info">
             <img class="mt-2 mb-5" style='height:auto;width:100%'src="http://ifc.co.ug/wp-content/uploads/2018/06/sales-manager-openings.gif" alt="image">
             </div>
-              <button data-toggle="modal" data-target="#myModal-2" class="btn btn-success btn-raised btn-lg p-4">
+              <button onclick="window.open('http://vendor.boxigo.in/')" class="btn btn-success btn-raised btn-lg p-4">
                 <i class="material-icons">group</i>&nbsp;&nbsp;Vendor Login
               </button>
             </div>

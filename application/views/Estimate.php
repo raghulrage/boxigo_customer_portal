@@ -69,9 +69,9 @@
 							<h6 class="px-2 m-0">Select City</h6>
 							<div class="form-group mx-2 text-center <?php if(form_error('select_city')): ?>has-danger<?php endif;?>">
 								<select type="text" name="select_city" class="form-control" value="<?= set_value('select_city');?>" id="select_city" placeholder=" ">
-									<option hidden value="Bengalore"></option>
+									<option hidden value="Bengaluru"></option>
 									<option value="None">None</option>
-									<option value="Bengalore">Bengalore</option>
+									<option value="Bengalore">Bengaluru</option>
 									<option value="Chennai">Chennai</option>
 									<option value="Kochi">Kochi</option>
 									<option value="Coimbatore">Coimbatore</option>

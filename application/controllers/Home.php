@@ -62,7 +62,7 @@ $this->load->template('Forserviceprovider');
 
 	public function privacy_policies()
 	{
-		$this->load->template('privacy_policies');
+		$this->load->template('Privacy_policies');
 	}
 
 	public function terms_and_condition()
