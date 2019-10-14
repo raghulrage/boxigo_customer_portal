@@ -23,7 +23,7 @@ $movedata = $this->session->userdata('movedata');
 		<?php if($this->session->flashdata('error_message')): ?>
 			<p class="text-danger"><?= $this->session->flashdata('error_message'); ?></p>
 		<?php endif; ?>
-		<h3 class="text-center">Choose your preferred service</h3><br>
+		<h3 class="text-center">Choose your preffered service</h3><br>
 		<div class="row">
 		
 			<?php foreach($characters->serviceType as $key => $value){ ?>

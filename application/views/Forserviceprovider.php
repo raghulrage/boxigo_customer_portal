@@ -71,7 +71,7 @@
                 <div class="col-sm">
                   <div class="info">
                     <img src="<?= base_url();?>includes/img/icons/time-management.svg" width="75" height="75">
-                    <h4 class='info-title'>REDUCE MANAGEMENT TIME</h4><br>
+                    <h4 class='info-title'>REDUCE MANAGEMENT TIMEt</h4><br>
                     <p class='text-justify'>Customer service and sales management. We’ll take care of customer service, billing and more so you can focus on what you do best – providing professional moving services.
                     </p>
                   </div>

@@ -84,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <h4 class="info-title">Plan</h4>
                 <p class='text-justify'>Create your inventory list using our easy planner. 
-                  You can make changes any time and see exactly how much it will cost to move each item from our registered movers.</p>
+                  You can make changes any time and see exactly how much it will cost to move each item from our registred movers.</p>
               </div>
             </div>
             <div class="col-sm">
