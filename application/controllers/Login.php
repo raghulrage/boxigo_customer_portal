@@ -12,7 +12,7 @@ class Login extends CI_Controller{
 	}
 
 	public function index(){
-		$this->load->template('Login');
+		$this->load->template('website/Login');
 	}
 
 

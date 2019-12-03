@@ -26,52 +26,52 @@ class Home extends CI_Controller {
 public function index()
 	
 {
-		$this->load->template('Home');
+		$this->load->template('website/Home');
 	}
 	
 	public function forserviceprovider()
 	{
 		
-$this->load->template('Forserviceprovider');
+$this->load->template('website/Forserviceprovider');
 	}
 
 	public function aboutus()
 	{
-		$this->load->template('Aboutus');
+		$this->load->template('website/Aboutus');
 	}
 
 	public function how_it_works()
 	{
-		$this->load->template('How_it_works');
+		$this->load->template('website/How_it_works');
 	}
 
 	public function faq()
 	{
-		$this->load->template('Faq');
+		$this->load->template('website/Faq');
 	}
 
 	public function admin()
 	{
-		$this->load->template('Admin');
+		$this->load->template('website/Admin');
 	}
 
 	public function customer_support()
 	{
-		$this->load->template('Customer_support');
+		$this->load->template('website/Customer_support');
 	}
 
 	public function privacy_policies()
 	{
-		$this->load->template('Privacy_policies');
+		$this->load->template('website/Privacy_policies');
 	}
 
 	public function terms_and_condition()
 	{
-		$this->load->template('Terms_and_condition');
+		$this->load->template('website/Terms_and_condition');
 	}
 
 	public function vendor_agreement()
 	{
-		$this->load->template('Vendor_agreement');
+		$this->load->template('website/Vendor_agreement');
 	}
 }

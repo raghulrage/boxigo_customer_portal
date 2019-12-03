@@ -17,42 +17,42 @@ class Estimate extends CI_Controller
 
 	public function index()
 	{
-		$this->load->template('Estimate');
+		$this->load->template('estimate/Estimate');
 	}
 
 	public function property_info()
 	{
-		$this->load->template('Property_info');
+		$this->load->template('estimate/Property_info');
 	}
 
 	public function personal_info()
 	{
-		$this->load->template('Personal_info');
+		$this->load->template('estimate/Personal_info');
 	}
 
 	public function items_info($data = null)
 	{
-		$this->load->template('Items_info', $data);
+		$this->load->template('estimate/Items_info', $data);
 	}
 
 	public function service_type()
 	{
-		$this->load->template('Service_type');
+		$this->load->template('estimate/Service_type');
 	}
 
 	public function summary()
 	{
-		$this->load->template('Summary');
+		$this->load->template('estimate/Summary');
 	}
 
 	public function api()
 	{
-		$this->load->template('Api');
+		$this->load->template('estimate/Api');
 	}
 		
 	public function otp()
 	{
-		$this->load->template('OTP');
+		$this->load->template('estimate/OTP');
 	}
 
 	public function form_one_validate()

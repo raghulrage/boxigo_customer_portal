@@ -77,8 +77,8 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 
-	'username' => 'boxigo_root',
-	'password' => 'boxigo@123',
+	'username' => 'root',
+	'password' => '',
 	'database' => 'boxigo',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

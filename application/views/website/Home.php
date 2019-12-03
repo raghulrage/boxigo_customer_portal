@@ -196,41 +196,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div> -->
     <div class="home-section section-why">
-      	<h2 class="text-center title mb-5">Why booking with Boxigo?</h2>
-      	<div class="row my-3 py-2">
-      		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/change.svg" width="50" height="50">&nbsp;&nbsp; Guaranteed Prices</h4>
-      			<p>Your price will not change unless you change your plan. Prices are fixed and transparent based on each mover’s rates. You can see exactly how much it will cost to add or remove an item or service.</p>
-      		</div>
-      		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/money-bag.svg" width="50" height="50">&nbsp;&nbsp; Huge Savings</h4>
-      			<p>For the first time you can compare prices from multiple moving companies for one single move plan in one place. That creates real competition and huge savings that can be achieved only when you book through Boxigo.</p>
-      		</div>
-      	</div>
-      	<div class="row my-3 py-2">
-      		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/telemarketer.svg" width="50" height="50">&nbsp;&nbsp; Live Customer Support</h4>
-      			<p>Our associates are here to answer any question you may have and to make sure you always have someone to speak with. Call, chat or email us anytime. You are not alone!</p>
-      		</div>
-      		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/new-product.svg" width="50" height="50">&nbsp;&nbsp; All-in Package</h4>
-      			<p>When you book with Boxigo you pay less and get more! See what is included in every move booked through Boxigo.</p>
-      		</div>
-      	</div>
-      	<div class="row my-3 py-2">
-      		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/giftbox.svg" width="50" height="50">&nbsp;&nbsp; No move day surprises</h4>
-      			<p>You pay through Boxigo 2 business days before your move, so there is no need to exchange money with the moving crew on the move day itself. Boxigo will review all documentation after your move is completed and will make sure you received the services you paid for.</p>
-      		</div>
-      		<div class="col-sm-6">
-      			<h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/review.svg" width="50" height="50">&nbsp;&nbsp; Guaranteed Satisfaction</h4>
-      			<p>Get your services you requested with utmost professionalism you deserve. Need custom requirements or refunds from a mover, we make sure you get it</p>
-      		</div>
-      	</div>
+        <h2 class="text-center title mb-5">Why booking with Boxigo?</h2>
+        <div class="row my-3 py-2">
+          <div class="col-sm-6">
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/change.svg" width="50" height="50">&nbsp;&nbsp; Guaranteed Prices</h4>
+            <p>Your price will not change unless you change your plan. Prices are fixed and transparent based on each mover’s rates. You can see exactly how much it will cost to add or remove an item or service.</p>
+          </div>
+          <div class="col-sm-6">
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/money-bag.svg" width="50" height="50">&nbsp;&nbsp; Huge Savings</h4>
+            <p>For the first time you can compare prices from multiple moving companies for one single move plan in one place. That creates real competition and huge savings that can be achieved only when you book through Boxigo.</p>
+          </div>
+        </div>
+        <div class="row my-3 py-2">
+          <div class="col-sm-6">
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/telemarketer.svg" width="50" height="50">&nbsp;&nbsp; Live Customer Support</h4>
+            <p>Our associates are here to answer any question you may have and to make sure you always have someone to speak with. Call, chat or email us anytime. You are not alone!</p>
+          </div>
+          <div class="col-sm-6">
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/new-product.svg" width="50" height="50">&nbsp;&nbsp; All-in Package</h4>
+            <p>When you book with Boxigo you pay less and get more! See what is included in every move booked through Boxigo.</p>
+          </div>
+        </div>
+        <div class="row my-3 py-2">
+          <div class="col-sm-6">
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/giftbox.svg" width="50" height="50">&nbsp;&nbsp; No move day surprises</h4>
+            <p>You pay through Boxigo 2 business days before your move, so there is no need to exchange money with the moving crew on the move day itself. Boxigo will review all documentation after your move is completed and will make sure you received the services you paid for.</p>
+          </div>
+          <div class="col-sm-6">
+            <h4 class="info-title"><img src="<?= base_url(); ?>includes/img/icons/review.svg" width="50" height="50">&nbsp;&nbsp; Guaranteed Satisfaction</h4>
+            <p>Get your services you requested with utmost professionalism you deserve. Need custom requirements or refunds from a mover, we make sure you get it</p>
+          </div>
+        </div>
     </div>
     <div class="home-section section-book-move text-center">
-    	<h2 class="text-center title mb-5">Interested in comparing different moving companies and getting guaranteed prices?</h2>
-    	<a href="<?= base_url(); ?>estimate" class="btn btn-success btn-raised">Book My Move</a>
+      <h2 class="text-center title mb-5">Interested in comparing different moving companies and getting guaranteed prices?</h2>
+      <a href="<?= base_url(); ?>estimate" class="btn btn-success btn-raised">Book My Move</a>
     </div>
     
     </div>

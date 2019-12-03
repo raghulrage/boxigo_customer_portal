@@ -43,7 +43,7 @@
               <?php endif; ?> -->
               <div class="row">
                 <div class="col-sm-12 col-md-9 col-lg-7 mx-auto">
-                  <div class="card card-signin my-5">
+                  <div class="card-signin my-5">
                     <div class="card-body">
                       <h5 class="card-title text-center mb-5">Log In</h5>
                       <?php echo form_open('login/login_validate',array('class'=>'form')); ?>

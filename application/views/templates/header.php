@@ -87,29 +87,27 @@
           </li>
           <li class="nav-item">
             <?php if($this->session->userdata('user_id')): ?>
-              <!-- <div class="nav-link bg-transparent border-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-check"></i> &nbsp;Settings
-                <div class="dropdown-menu">
-                  <li>
-                    <a  href="#">Dashboard</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item " href="<?= base_url();?>estimate">Make Estimate</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item " href="<?= base_url();?>logout">Logout</a>
-                  </li>
+            <!--   <div class="dropdown">
+                <button class="nav-link bg-transparent border-0 dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-check"></i> &nbsp;Settings</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">   
+                      <a  href="#">Dashboard</a>
+                      <a class="dropdown-item " href="<?= base_url();?>estimate">Make Estimate</a>
+                      <a class="dropdown-item " href="<?= base_url();?>logout">Logout</a>
+                  </div>
+                </div> -->
+
+
+              <div class="dropdown nav-item">
+                <button class="nav-link dropdown-toggle bg-transparent border-0" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-cog"></i>&nbsp;Settings
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="<?= base_url();?>dashboard">Dashboard</a>
+                  <a class="dropdown-item" href="<?= base_url();?>estimate">Make Estimate</a>
+                  <a class="dropdown-item" href="<?= base_url();?>logout">Logout</a>
                 </div>
               </div>
-            -->
-          <div class="dropdown nav-item">
-              <div class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-cog"></i>&nbsp;Settings
-              </div>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="<?= base_url();?>dashboard">Dashboard</a>
-                <a class="dropdown-item" href="<?= base_url();?>estimate">Make Estimate</a>
-                <a class="dropdown-item" href="<?= base_url();?>logout">Logout</a>
-              </div>
-            </div>
+
+
                 <!-- <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="<?= base_url();?>logout">
                   <i class="fas fa-user-check"></i> &nbsp;Logout
                 </a> -->

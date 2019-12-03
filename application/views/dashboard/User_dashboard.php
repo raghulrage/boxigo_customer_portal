@@ -110,19 +110,20 @@
 						</div>
 					</div>
 				</div>
-				<div id="collapse<?= $row->estimate_id; ?>" class="collapse" aria-labelledby="heading<?= $row->estimate_id; ?>" data-parent="#accordion">
+				<div id="collapse<?= $row->estimate_id; ?>" class="collapse" aria-labelledby="heading<?= $row->estimate_id; ?>" data-parent="#accordion_<?= $row->estimate_id; ?>">
 						<div class="card-body px-0">
 							<?php if (!empty($row->items->rooms)): ?>
 								<div class="row">
 								<?php foreach ($row->items->rooms as $key => $value){ ?>
-									<div class="col-sm-6 border">
+									<div class="col-sm-12 border">
 										<div class="row d-flex justify-content-center align-items-center">
-												<h4><?= $key; ?></h4>
+												<h4>Your selected <?= $key; ?> items</h4>
 										</div>
-										<div class="row d-flex justify-content-start align-items-center border-top">			
+										<div class="row d-flex align-items-center border-top m-3">			
 												<?php foreach ($value as $k => $val) {?>
-						
-													<span><small style="font-size: 1rem" class="pl-2 pr-2"><?= $k ;?> : </small><small style="font-size: 1rem" class="text-success"><?= $val; ?></small></span>
+												<div class="item_box card m-1 p-3" style="width: auto">
+													<span><small style="font-size: 1rem" ><img style="width: 20px;height: 20px;" src="<?= base_url(); ?>images/items/<?= $k; ?>.png" alt='image' /></small><small style="font-size: 1rem" class="pl-2 pr-2"><?= $k ;?> : </small><small style="font-size: 1.5rem" class="text-success"><?= $val; ?></small></span>
+												</div>
 												<?php } ?>
 										</div>	
 									</div>
@@ -147,7 +148,7 @@
 							</div>
 				</div>
 
-				<div id="vendor_collapse<?= $row->estimate_id; ?>" class="collapse" aria-labelledby="heading<?= $row->estimate_id; ?>" data-parent="#accordion">
+				<div id="vendor_collapse<?= $row->estimate_id; ?>" class="collapse" aria-labelledby="heading<?= $row->estimate_id; ?>" data-parent="#accordion_<?= $row->estimate_id; ?>">
 					<?php foreach ($row->quotations as $key => $value) { ?>
 						<div class="row border-bottom d-flex justify-content-center align-items-center">
 							<div class="col-sm col-md-3 d-flex align-items-center flex-column">
@@ -170,7 +171,7 @@
 							</div> 
 							<div class="col-sm col-md-2 text-center ">
 										<div class="row d-flex justify-content-center align-items-center">
-											<h4>&#8377; <?=$value['quote']['Total']; ?></h4>
+											<h4>&#8377; <?=$value['quote']['total']; ?></h4>
 										</div>
 										<div class="row d-flex justify-content-center align-items-center">
 											<a  href="#<?= $value['vendor_id'];?>_<?= $value['estimate_id']; ?>" data-toggle="modal"  role="button" aria-expanded="false" aria-controls="<?= $value['vendor_id'];?>_<?= $value['estimate_id']; ?>" class="btn btn-info btn-sm w-75">view details</a>
@@ -258,7 +259,7 @@
 											<h4>Additional Information</h4>
 											<h4 class="text-success">Service type : <i class="fas fa-award"></i>&nbsp;<?=$row->service_type;?></h4>
 											<h3 class="text-success">Total items : <?=$row->total_items;?></h3>
-											<h3 class="text-success">Total Cost : &#8377; <?= $value['quote']['Total'];?></h3>
+											<h3 class="text-success">Total Cost : &#8377; <?= $value['quote']['total'];?></h3>
 											<span class="text-success">Please read our <a href="#">Terms and Conditions</a></span>
 											<a href="<?=base_url();?>dashboard/Payment_gateway"><button type="button" class="btn btn-success">Select and Continue</button></a>
 										</div>
